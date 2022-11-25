@@ -1,0 +1,12 @@
+{% if detailed %}
+  {% assign css = "places-list places-list--detailed" %}
+{% else %}
+  {% assign css = "places-list" %}
+{% endif %}
+
+<ul class="{{ css }}">
+  {% for place in show %}
+    {% include "filtered-place", place: place, detailed: detailed %}
+  {% endfor %}
+</ul>
+

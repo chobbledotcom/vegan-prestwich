@@ -1,0 +1,18 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {% if page.metaTitle %}
+      {{ page.metaTitle | escape }}
+    {% else if page.name %}
+      {{ page.name | escape }}, Prestwich
+    {% else if page.title %}
+      {{page.title | escape }}, Prestwich
+    {% else %}
+      {{ site.title | escape }}
+    {% endif %}
+  </title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 | escape }}">
+</head>

@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$content-width:    1000px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+@import "../_sass/minima";
+
+h1, h2, h3, h4 {
+    border-bottom: 1px solid $grey-color-light;
+}
+
+hr {
+    margin: 2em;
+    border: 0;
+    border-top: 1px solid #c8e3d0;
+    height: 0;
+}
+
+.small {
+    font-size: smaller;
+}
+
+.places-list {
+    &--detailed {
+        color: $grey-color;
+
+        li {
+            margin-bottom: 10px;
+
+            p {
+                margin-bottom: auto;
+            }
+        }
+    }
+    &__address {
+        font-size: small;
+    }
+    &__contact {
+        font-size: small;
+        a {
+            margin-right: 5px;
+        }
+    }
+    &__tags {
+        font-size: small;
+        opacity: 0.6;
+    }
+}
+
+.place-meta {
+    font-size: 14px;
+    background: $grey-color-light;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 0 10px;
+
+    strong {
+        color: #797;
+        margin-right: 5px;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    hr {
+        margin: 10px 0;
+    }
+}
+
+.place-images {
+    a {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border: 2px solid white;
+        overflow: hidden;
+        margin: 0 10px 10px 0;
+        background-size: cover;
+
+        &:hover {
+            border: 2px solid $green;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.place-tags {
+    color: $grey-color;
+}
+
+.contribute {
+    font-size: 12px;
+    list-style-type: circle;
+}
+
+.avoid-break{
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+.site-footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 401px) {
+    .columns {
+        column-count: 3;
+        column-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .place-meta {
+        float: right;
+        width: 270px;
+        margin: 0 0 20px 20px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+
+        & >.col {
+            flex-grow: 1;
+            flex-basis: 220px;
+            margin: 10px;
+        }
+    }
+
+    .columns {
+        column-count: 4;
+        column-gap: 20px;
+    }
+}

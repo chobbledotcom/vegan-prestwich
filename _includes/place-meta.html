@@ -1,0 +1,68 @@
+<div class="place-meta">
+    <ul>
+        {% if page.web %}
+            <li>
+                <strong>Web:</strong>
+                <a href="{{ page.web }}">
+                    {{ page.web | replace: "https://", "" | replace: "http://", "" | replace: "www.", "" }}
+                </a>
+            </li>
+        {% endif %}
+        {% if page.address %}
+            <li><strong>Address:</strong> {{ page.address }}</li>
+        {% endif %}
+        {% if page.postcode %}
+            <li><strong>Postcode:</strong> {{ page.postcode }}</li>
+        {% endif %}
+        {% if page.phone %}
+            <li><strong>Phone:</strong> <a href="tel:{{ page.phone }}">{{ page.phone }}</a></li>
+        {% endif %}
+    </ul>
+    {% if page.google or page.facebook or page.twitter or page.tripadvisor or page.instagram %}
+        <hr>
+        <ul>
+            {% if page.google %}
+                <li><strong>Google:</strong> <a href="{{ page.google }}">click here</a></li>
+            {% endif %}
+            {% if page.facebook %}
+                {% capture facebook %}
+                    @{{ page.facebook | replace: "https://www.facebook.com/", "" }}
+                {% endcapture %}
+                {% assign stripped_facebook = facebook | replace: "/", "" %}
+                {% if stripped_facebook != facebook %}
+                    {% assign facebook = "click here" %}
+                {% endif %}
+                <li><strong>Facebook:</strong> <a href="{{ page.facebook }}">{{ facebook| escape }}</a></li>
+            {% endif %}
+            {% if page.instagram %}
+                {% capture instagram %}
+                    @{{ page.instagram | replace: "https://www.instagram.com/u/", "" | replace: "https://www.instagram.com/", "" }}
+                {% endcapture %}
+                {% assign stripped_instagram = instagram | replace: "/", "" %}
+                {% if stripped_instagram != instagram %}
+                    {% assign instagram = "click here" %}
+                {% endif %}
+                <li><strong>Instagram:</strong> <a href="{{ page.instagram }}">{{ instagram | escape }}</a></li>
+            {% endif %}
+            {% if page.twitter %}
+                <li><strong>Twitter:</strong> <a href="{{ page.twitter }}">@{{ page.twitter | replace: "https://twitter.com/", "" }}</a></li>
+            {% endif %}
+            {% if page.tripadvisor %}
+                <li><strong>TripAdvisor:</strong> <a href="{{ page.tripadvisor }}">click here</a></li>
+            {% endif %}
+        </ul>
+    {% endif %}
+    {% if page.times %}
+        <hr>
+        <ul>
+            <li>
+                <strong>Times</strong>
+                <ul class="small">
+                    {% for time in page.times %}
+                    <li>{{ time  }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+        </ul>    
+    {% endif %}
+</div>

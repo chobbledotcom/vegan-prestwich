@@ -1,0 +1,25 @@
+<li>
+    <a href="{{ place.url }}">{{ place.data.name | escape }}</a>
+    {% if detailed %}
+        {% if place.data.address %}
+            <span class="places-list__address">
+                {{ place.data.address }}, {{ place.data.postcode }}
+            </span>
+        {% endif %}
+        <p class="places-list__contact">
+            {% if place.data.phone %}
+                <a href="tel:{{ place.data.phone | replace: ' ', '' }}">{{ place.data.phone }}</a>
+            {% endif %}
+            {% if place.data.web %}
+                <a href="{{ place.data.web }}">
+                    {{ place.data.web | replace: "https://", "" | replace: "http://", "" | replace: "www.", "" | escape }}
+                </a>
+            {% endif %}
+        </p>
+        <p class="places-list__tags">
+            {% assign tags = place.data.tags | sort %}
+            {% for tag in tags %}{% unless forloop.first %}, {% endunless %}
+                {{ tag }}{% endfor %}
+        </p>
+    {% endif %}
+</li>

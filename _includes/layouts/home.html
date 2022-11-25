@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div class="page">
+
+  <h1>
+    Vegan Prestwich
+  </h1>
+  
+  {{ content }}
+  
+  {% include "contribute.html" %}
+
+  <div class="row">
+      <div class="col">
+          <h3>Shops</h3>
+          {% include "filtered-places", show: collections.shops, detailed: false %}
+      </div>
+      <div class="col">
+          <h3>Restaurants</h3>
+          {% include "filtered-places", show: collections.restaurants, detailed: false %}
+      </div>
+      <div class="col">
+          <h3>Food Delivery / Takeaways</h3>
+          {% include "filtered-places", show: collections.deliveries, detailed: false %}
+      </div>
+  </div>
+  <p>
+    <strong>Recent updates:</strong>
+    {% assign recently_updated = site.places | sort: "last_modified_at" | reverse | slice: 0, 10 %}
+    {% for place in recently_updated %}
+      <a href="{{ place.url }}">{{ place.name | escape }}</a>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </p>
+</div>
