@@ -7,7 +7,7 @@ environment:
 sources:
   - https://git.sr.ht/~stfn/vegan-prestwich-11ty
 secrets:
-  - b56325c2-cd2c-4a22-b5e9-8c43db571721 # neocities
+  - ce4927a1-3324-4048-9b2d-79a82c67256d # neocities
 tasks:
   - setup: |
       cd $repo
