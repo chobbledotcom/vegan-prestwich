@@ -1,5 +1,6 @@
 image: alpine/edge
 packages:
+  - ruby-dev
   - npm
 environment:
   repo: vegan-prestwich-11ty
@@ -11,6 +12,7 @@ tasks:
   - setup: |
       cd $repo
       npm install
+      sudo gem install --no-document neocities
   - build: |
       cd $repo
       npm run build
