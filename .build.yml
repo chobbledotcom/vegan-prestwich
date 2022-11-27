@@ -2,7 +2,7 @@ image: alpine/edge
 packages:
   - npm
 environment:
-  repo: vegan-prestwich
+  repo: vegan-prestwich-11ty
 sources:
   - https://git.sr.ht/~stfn/vegan-prestwich-11ty
 secrets:
