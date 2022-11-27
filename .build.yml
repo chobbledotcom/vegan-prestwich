@@ -1,19 +1,19 @@
 image: alpine/edge
 packages:
   - npm
+environment:
+  repo: vegan-prestwich
 sources:
   - https://git.sr.ht/~stfn/vegan-prestwich-11ty
 secrets:
-  - b56325c2-cd2c-4a22-b5e9-8c43db571721
+  - b56325c2-cd2c-4a22-b5e9-8c43db571721 # neocities
 tasks:
   - setup: |
+      cd $repo
       npm install
   - build: |
-      cd vegan-prestwich
+      cd $repo
       npm run build
   - deploy: |
-      cd vegan-prestwich
-      set +x
-      export NEOCITIES_API_KEY=$(cat ~/.neocities_api_key)
-      set -x
-      neocities push --prune _site
+      cd $repo
+      sh ./deploy-neocities $repo _site

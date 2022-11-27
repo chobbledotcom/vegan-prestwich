@@ -1,0 +1,6 @@
+#!/bin/bash
+set +x
+export NEOCITIES_API_KEY=$(cat ~/.neocities/$1)
+set -x
+neocities push --prune $2
+
