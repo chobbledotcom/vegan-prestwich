@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<h1>{{ page.title | escape }}</h1>
+<h1>{{ title | escape }}</h1>
 
 <div class="content">
   {{ content }}
 
   {% if chains.size > 0 %}
-    <h2>{{ page.non_chain_intro }}</h2>
+    <h2>{{ non_chain_intro }}</h2>
   {% endif %}
 
   <ul class="places-list places-list--detailed">
@@ -19,7 +19,7 @@ layout: default
 
   {% if chains.size > 0 %}
 
-    <h2>{{ page.chain_intro }}</h2>
+    <h2>{{ chain_intro }}</h2>
 
     <ul class="places-list places-list--detailed">
         {% for place in collections.restaurants %}

@@ -1,64 +1,64 @@
 <div class="place-meta">
     <ul>
-        {% if page.web %}
+        {% if web %}
             <li>
                 <strong>Web:</strong>
-                <a href="{{ page.web }}">
-                    {{ page.web | replace: "https://", "" | replace: "http://", "" | replace: "www.", "" }}
+                <a href="{{ web }}">
+                    {{ web | replace: "https://", "" | replace: "http://", "" | replace: "www.", "" }}
                 </a>
             </li>
         {% endif %}
-        {% if page.address %}
-            <li><strong>Address:</strong> {{ page.address }}</li>
+        {% if address %}
+            <li><strong>Address:</strong> {{ address }}</li>
         {% endif %}
-        {% if page.postcode %}
-            <li><strong>Postcode:</strong> {{ page.postcode }}</li>
+        {% if postcode %}
+            <li><strong>Postcode:</strong> {{ postcode }}</li>
         {% endif %}
-        {% if page.phone %}
-            <li><strong>Phone:</strong> <a href="tel:{{ page.phone }}">{{ page.phone }}</a></li>
+        {% if phone %}
+            <li><strong>Phone:</strong> <a href="tel:{{ phone | replace: " ", "" }}">{{ phone }}</a></li>
         {% endif %}
     </ul>
-    {% if page.google or page.facebook or page.twitter or page.tripadvisor or page.instagram %}
+    {% if google or facebook or twitter or tripadvisor or instagram %}
         <hr>
         <ul>
-            {% if page.google %}
-                <li><strong>Google:</strong> <a href="{{ page.google }}">click here</a></li>
+            {% if google %}
+                <li><strong>Google:</strong> <a href="{{ google }}">click here</a></li>
             {% endif %}
-            {% if page.facebook %}
+            {% if facebook %}
                 {% capture facebook %}
-                    @{{ page.facebook | replace: "https://www.facebook.com/", "" }}
+                    @{{ facebook | replace: "https://www.facebook.com/", "" }}
                 {% endcapture %}
                 {% assign stripped_facebook = facebook | replace: "/", "" %}
                 {% if stripped_facebook != facebook %}
                     {% assign facebook = "click here" %}
                 {% endif %}
-                <li><strong>Facebook:</strong> <a href="{{ page.facebook }}">{{ facebook| escape }}</a></li>
+                <li><strong>Facebook:</strong> <a href="{{ facebook }}">{{ facebook| escape }}</a></li>
             {% endif %}
-            {% if page.instagram %}
+            {% if instagram %}
                 {% capture instagram %}
-                    @{{ page.instagram | replace: "https://www.instagram.com/u/", "" | replace: "https://www.instagram.com/", "" }}
+                    @{{ instagram | replace: "https://www.instagram.com/u/", "" | replace: "https://www.instagram.com/", "" }}
                 {% endcapture %}
                 {% assign stripped_instagram = instagram | replace: "/", "" %}
                 {% if stripped_instagram != instagram %}
                     {% assign instagram = "click here" %}
                 {% endif %}
-                <li><strong>Instagram:</strong> <a href="{{ page.instagram }}">{{ instagram | escape }}</a></li>
+                <li><strong>Instagram:</strong> <a href="{{ instagram }}">{{ instagram | escape }}</a></li>
             {% endif %}
-            {% if page.twitter %}
-                <li><strong>Twitter:</strong> <a href="{{ page.twitter }}">@{{ page.twitter | replace: "https://twitter.com/", "" }}</a></li>
+            {% if twitter %}
+                <li><strong>Twitter:</strong> <a href="{{ twitter }}">@{{ twitter | replace: "https://twitter.com/", "" }}</a></li>
             {% endif %}
-            {% if page.tripadvisor %}
-                <li><strong>TripAdvisor:</strong> <a href="{{ page.tripadvisor }}">click here</a></li>
+            {% if tripadvisor %}
+                <li><strong>TripAdvisor:</strong> <a href="{{ tripadvisor }}">click here</a></li>
             {% endif %}
         </ul>
     {% endif %}
-    {% if page.times %}
+    {% if times %}
         <hr>
         <ul>
             <li>
                 <strong>Times</strong>
                 <ul class="small">
-                    {% for time in page.times %}
+                    {% for time in times %}
                     <li>{{ time  }}</li>
                     {% endfor %}
                 </ul>

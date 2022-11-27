@@ -1,0 +1,5 @@
+{
+  "tags": [ "tag_pages" ],
+  "layout": "tag",
+  "permalink": "tags/{{show|slugify}}/index.html"
+}

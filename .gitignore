@@ -1,11 +1,10 @@
 .bundle
 .DS_Store
-.jekyll-metadata
 .sass-cache
 _site
 Cache
 vendor
 Gemfile.lock
-.jekyll-cache
+.eleventy.js.swp
 .neocities
 node_modules

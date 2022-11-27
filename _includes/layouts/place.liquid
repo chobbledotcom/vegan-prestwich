@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+{% include "place-json-ld.html" %}
+
+<h1>{{ name | escape }}</h1>
+
+<div class="content">
+    {% include "place-meta.html" %}
+    {{ content }}
+
+    <p>
+        <small>
+            <strong>Last Updated:</strong> {{ last_modified_at | date: "%-d %B %Y" }}
+        </small>
+    </p>
+
+
+    <div class="place-images">
+    {% assign place_images = collections.place_images | reverse %}
+    {% for image in place_images %}
+        {% capture absolute_url %}/{{image}}{% endcapture %}
+        {% assign folder_size = absolute_url.size | minus: 6 %}
+        {% capture absolute_folder %}{{ absolute_url | slice: 0, folder_size }}{% endcapture %}
+        {% if absolute_folder == page.url %}
+            <a
+                href="{{absolute_url}}"
+                style="background-image: url('{{ absolute_url }}')"
+                title="{{ title }}"
+            ></a>
+        {% endif %}
+    {% endfor %}
+    </div>
+
+    <p>
+        <small class="place-tags">
+            Tags:
+            {% assign tags = tags | sort | remove: "places" %}
+            {% for tag in tags %}{% unless forloop.first %}, {% endunless %}
+                {% assign tag_page = site.tags | where: "slug", tag | first %}
+                {% if tag_page %}<a href="{{ tag_page.url }}">{% endif %}{{ tag }}{% if tag_page %}</a>{% endif %}{% endfor %}
+        </small>
+    </p>
+</div>

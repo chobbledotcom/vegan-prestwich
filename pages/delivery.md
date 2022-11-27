@@ -1,10 +1,9 @@
 ---
-layout: page
 link-text: Delivery / Takeaways
 title: Vegan Food Delivery in Prestwich
 metaTitle: Vegan Food Delivery in Prestwich
 permalink: /food-delivery-takeaways/
-show: delivery
+show: deliveries
 order: 2
 ---
 

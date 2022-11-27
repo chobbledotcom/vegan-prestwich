@@ -16,10 +16,10 @@
       </span>
 
       <div class="trigger">
-        {% assign top-links = site.pages | sort: "order" %}
+        {% assign top-links = collections.pages | sort: "order" %}
         {% for link-page in top-links %}
-          {% if link-page.link-text %}
-          <a class="page-link" href="{{ link-page.url }}">{{ link-page.link-text | escape }}</a>
+          {% if link-page.data.link-text %}
+          <a class="page-link" href="{{ link-page.url }}">{{ link-page.data.link-text | escape }}</a>
           {% endif %}
         {% endfor %}
       </div>

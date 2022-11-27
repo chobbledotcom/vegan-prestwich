@@ -28,9 +28,9 @@ layout: default
   </div>
   <p>
     <strong>Recent updates:</strong>
-    {% assign recently_updated = site.places | sort: "last_modified_at" | reverse | slice: 0, 10 %}
+    {% assign recently_updated = collections.places | sort: "last_modified_at" | reverse | slice: 0, 10 %}
     {% for place in recently_updated %}
-      <a href="{{ place.url }}">{{ place.name | escape }}</a>{% unless forloop.last %}, {% endunless %}
+      <a href="{{ place.url }}">{{ place.data.name | escape }}</a>{% unless forloop.last %}, {% endunless %}
     {% endfor %}
   </p>
 </div>

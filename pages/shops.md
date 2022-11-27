@@ -4,7 +4,7 @@ link-text: Shops
 title: Shops Selling Vegan Stuff
 metaTitle: Vegan Options in Shops in Prestwich
 permalink: /shops/
-show: shop
+show: shops
 order: 3
 ---
 
