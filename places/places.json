@@ -1,5 +1,5 @@
 {
   "tags": [ "places" ],
   "layout": "place",
-  "permalink": "/places/{{ name|slugify }}/index.html"
+  "permalink": "/places/{{ page.fileSlug }}/index.html"
 }
