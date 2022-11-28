@@ -42,7 +42,7 @@ title: Tag
                 {{ tag | capitalize }}
             {% if tag_page %}</a>{% endif %}
             <ul class="small">
-            {% for place in collections.places %}
+            {% for place in collections.sorted_places %}
                 {% if place.data.tags contains tag %}
                     {% include "filtered-place", place: place, detailed: false %}
                 {% endif %}

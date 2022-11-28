@@ -11,20 +11,24 @@ module.exports = function(config) {
   config.addLayoutAlias('tag', 'layouts/tag.liquid');
   config.addLayoutAlias('tags', 'layouts/tags.liquid');
 
-  let getAllSorted = (api) => {
-    return api.getAll().sort((a, b) => {
-      a.name - b.name
+  let sortedPlaces = (api) => {
+    return api.getAll().filter((a) => {
+      return a.data.tags.indexOf("places") != -1;
+    }).sort((a, b) => {
+      return a.data.name.localeCompare(b.data.name);
     });
   }
 
+  config.addCollection("sorted_places", (api) => sortedPlaces(api));
+
   config.addCollection("shops", (api) =>
-    getAllSorted(api).filter((a) => a.data.permalink && a.data.shop));
+    sortedPlaces(api).filter((a) => a.data.permalink && a.data.shop));
 
   config.addCollection("restaurants", (api) =>
-    getAllSorted(api).filter((a) => a.data.permalink && a.data.restaurant));
+    sortedPlaces(api).filter((a) => a.data.permalink && a.data.restaurant));
 
   config.addCollection("deliveries", (api) =>
-    getAllSorted(api).filter((a) => a.data.permalink && a.data.delivery));
+    sortedPlaces(api).filter((a) => a.data.permalink && a.data.delivery));
 
   config.addWatchTarget("./style/style.scss");
 

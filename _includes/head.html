@@ -2,6 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="max-image-preview:large">
   {% capture styles %}
     {% include "../_site/style/style.css" %}
   {% endcapture %}
@@ -9,15 +10,15 @@
     {{ styles }}
   </style>
   <title>
-    {% if metaTitle %}
+    {%- if metaTitle %}
       {{ metaTitle | escape }}
-    {% else if title %}
-      {{ title | escape }}, Prestwich
-    {% else if name %}
+    {%- elsif name %}
       {{ name | escape }}, Prestwich
-    {% else %}
+    {%- elsif title %}
+      {{ title | escape }}, Prestwich
+    {%- else %}
       {{ site.title | escape }}
-    {% endif %}
+    {%- endif %}
   </title>
   <meta name="description" content="{{ excerpt | default: site.description | strip_html | truncate: 160 | escape }}">
 </head>
