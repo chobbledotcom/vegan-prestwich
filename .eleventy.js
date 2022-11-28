@@ -13,7 +13,7 @@ module.exports = function(config) {
 
   let sortedPlaces = (api) => {
     return api.getAll().filter((a) => {
-      return a.data.tags.indexOf("places") != -1;
+      return a.data.tags && a.data.tags.indexOf("places") != -1;
     }).sort((a, b) => {
       return a.data.name.localeCompare(b.data.name);
     });
@@ -34,8 +34,9 @@ module.exports = function(config) {
 
   config.addCollection("place_images", (collection) => placeImages);;
   config.addPassthroughCopy("places/*/*.jpg");
-  config.addPassthroughCopy("robots.txt");
-  config.addPassthroughCopy("favicon.ico");
+  config.addPassthroughCopy("static/robots.txt");
+  config.addPassthroughCopy("static/not_found.html");
+  config.addPassthroughCopy("static/favicon.ico");
 
   config.addFilter('where', (array, key, value) => {
     return (array || []).filter(item => {
