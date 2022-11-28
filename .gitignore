@@ -8,3 +8,4 @@ Gemfile.lock
 .eleventy.js.swp
 .neocities
 node_modules
+venv
