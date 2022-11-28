@@ -3,13 +3,13 @@
         "@context": "http://schema.org",
         "@type": "LocalBusiness",
         "name": "{{ name }}",
-        {% if email %}"email": "{{ email }}",{% endif %}
-        {% if phone %}"telephone": "{{ phone }}",{% endif %}
-        {% if web %}"url": "{{ web }}",{% endif %}
-        {% if facebook %} "sameAs": [
-            {% if facebook %}"{{ facebook }}"{% endif %}
-        ],{% endif %}
-        {% if google %}"hasMap": "{{ google }}",{% endif %}
+        {%- if email -%}"email": "{{ email }}",{%- endif -%}
+        {%- if phone -%}"telephone": "{{ phone }}",{%- endif -%}
+        {%- if web -%}"url": "{{ web }}",{%- endif -%}
+        {%- if facebook -%} "sameAs": [
+            {%- if facebook -%}"{{ facebook }}"{%- endif -%}
+        ],{%- endif -%}
+        {%- if google -%}"hasMap": "{{ google }}",{%- endif -%}
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "{{ address}}",
