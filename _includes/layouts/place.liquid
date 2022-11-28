@@ -36,10 +36,8 @@ layout: default
     <p>
         <small class="place-tags">
             Tags:
-            {% assign tags = tags | sort | remove: "places" %}
-            {% for tag in tags %}{% unless forloop.first %}, {% endunless %}
-                {% assign tag_page = site.tags | where: "slug", tag | first %}
-                {% if tag_page %}<a href="{{ tag_page.url }}">{% endif %}{{ tag }}{% if tag_page %}</a>{% endif %}{% endfor %}
+            {% capture sorted_tags %}{{ tags | sort | join: ", " }}{% endcapture %}
+            {{ sorted_tags | remove: ", places" | remove: "places, " | remove: "places" }}
         </small>
     </p>
 </div>

@@ -17,9 +17,8 @@
             {% endif %}
         </p>
         <p class="places-list__tags">
-            {% assign tags = place.data.tags | sort %}
-            {% for tag in tags %}{% unless forloop.first %}, {% endunless %}
-                {{ tag }}{% endfor %}
+            {% capture sorted_tags %}{{ place.data.tags | sort | join: ", " }}{% endcapture %}
+            {{ sorted_tags | remove: ", places" | remove: "places, " | remove: "places" }}
         </p>
     {% endif %}
 </li>
