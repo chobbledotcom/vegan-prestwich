@@ -33,7 +33,7 @@ module.exports = function(config) {
   config.addPassthroughCopy("favicon.ico");
 
   config.addFilter('where', (array, key, value) => {
-    return array.filter(item => {
+    return (array || []).filter(item => {
       const keys = key.split('.');
       const reducedKey = keys.reduce((object, key) => {
         return object[key];
@@ -44,7 +44,7 @@ module.exports = function(config) {
   });
 
   config.addFilter('where_includes', (array, key, value) => {
-    return array.filter(item => {
+    return (array || []).filter(item => {
       const keys = key.split('.');
       const reducedKey = keys.reduce((object, key) => {
         return object[key];
