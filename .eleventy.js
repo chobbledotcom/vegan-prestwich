@@ -34,9 +34,9 @@ module.exports = function(config) {
 
   config.addCollection("place_images", (collection) => placeImages);;
   config.addPassthroughCopy("places/*/*.jpg");
-  config.addPassthroughCopy("static/robots.txt");
-  config.addPassthroughCopy("static/not_found.html");
-  config.addPassthroughCopy("static/favicon.ico");
+  config.addPassthroughCopy({"static/robots.txt": "/robots.txt"});
+  config.addPassthroughCopy({"static/not_found.html": "/not_found.html"});
+  config.addPassthroughCopy({"static/favicon.ico": "/favicon.ico"});
 
   config.addFilter('where', (array, key, value) => {
     return (array || []).filter(item => {
