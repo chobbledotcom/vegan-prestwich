@@ -2,6 +2,10 @@
 layout: default
 ---
 
+{% assign tagged = collections.places | where_includes: "data.tags", show %}
+{% assign not_chains = tagged | where: "data.is_chain", false %}
+{% assign chains = tagged | where: "data.is_chain", true %}
+
 <h1>{{ title | escape }}</h1>
 
 <div class="content">
@@ -12,7 +16,7 @@ layout: default
   {% endif %}
 
   <ul class="places-list places-list--detailed">
-      {% for place in collections.restaurants %}
+      {% for place in not_chains %}
         {% include "filtered-place", place: place, detailed: true %}
       {% endfor %}
   </ul>
@@ -22,8 +26,8 @@ layout: default
     <h2>{{ chain_intro }}</h2>
 
     <ul class="places-list places-list--detailed">
-        {% for place in collections.restaurants %}
-        {% include "filtered-place", place: place, detailed: true %}
+        {% for place in chains %}
+          {% include "filtered-place", place: place, detailed: true %}
         {% endfor %}
     </ul>
 

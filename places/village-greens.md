@@ -17,6 +17,7 @@ tags:
 omni: true
 shop: true
 bold: true
+is_chain: false
 times:
 - "Sunday: 11am–5pm"
 - "Monday: 9am–6pm"

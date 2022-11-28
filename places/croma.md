@@ -10,6 +10,7 @@ facebook: https://www.facebook.com/cromapizzaprestwich
 tags:
 - pizza
 omni: true
+is_chain: false
 restaurant: true
 delivery: true
 times:

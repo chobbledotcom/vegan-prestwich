@@ -12,6 +12,7 @@ twitter: https://twitter.com/DokesPizzeria
 tags:
 - pizza
 omni: true
+is_chain: false
 restaurant: true
 delivery: false
 times:

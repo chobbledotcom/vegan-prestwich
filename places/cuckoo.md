@@ -12,6 +12,7 @@ tags:
 - trendy
 - alcohol
 omni: true
+is_chain: false
 restaurant: true
 delivery: false
 times:

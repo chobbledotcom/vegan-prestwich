@@ -12,6 +12,7 @@ tags:
 - pasta
 omni: true
 restaurant: false
+is_chain: false
 delivery: true
 times:
 - "Sunday: 11am–11pm"

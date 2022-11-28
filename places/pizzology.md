@@ -12,6 +12,7 @@ tags:
 - pizza
 omni: true
 restaurant: false
+is_chain: false
 delivery: true
 times:
 - "Mon - 16:00-00:00"

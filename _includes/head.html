@@ -11,10 +11,10 @@
   <title>
     {% if metaTitle %}
       {{ metaTitle | escape }}
-    {% else if name %}
-      {{ name | escape }}, Prestwich
     {% else if title %}
       {{ title | escape }}, Prestwich
+    {% else if name %}
+      {{ name | escape }}, Prestwich
     {% else %}
       {{ site.title | escape }}
     {% endif %}

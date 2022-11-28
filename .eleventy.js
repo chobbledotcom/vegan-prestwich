@@ -12,7 +12,9 @@ module.exports = function(config) {
   config.addLayoutAlias('tags', 'layouts/tags.liquid');
 
   let getAllSorted = (api) => {
-    return api.getAll().sort((a, b) => { a.name - b.name });
+    return api.getAll().sort((a, b) => {
+      a.name - b.name
+    });
   }
 
   config.addCollection("shops", (api) =>
@@ -28,6 +30,28 @@ module.exports = function(config) {
 
   config.addCollection("place_images", (collection) => placeImages);;
   config.addPassthroughCopy("places/*/*.jpg");
+
+  config.addFilter('where', (array, key, value) => {
+    return array.filter(item => {
+      const keys = key.split('.');
+      const reducedKey = keys.reduce((object, key) => {
+        return object[key];
+      }, item);
+
+      return (reducedKey == value ? item : false);
+    });
+  });
+
+  config.addFilter('where_includes', (array, key, value) => {
+    return array.filter(item => {
+      const keys = key.split('.');
+      const reducedKey = keys.reduce((object, key) => {
+        return object[key];
+      }, item);
+
+      return (reducedKey && reducedKey.indexOf(value) != -1 ? item : false);
+    });
+  });
 
   return {
     dir: {

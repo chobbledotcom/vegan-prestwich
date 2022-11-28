@@ -11,6 +11,7 @@ tags:
 - pizza
 - pasta
 omni: true
+is_chain: false
 restaurant: false
 delivery: true
 times:
