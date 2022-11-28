@@ -30,6 +30,7 @@ module.exports = function(config) {
 
   config.addCollection("place_images", (collection) => placeImages);;
   config.addPassthroughCopy("places/*/*.jpg");
+  config.addPassthroughCopy("robots.txt");
   config.addPassthroughCopy("favicon.ico");
 
   config.addFilter('where', (array, key, value) => {
