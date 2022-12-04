@@ -3,7 +3,7 @@ packages:
   - ruby-dev
   - npm
 environment:
-  repo: vegan-prestwich-11ty
+  repo: vegan-prestwich
 sources:
   - https://git.sr.ht/~stfn/vegan-prestwich
 secrets:
