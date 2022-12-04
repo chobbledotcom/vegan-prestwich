@@ -1,6 +1,6 @@
 const fg = require('fast-glob');
 
-const placeImages = fg.sync(['places/*/*.jpg', '!**/_site']);
+const placeImages = fg.sync(['place/*/*.jpg', '!**/_site']);
 
 module.exports = function(config) {
   // Aliases are in relation to the _includes folder
@@ -33,7 +33,7 @@ module.exports = function(config) {
   config.addWatchTarget("./style/style.scss");
 
   config.addCollection("place_images", (collection) => placeImages);;
-  config.addPassthroughCopy("places/*/*.jpg");
+  config.addPassthroughCopy("place/*/*.jpg");
   config.addPassthroughCopy({"static/robots.txt": "/robots.txt"});
   config.addPassthroughCopy({"static/not_found.html": "/not_found.html"});
   config.addPassthroughCopy({"static/favicon.ico": "/favicon.ico"});

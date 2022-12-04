@@ -18,4 +18,4 @@ tasks:
       npm run build
   - deploy: |
       cd $repo
-      sh ./deploy-neocities $repo _site
+      sh ./neocities-deploy $repo _site
