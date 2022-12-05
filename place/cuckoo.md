@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2022-05-17
+last_modified_at: 2022-12-05
 name: Cuckoo
 address: 395-397 Bury New Rd
 postcode: M25 1AW
@@ -23,6 +23,8 @@ times:
 ---
 
 Vegan cheese on their pizzas is available on request, plus they have a few vegan options nibbles-wise - sweet potato fries, falafel, hummus, pitta etc.
+
+[December 2022:](https://anar.chi.st/i/web/post/505293494427500108) "really tasty pizza, falafel and hummus from Cuckoo's Prestwich the other day. they've got nice vegan cheese, but from past visits I know the cheese-less pizzas are also A++. great coffee, too!"
 
 [May 2022:](https://www.instagram.com/p/CdGdf1-NNSW) "Dropped in to [@cuckoo_prestwich](https://www.instagram.com/cuckoo_prestwich) for lunch and got ourselves some delicious 'make your own' vegan pizzas. I went for olives and asparagus and my date chose peppers and wild mushrooms. Both very tasty with a lovely crispy base 🍕"
 
