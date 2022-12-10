@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2022-10-02
+last_modified_at: 2022-12-10
 name: Goods In
 address: Stella House, Unit 2A, Infant St
 postcode: M25 1SS
@@ -22,6 +22,8 @@ times:
 - "Sat 9am - midnight"
 - "Sun 9am - 8pm"
 ---
+
+[December 2022:](https://www.instagram.com/p/Cl8gGQUNxxP) "Goods In serving up some excellent Christmas pudding shaped vegan cookies this week! They taste like a chocolate brownie but in a biscuit, ie excellent. We’ve heard rumours of the return of vegan snowman muffins as well but you’ll have to be quick off the draw to get one!"
 
 [October 2022:](https://www.instagram.com/p/CjIeh8Ct7IR) "Braved the rain for a crispy vegan breakfast butty from @thegoodsinmcr. No regrets!"
 
