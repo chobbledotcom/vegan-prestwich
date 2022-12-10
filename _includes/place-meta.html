@@ -25,24 +25,24 @@
                 <li><strong>Google:</strong> <a href="{{ google }}">click here</a></li>
             {% endif %}
             {% if facebook %}
-                {% capture facebook %}
+                {% capture facebook_text %}
                     @{{ facebook | replace: "https://www.facebook.com/", "" }}
                 {% endcapture %}
-                {% assign stripped_facebook = facebook | replace: "/", "" %}
-                {% if stripped_facebook != facebook %}
-                    {% assign facebook = "click here" %}
+                {% assign stripped_facebook = facebook_text | replace: "/", "" %}
+                {% if stripped_facebook != facebook_text %}
+                    {% assign facebook_text = "click here" %}
                 {% endif %}
-                <li><strong>Facebook:</strong> <a href="{{ facebook }}">{{ facebook| escape }}</a></li>
+                <li><strong>Facebook:</strong> <a href="{{ facebook }}">{{ facebook_text | escape }}</a></li>
             {% endif %}
             {% if instagram %}
-                {% capture instagram %}
+                {% capture instagram_text %}
                     @{{ instagram | replace: "https://www.instagram.com/u/", "" | replace: "https://www.instagram.com/", "" }}
                 {% endcapture %}
-                {% assign stripped_instagram = instagram | replace: "/", "" %}
-                {% if stripped_instagram != instagram %}
-                    {% assign instagram = "click here" %}
+                {% assign stripped_instagram = instagram_text | replace: "/", "" %}
+                {% if stripped_instagram != instagram_text %}
+                    {% assign instagram_text = "click here" %}
                 {% endif %}
-                <li><strong>Instagram:</strong> <a href="{{ instagram }}">{{ instagram | escape }}</a></li>
+                <li><strong>Instagram:</strong> <a href="{{ instagram }}">{{ instagram_text | escape }}</a></li>
             {% endif %}
             {% if twitter %}
                 <li><strong>Twitter:</strong> <a href="{{ twitter }}">@{{ twitter | replace: "https://twitter.com/", "" }}</a></li>
