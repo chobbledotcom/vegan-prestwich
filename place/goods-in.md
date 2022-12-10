@@ -6,6 +6,7 @@ postcode: M25 1SS
 phone: 0161 536 7869
 google: https://goo.gl/maps/zouSbft8fJfh3RAU8
 facebook: https://www.facebook.com/thegoodsinmcr/
+instagram: https://www.instagram.com/thegoodsinmcr
 tags:
 - breakfast
 - cake
