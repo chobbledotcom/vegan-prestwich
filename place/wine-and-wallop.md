@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2022-06-12
+last_modified_at: 2022-12-18
 name: Wine and Wallop
 address: 401 Bury New Road
 postcode: M25 1AA
@@ -24,7 +24,9 @@ times:
 - "Friday: 10am–1am"
 ---
 
-**UPDATE June 2022: Wine & Wallop no longer do the vegan burger, or any vegan hot meals 😔**
+**December 2022:** Wine & Wallop have re-added the vegan burger and vegan breakfast to their menu!
+
+**June 2022:** Wine & Wallop no longer do the vegan burger, or any vegan hot meals 😔
 
 [March 2022:](https://www.instagram.com/p/Cbu1QLyNlkx) "Not an easy subject to photograph, the ol’ vegan burger. Look at that healthy sized portion of chips though! NGL, the removal of half the vegan options at @wineandwallop_prestwich after the rebrand stung but it’s a decent burger and a nice atmosphere in the afternoons."
 
