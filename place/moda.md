@@ -3,7 +3,7 @@ last_modified_at: 2022-06-29
 name: Moda Kitchen and Bar
 address: 6 Clifton Road
 postcode: M25 3HQ
-phone: 07513 049207
+phone: 0161 798 0200
 email: info@modaprestwich.uk
 web: https://modaprestwich.uk
 google: https://goo.gl/maps/f3SDKe69F9x49ry76
