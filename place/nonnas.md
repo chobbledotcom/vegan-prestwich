@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2022-11-06
+last_modified_at: 2022-12-18
 name: Nonna's Delicatessen
 address: 391 Bury New Road
 postcode: M25 1AW
@@ -16,6 +16,10 @@ restaurant: true
 delivery: false
 
 ---
+
+[December 2022:](https://www.facebook.com/groups/veganprestwich/posts/1821901864853888/) "I’ve just had this huge slice of vegan chocolate and raspberry cake at Nona’s. I also bought all the cheese for my vegan cheese board for Xmas"
+
+"I have had that cake and it is incredible! I also got the Herby goats 'I am nut ok' for Xmas day ✨ god bless Nonna's!!"
 
 [October 2022](https://www.facebook.com/groups/veganprestwich/posts/1779032682474140) "👋 I just wanted to give a massive shout out to Nonna's Delicatessen for their new vegan cheese range from I AM NUT OK. I’ve tried so many bad vegan cheeses I almost gave up, but so glad I didn’t! I’ve only tried the herby goat’s cheese so far but will definitely be going back and trying all the others ❤️"
 
