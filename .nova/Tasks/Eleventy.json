@@ -1,0 +1,16 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nnpm run build"
+    },
+    "clean" : {
+      "enabled" : true,
+      "script" : "rm -rf _site"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nnpm start"
+    }
+  }
+}

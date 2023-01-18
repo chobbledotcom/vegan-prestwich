@@ -1,9 +1,8 @@
 {
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^2.0.0-beta.1"
   },
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2",
     "cross-env": "^7.0.3",
     "fast-glob": "^3.2.12",
     "html-minifier": "^4.0.0",
