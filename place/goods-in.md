@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2022-12-10
+last_modified_at: 2022-01-22
 name: Goods In
 address: Stella House, Unit 2A, Infant St
 postcode: M25 1SS
@@ -14,6 +14,7 @@ tags:
 - alcohol
 - trendy
 - lunch
+- tacos
 omni: true
 restaurant: true
 delivery: false
@@ -23,6 +24,8 @@ times:
 - "Sat 9am - midnight"
 - "Sun 9am - 8pm"
 ---
+
+[January 2023:](https://www.instagram.com/p/CnuqRDUNcJu) "Managed to get some of those Goods In tacos after getting turned away last weekend! This weekend we got the last of the cauliflower - clearly the veegs are coming out in force to try these. Well worth the wait. The chilli was particularly flavourful and the taco shells were just the right amount of crunch. They’re available every weekend but remember to book!"
 
 [December 2022:](https://www.instagram.com/p/Cl8gGQUNxxP) "Goods In serving up some excellent Christmas pudding shaped vegan cookies this week! They taste like a chocolate brownie but in a biscuit, ie excellent. We’ve heard rumours of the return of vegan snowman muffins as well but you’ll have to be quick off the draw to get one!"
 

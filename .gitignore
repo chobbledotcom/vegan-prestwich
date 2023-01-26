@@ -1,4 +1,5 @@
 .bundle
+.nova
 .DS_Store
 .sass-cache
 _site
