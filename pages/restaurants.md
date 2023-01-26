@@ -2,10 +2,10 @@
 layout: page
 link-text: Restaurants
 title: Restaurants
-metaTitle: Vegan Restaurants in Prestwich
+metaTitle: Vegan Food in Prestwich's Restaurants
 permalink: /restaurants/
 show: restaurants
 ---
 
-Places you can sit down for a tasty vegan meal in Prestwich - click the business names for more info.
+Places you can sit down for tasty vegan food in Prestwich - click the business names for more info.
 

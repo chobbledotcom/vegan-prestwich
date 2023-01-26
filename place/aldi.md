@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2022-08-17
+last_modified_at: 2022-12-30
 name: Aldi
 address: 380 Bury New Road
 postcode: M25 1AR
@@ -22,6 +22,10 @@ times:
 - "Friday: 8am–10pm"
 - "Saturday: 8am–10pm"
 ---
+
+[December 2022:](https://www.facebook.com/groups/veganprestwich/posts/1833008197076588/) "Never seen so many goodies in Prestwich Aldi! Recommended: the festive bakes, pizza, Chinese chicken strips. Tbh all of it 😂😂😂"
+
+"Prestwich Aldi had some vegan ice cream and some pizzas in today. Must have listened to my comment no vegan pizzas or icecream. They have repented!!"
 
 [August 2022:](https://www.facebook.com/groups/veganprestwich/posts/1724164484627627/) "They are trialing vegan croissants at Aldi. Just got a pack this afternoon. See pic."
 

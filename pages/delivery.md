@@ -7,4 +7,4 @@ show: deliveries
 order: 2
 ---
 
-The below places all deliver - click the names for more info.
+The below restaurants all deliver vegan food - click the names for more info.

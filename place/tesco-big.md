@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2020-01-06
+last_modified_at: 2023-01-26
 name: Tesco (big)
 address: Valley Park Rd
 postcode: M25 3TG
@@ -17,11 +17,13 @@ is_chain: true
 times:
 - "Sunday: 10am–4pm"
 - "Monday: 6am–12am"
-- "Tuesday: Open 24 hours"
-- "Wednesday: Open 24 hours"
-- "Thursday: Open 24 hours"
-- "Friday: Open 24 hours"
-- "Saturday: Open 24 hours"
+- "Tuesday: 6am–12am"
+- "Wednesday: 6am–12am"
+- "Thursday: 6am–12am"
+- "Friday: 6am–12am"
+- "Saturday: 6am–12am"
 ---
 
-Really good 'free from' section, good vegan cheeses, lots of veggie options in the freezer.
+Really good 'free from' vegan food sections all over the shop, good vegan cheeses and non-dairy milks, lots of veggie options in the freezers too.
+
+Tesco does not support, commission or carry out animal testing on any of their own-brand products or their ingredients, nor do suppliers on their behalf.
