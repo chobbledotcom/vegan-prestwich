@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2022-11-06
+last_modified_at: 2023-02-28
 name: Heaton Park Cafés
 address: The Stables, Heaton Park
 postcode: M25 2SW
@@ -23,6 +23,8 @@ times:
 - "Sunday: 8am–5pm"
 
 ---
+
+[February 2023:](https://www.instagram.com/p/CpK7gVDNlPT/) "@heatonparkcafes have upped their vegan offerings again! We tried the scotch egg, the bbq Texas strip sandwich, and the chocolate and coconut tart. All great options and not the only ones available. Well impressed!"
 
 [October 2022:](https://www.facebook.com/groups/veganprestwich/posts/1772543673123041) "Heaton Park cafe does vegan ring doughnuts! also, hot dogs, paninis, burgers, chips, coffee.. and all compostable packaging too ❤"
 

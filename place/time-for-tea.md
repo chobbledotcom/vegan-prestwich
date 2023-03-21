@@ -12,6 +12,7 @@ tags:
 - lunch
 omni: true
 shop: false
+restaurant: true
 times:
 - "Sunday: Closed"
 - "Monday: Closed"
