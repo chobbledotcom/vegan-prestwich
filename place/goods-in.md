@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2023-01-22
+last_modified_at: 2023-03-22
 name: Goods In
 address: Stella House, Unit 2A, Infant St
 postcode: M25 1SS
@@ -24,6 +24,8 @@ times:
 - "Sat 9am - midnight"
 - "Sun 9am - 8pm"
 ---
+
+[March 2023:](https://www.instagram.com/p/CqGccPcISj9/) "The Goods In have done a little shake up of their daytime menu, adding a handful of vegan sides and a new main - cauliflower shawarma! So good. Stiff competition for their vegan breakfast options."
 
 [January 2023:](https://www.instagram.com/p/CnuqRDUNcJu) "Managed to get some of those Goods In tacos after getting turned away last weekend! This weekend we got the last of the cauliflower - clearly the veegs are coming out in force to try these. Well worth the wait. The chilli was particularly flavourful and the taco shells were just the right amount of crunch. They’re available every weekend but remember to book!"
 
