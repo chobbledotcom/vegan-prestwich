@@ -1,6 +1,6 @@
 ---
 last_modified_at: 2022-12-30
-name: Aldi
+name: Aldi Supermarket
 address: 380 Bury New Road
 postcode: M25 1AR
 phone: 0800 042 0800
