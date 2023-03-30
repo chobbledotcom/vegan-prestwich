@@ -11,7 +11,7 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #0752b4;
 
 $green:            #00D13D;
 $grey-color:       #828282;
@@ -36,6 +36,10 @@ hr {
     border: 0;
     border-top: 1px solid #c8e3d0;
     height: 0;
+}
+
+ul {
+    line-height: 170%;
 }
 
 .small {
