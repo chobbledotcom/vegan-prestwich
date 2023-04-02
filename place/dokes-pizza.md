@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2022-11-06
+last_modified_at: 2023-03-27
 name: Dokes Pizza
 address: 449A Bury New Rd
 postcode: M25 1AF
@@ -24,6 +24,8 @@ times:
 - "Saturday: 10am–11pm"
 - "Sunday: 10am–10pm"
 ---
+
+[March 2023:](https://www.instagram.com/p/CqSWGe1NZHR) "Finally got myself back to @dokesprestwich this weekend! Last time I went was right after they opened. Seems like the menu has been streamlined a bit. They’ve got this lovely mushroom and truffle oil pizza as a vegan option, and are willing to adapt their other options with vegan cheese and topping substitutions. I have to say this pizza was delicious though, so I’d happily have it again!"
 
 [October 2022:](https://www.facebook.com/groups/veganprestwich/posts/1776423132735095) "Went for a meal at Dokes Pizzeria in the village last night and have to admit it’s the best Vegan Pizza I’ve found in 3 years !"
 
