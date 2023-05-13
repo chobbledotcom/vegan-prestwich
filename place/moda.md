@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2023-01-18
+last_modified_at: 2023-05-07
 name: Moda Kitchen and Bar
 address: 6 Clifton Road
 postcode: M25 3HQ
@@ -26,6 +26,8 @@ times:
 - "Saturday: 9am–12am"
 - "Sunday: 10am–9pm"
 ---
+
+[May 2023:](https://www.instagram.com/p/Cr8q0nZt3lA) "I’ve said it before but I’ll say it again: the vegan Sunday roast from @moda_kitchenandbar is exceptional. It’s also massive. Somebody please roll me home 😄 Also pictured: the nut roast comes on a ciabatta for a slightly lighter bite!"
 
 [January 2023:](https://www.facebook.com/groups/veganprestwich/posts/1846781452365929/) "Just had a very tasty vegan breakfast from Moda with really yummy vegan sausages, hash browns, toast, beans, mushrooms, spicy and zesty guac, nice coffee, good beer, can't fault it!"
 

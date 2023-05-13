@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2022-12-11
+last_modified_at: 2023-05-10
 name: Campo Blanco
 address: 1 Moss Ln, Whitefield
 postcode: M45 6QE
@@ -20,12 +20,14 @@ takeaway: true
 times:
 - "Monday: CLOSED"
 - "Tuesday: CLOSED"
-- "Wednesday: 12:00 - 22:00"
-- "Thursday: 12:00 - 22:00"
+- "Wednesday: 12:00 - 22:30"
+- "Thursday: 12:00 - 22:30"
 - "Friday: 12:00 - 23:00"
 - "Saturday: 12:00 - 23:00"
 - "Sunday: 12:00 - 21:00"
 ---
+
+[May 2023:](https://www.instagram.com/p/CsEKvceN1fT) "@campoblanco have started opening for lunch, so we popped over to try one of their tapas bowls. At first glance it didn’t look like there was a lot of options for us, but cross referencing with the main menu we discovered that the chickpeas, mushrooms, and a couple of other dishes can be made vegan on request. We easily got a very good and filling feed! We’ll definitely be back 💚"
 
 [December 2022:](https://www.facebook.com/groups/veganprestwich/posts/1816682708709137) "Tonight we ate at campo blanco in whitefield. The vegan options were great! We had hummus and flatbread, cauliflower wings (the nicest I’ve ever had!) garlic mushrooms, sticky sprouts and Patata‘s Bravas. Would highly recommend."
 
