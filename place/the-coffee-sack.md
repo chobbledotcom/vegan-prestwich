@@ -27,6 +27,8 @@ times:
 
 ---
 
+[July 2023:](https://dumpoir.com/c/6069534814710169413) "New fave! Cauliflower and vegan halloumi salad from @coffeesackprestwich- you have to ask for vegan halloumi, which comes nicely crisped up. Yum!"
+
 [April 2023:](https://www.instagram.com/p/Cq-jIjFN3iM) "What’s better than a lovely healthy lunch at @coffeesackprestwich on a sunny spring day? 💚"
 
 [December 2022:](https://www.instagram.com/p/CmMJ0XoNCrp) "Oh hey! @coffeesackprestwich have a new vegan menu out. What do we think? They’ve been consistently offering vegan cake recently as well"
