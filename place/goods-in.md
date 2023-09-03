@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2023-06-24
+last_modified_at: 2023-09-03
 name: Goods In
 address: Stella House, Unit 2A, Infant St
 postcode: M25 1SS
@@ -24,6 +24,8 @@ times:
 - "Sat 9am - midnight"
 - "Sun 9am - 8pm"
 ---
+
+[September 2023:](https://dumpoir.com/c/9239297160456841813) "A bunch of vegan cakes at Goods In today 💜"
 
 [June 2023:](https://www.instagram.com/p/Ct2DANotdSv) "Friends! You really need to come down to @thegoodsinmcr some weekend evening and try the @thechaatwalas take over menu. So, so delicious. It’s on Thursday, Friday, Saturday for the next 6 weeks. Best part: the menu is 100% vegan 🌱 Pictured are the Dahi Puri, Sev Puri, Keema Fries, and Samosa Chaat. We got this combo for £25!"
 

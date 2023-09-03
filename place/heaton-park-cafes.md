@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2023-02-28
+last_modified_at: 2023-09-03
 name: Heaton Park Cafés
 address: The Stables, Heaton Park
 postcode: M25 2SW
@@ -23,6 +23,8 @@ times:
 - "Sunday: 8am–5pm"
 
 ---
+
+[September 2023:](https://dumpoir.com/c/4636779984223473813) "Sunny Sunday visit to Heaton Park meant we got to try the “Kickin Katsu” burger there for the first time. Pity me and my attempts to get a good picture! Burgers are hard. Hit the spot though 🍔"
 
 [February 2023:](https://www.instagram.com/p/CpK7gVDNlPT/) "@heatonparkcafes have upped their vegan offerings again! We tried the scotch egg, the bbq Texas strip sandwich, and the chocolate and coconut tart. All great options and not the only ones available. Well impressed!"
 
