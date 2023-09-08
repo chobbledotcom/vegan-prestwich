@@ -6,17 +6,16 @@ environment:
   repo: vegan-prestwich
 sources:
   - https://git.sr.ht/~stfn/vegan-prestwich
-  - https://github.com/stefan-burke/neocities-ruby.git
+  - https://github.com/stefan-burke/build-scripts
 secrets:
   - ff7f6e84-35b9-4aa9-afa1-1fbc3fe6a2d1 # ~/.neocities/$repo
 tasks:
   - setup: |
       cd $repo
       npm install
-      sudo gem install --no-document neocities
   - build: |
       cd $repo
       npm run build
   - deploy: |
       cd $repo
-      sh ./neocities-deploy $repo _site
+      sudo sh ./build-scripts/neocities-deploy $repo _site

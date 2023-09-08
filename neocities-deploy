@@ -1,6 +1,7 @@
 #!/bin/bash
+gem install --no-document neocities
 set +x
 export NEOCITIES_API_KEY=$(cat ~/.neocities/$1)
 set -x
-../neocities-ruby/bin/neocities push --prune $2
+neocities push --prune $2
 
