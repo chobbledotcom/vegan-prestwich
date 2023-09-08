@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2020-01-13
+last_modified_at: 2020-09-08
 name: Saffron Express
 address: 391 Bury Old Rd 
 postcode: M25 1PS
@@ -23,6 +23,14 @@ times:
 - "Saturday: 4:30pm–12am"
 - "Sunday: 5–11pm"
 ---
+
+[September 2023:](https://www.facebook.com/groups/veganprestwich/posts/1995410127503060) "Saffron Express has plenty of vegan options, and I'm in love with their korma"
+
+"Saffron is the best curry house in prestwich"
+
+"Saffron Express are SO helpful with vegan stuff and so so lovely. They do me a vegan korma sometimes with just coconut milk (not what you're after obviously 😂 but they go out of their way!) Definitely give them a try some time!"
+
+"Saffron express! they are all proper lovely and go out of their way to make anything vegan. I get a vegan madras from there quite often so a vindaloo will be more than possible 👍"
 
 [January 2020:](https://www.facebook.com/groups/veganprestwich/permalink/1009180652792684/) "They've been mentioned a few times before, but I highly recommend Saffron Express for any curry-loving local veegs.
 
