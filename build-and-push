@@ -1,0 +1,15 @@
+#!/usr/bin/env
+
+npm install
+npm run build
+
+set +x
+export NEOCITIES_API_KEY=$(cat /home/user/.neocities/vegan-prestwich)
+set -x
+
+gem install --no-document neocities
+neocities push --prune _site
+
+git add .
+git commit -m "auto-updated after build"
+git push
