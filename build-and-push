@@ -1,11 +1,7 @@
 #!/usr/bin/env
 
-bun install
-bun run remove
-bun run build_sass
-bun run minify_css
-bun run build_eleventy
-bun run minify_html
+npm install
+npm run build
 
 set +x
 export NEOCITIES_API_KEY=$(cat /home/user/.neocities/vegan-prestwich)
