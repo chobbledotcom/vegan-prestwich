@@ -17,7 +17,7 @@ export CXX
 GEM_PATH='/nix/store/b9ciz4w06pyimkznnsb4d675nsh64zaa-bundler-2.4.13/lib/ruby/gems/3.1.0:/nix/store/v001jk4sximy2fn9c704dj64a2vwfxsm-ruby-3.1.4/lib/ruby/gems/3.1.0'
 export GEM_PATH
 HOSTTYPE='x86_64'
-HOST_PATH='/nix/store/b9ciz4w06pyimkznnsb4d675nsh64zaa-bundler-2.4.13/bin:/nix/store/v001jk4sximy2fn9c704dj64a2vwfxsm-ruby-3.1.4/bin:/nix/store/1l03gdg4w3cvkygvbxsq9i19flnp1p3y-nodejs-18.17.1/bin:/nix/store/kqllsb8p30nrz9aqvv5ybhrwy6lw01ja-npm-9.6.7/bin:/nix/store/si97pgvmxcfishk3b244cfa0x5xf3n6v-html-minifier-4.0.0/bin:/nix/store/j4fwy5gi1rdlrlbk2c0vnbs7fmlm60a7-coreutils-9.1/bin:/nix/store/x6rwgp1jl5sgzwbsaigqkdbdc7krzwj7-findutils-4.9.0/bin:/nix/store/1x4qg9ap1x3b50z7j4mbdvqlf1sjkbf8-diffutils-3.9/bin:/nix/store/vqj2w8rqghmmp4wkn9lkcym5kzlqk372-gnused-4.9/bin:/nix/store/8mzvz6kk57p9aqdk72pq1adsl38bkzi6-gnugrep-3.7/bin:/nix/store/49q1zfhkan4k0rqyxfhj512nw2wwngsf-gawk-5.2.1/bin:/nix/store/mddiy1w0ikb2pd48c7fciw044csv536y-gnutar-1.35/bin:/nix/store/s9dzv58651xf1d6m5i48s17vkbipg5ww-gzip-1.12/bin:/nix/store/bsca0mm8zc66gnibdvp5wwpfqh5c91xa-bzip2-1.0.8-bin/bin:/nix/store/ik9ibmq0rbznwyj6472lv2ab0c397lhy-gnumake-4.4.1/bin:/nix/store/8fv91097mbh5049i9rglc73dx6kjg3qk-bash-5.2-p15/bin:/nix/store/0cw69kwj62xnid3bkcd3lylnwz7w6gn8-patch-2.7.6/bin:/nix/store/08bbg98v5l4aalxbr583mhpxasrwsf41-xz-5.4.3-bin/bin:/nix/store/2q1x5hazpr8yf5hh0pj09nmz94sc7q81-file-5.44/bin'
+HOST_PATH='/nix/store/b9ciz4w06pyimkznnsb4d675nsh64zaa-bundler-2.4.13/bin:/nix/store/v001jk4sximy2fn9c704dj64a2vwfxsm-ruby-3.1.4/bin:/nix/store/zxqpn6f6xmbr3ydzwcy7g5y2cl2xc9xw-bun-0.6.2/bin:/nix/store/j4fwy5gi1rdlrlbk2c0vnbs7fmlm60a7-coreutils-9.1/bin:/nix/store/x6rwgp1jl5sgzwbsaigqkdbdc7krzwj7-findutils-4.9.0/bin:/nix/store/1x4qg9ap1x3b50z7j4mbdvqlf1sjkbf8-diffutils-3.9/bin:/nix/store/vqj2w8rqghmmp4wkn9lkcym5kzlqk372-gnused-4.9/bin:/nix/store/8mzvz6kk57p9aqdk72pq1adsl38bkzi6-gnugrep-3.7/bin:/nix/store/49q1zfhkan4k0rqyxfhj512nw2wwngsf-gawk-5.2.1/bin:/nix/store/mddiy1w0ikb2pd48c7fciw044csv536y-gnutar-1.35/bin:/nix/store/s9dzv58651xf1d6m5i48s17vkbipg5ww-gzip-1.12/bin:/nix/store/bsca0mm8zc66gnibdvp5wwpfqh5c91xa-bzip2-1.0.8-bin/bin:/nix/store/ik9ibmq0rbznwyj6472lv2ab0c397lhy-gnumake-4.4.1/bin:/nix/store/8fv91097mbh5049i9rglc73dx6kjg3qk-bash-5.2-p15/bin:/nix/store/0cw69kwj62xnid3bkcd3lylnwz7w6gn8-patch-2.7.6/bin:/nix/store/08bbg98v5l4aalxbr583mhpxasrwsf41-xz-5.4.3-bin/bin:/nix/store/2q1x5hazpr8yf5hh0pj09nmz94sc7q81-file-5.44/bin'
 export HOST_PATH
 IFS=' 	
 '
@@ -37,7 +37,7 @@ NIX_CC='/nix/store/lcf37pgp3rgww67v9x2990hbfwx96c1w-gcc-wrapper-12.2.0'
 export NIX_CC
 NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu='1'
 export NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu
-NIX_CFLAGS_COMPILE=' -frandom-seed=krwm26q87j -isystem /nix/store/v001jk4sximy2fn9c704dj64a2vwfxsm-ruby-3.1.4/include -isystem /nix/store/1l03gdg4w3cvkygvbxsq9i19flnp1p3y-nodejs-18.17.1/include -isystem /nix/store/v001jk4sximy2fn9c704dj64a2vwfxsm-ruby-3.1.4/include -isystem /nix/store/1l03gdg4w3cvkygvbxsq9i19flnp1p3y-nodejs-18.17.1/include'
+NIX_CFLAGS_COMPILE=' -frandom-seed=kl646zl83g -isystem /nix/store/v001jk4sximy2fn9c704dj64a2vwfxsm-ruby-3.1.4/include -isystem /nix/store/v001jk4sximy2fn9c704dj64a2vwfxsm-ruby-3.1.4/include'
 export NIX_CFLAGS_COMPILE
 NIX_ENFORCE_NO_NATIVE='1'
 export NIX_ENFORCE_NO_NATIVE
@@ -51,8 +51,6 @@ NIX_STORE='/nix/store'
 export NIX_STORE
 NM='nm'
 export NM
-NODE_PATH='/nix/store/1l03gdg4w3cvkygvbxsq9i19flnp1p3y-nodejs-18.17.1/lib/node_modules:/nix/store/kqllsb8p30nrz9aqvv5ybhrwy6lw01ja-npm-9.6.7/lib/node_modules:/nix/store/si97pgvmxcfishk3b244cfa0x5xf3n6v-html-minifier-4.0.0/lib/node_modules'
-export NODE_PATH
 OBJCOPY='objcopy'
 export OBJCOPY
 OBJDUMP='objdump'
@@ -61,7 +59,7 @@ OLDPWD=''
 export OLDPWD
 OPTERR='1'
 OSTYPE='linux-gnu'
-PATH='/nix/store/5rbqiz11vagap5fsk3vw8fgznw6vxyrh-patchelf-0.15.0/bin:/nix/store/lcf37pgp3rgww67v9x2990hbfwx96c1w-gcc-wrapper-12.2.0/bin:/nix/store/b7hvml0m3qmqraz1022fwvyyg6fc1vdy-gcc-12.2.0/bin:/nix/store/lyri4viji7lx2jwp5xy5fi1i1y0wx8z0-glibc-2.37-8-bin/bin:/nix/store/j4fwy5gi1rdlrlbk2c0vnbs7fmlm60a7-coreutils-9.1/bin:/nix/store/qnjzh4b0zgdkpb9x3r3h3bnc3rhdysbx-binutils-wrapper-2.40/bin:/nix/store/zkjq96ik8cbv6ijh1lylnkk2bni9qvas-binutils-2.40/bin:/nix/store/b9ciz4w06pyimkznnsb4d675nsh64zaa-bundler-2.4.13/bin:/nix/store/v001jk4sximy2fn9c704dj64a2vwfxsm-ruby-3.1.4/bin:/nix/store/1l03gdg4w3cvkygvbxsq9i19flnp1p3y-nodejs-18.17.1/bin:/nix/store/kqllsb8p30nrz9aqvv5ybhrwy6lw01ja-npm-9.6.7/bin:/nix/store/si97pgvmxcfishk3b244cfa0x5xf3n6v-html-minifier-4.0.0/bin:/nix/store/j4fwy5gi1rdlrlbk2c0vnbs7fmlm60a7-coreutils-9.1/bin:/nix/store/x6rwgp1jl5sgzwbsaigqkdbdc7krzwj7-findutils-4.9.0/bin:/nix/store/1x4qg9ap1x3b50z7j4mbdvqlf1sjkbf8-diffutils-3.9/bin:/nix/store/vqj2w8rqghmmp4wkn9lkcym5kzlqk372-gnused-4.9/bin:/nix/store/8mzvz6kk57p9aqdk72pq1adsl38bkzi6-gnugrep-3.7/bin:/nix/store/49q1zfhkan4k0rqyxfhj512nw2wwngsf-gawk-5.2.1/bin:/nix/store/mddiy1w0ikb2pd48c7fciw044csv536y-gnutar-1.35/bin:/nix/store/s9dzv58651xf1d6m5i48s17vkbipg5ww-gzip-1.12/bin:/nix/store/bsca0mm8zc66gnibdvp5wwpfqh5c91xa-bzip2-1.0.8-bin/bin:/nix/store/ik9ibmq0rbznwyj6472lv2ab0c397lhy-gnumake-4.4.1/bin:/nix/store/8fv91097mbh5049i9rglc73dx6kjg3qk-bash-5.2-p15/bin:/nix/store/0cw69kwj62xnid3bkcd3lylnwz7w6gn8-patch-2.7.6/bin:/nix/store/08bbg98v5l4aalxbr583mhpxasrwsf41-xz-5.4.3-bin/bin:/nix/store/2q1x5hazpr8yf5hh0pj09nmz94sc7q81-file-5.44/bin'
+PATH='/nix/store/5rbqiz11vagap5fsk3vw8fgznw6vxyrh-patchelf-0.15.0/bin:/nix/store/lcf37pgp3rgww67v9x2990hbfwx96c1w-gcc-wrapper-12.2.0/bin:/nix/store/b7hvml0m3qmqraz1022fwvyyg6fc1vdy-gcc-12.2.0/bin:/nix/store/lyri4viji7lx2jwp5xy5fi1i1y0wx8z0-glibc-2.37-8-bin/bin:/nix/store/j4fwy5gi1rdlrlbk2c0vnbs7fmlm60a7-coreutils-9.1/bin:/nix/store/qnjzh4b0zgdkpb9x3r3h3bnc3rhdysbx-binutils-wrapper-2.40/bin:/nix/store/zkjq96ik8cbv6ijh1lylnkk2bni9qvas-binutils-2.40/bin:/nix/store/b9ciz4w06pyimkznnsb4d675nsh64zaa-bundler-2.4.13/bin:/nix/store/v001jk4sximy2fn9c704dj64a2vwfxsm-ruby-3.1.4/bin:/nix/store/zxqpn6f6xmbr3ydzwcy7g5y2cl2xc9xw-bun-0.6.2/bin:/nix/store/j4fwy5gi1rdlrlbk2c0vnbs7fmlm60a7-coreutils-9.1/bin:/nix/store/x6rwgp1jl5sgzwbsaigqkdbdc7krzwj7-findutils-4.9.0/bin:/nix/store/1x4qg9ap1x3b50z7j4mbdvqlf1sjkbf8-diffutils-3.9/bin:/nix/store/vqj2w8rqghmmp4wkn9lkcym5kzlqk372-gnused-4.9/bin:/nix/store/8mzvz6kk57p9aqdk72pq1adsl38bkzi6-gnugrep-3.7/bin:/nix/store/49q1zfhkan4k0rqyxfhj512nw2wwngsf-gawk-5.2.1/bin:/nix/store/mddiy1w0ikb2pd48c7fciw044csv536y-gnutar-1.35/bin:/nix/store/s9dzv58651xf1d6m5i48s17vkbipg5ww-gzip-1.12/bin:/nix/store/bsca0mm8zc66gnibdvp5wwpfqh5c91xa-bzip2-1.0.8-bin/bin:/nix/store/ik9ibmq0rbznwyj6472lv2ab0c397lhy-gnumake-4.4.1/bin:/nix/store/8fv91097mbh5049i9rglc73dx6kjg3qk-bash-5.2-p15/bin:/nix/store/0cw69kwj62xnid3bkcd3lylnwz7w6gn8-patch-2.7.6/bin:/nix/store/08bbg98v5l4aalxbr583mhpxasrwsf41-xz-5.4.3-bin/bin:/nix/store/2q1x5hazpr8yf5hh0pj09nmz94sc7q81-file-5.44/bin'
 export PATH
 PS4='+ '
 RANLIB='ranlib'
@@ -82,7 +80,7 @@ XDG_DATA_DIRS='/nix/store/5rbqiz11vagap5fsk3vw8fgznw6vxyrh-patchelf-0.15.0/share
 export XDG_DATA_DIRS
 __structuredAttrs=''
 export __structuredAttrs
-buildInputs='/nix/store/b9ciz4w06pyimkznnsb4d675nsh64zaa-bundler-2.4.13 /nix/store/v001jk4sximy2fn9c704dj64a2vwfxsm-ruby-3.1.4 /nix/store/1l03gdg4w3cvkygvbxsq9i19flnp1p3y-nodejs-18.17.1 /nix/store/kqllsb8p30nrz9aqvv5ybhrwy6lw01ja-npm-9.6.7 /nix/store/si97pgvmxcfishk3b244cfa0x5xf3n6v-html-minifier-4.0.0'
+buildInputs='/nix/store/b9ciz4w06pyimkznnsb4d675nsh64zaa-bundler-2.4.13 /nix/store/v001jk4sximy2fn9c704dj64a2vwfxsm-ruby-3.1.4 /nix/store/zxqpn6f6xmbr3ydzwcy7g5y2cl2xc9xw-bun-0.6.2'
 export buildInputs
 buildPhase='{ echo "------------------------------------------------------------";
   echo " WARNING: the existence of this path is not guaranteed.";
@@ -127,8 +125,8 @@ export dontAddDisableDepTrack
 declare -a envBuildBuildHooks=()
 declare -a envBuildHostHooks=()
 declare -a envBuildTargetHooks=()
-declare -a envHostHostHooks=('ccWrapper_addCVars' 'bintoolsWrapper_addLDVars' 'addGemPath' 'addRubyLibPath' 'addNodePath' )
-declare -a envHostTargetHooks=('ccWrapper_addCVars' 'bintoolsWrapper_addLDVars' 'addGemPath' 'addRubyLibPath' 'addNodePath' )
+declare -a envHostHostHooks=('ccWrapper_addCVars' 'bintoolsWrapper_addLDVars' 'addGemPath' 'addRubyLibPath' )
+declare -a envHostTargetHooks=('ccWrapper_addCVars' 'bintoolsWrapper_addLDVars' 'addGemPath' 'addRubyLibPath' )
 declare -a envTargetTargetHooks=()
 declare -a fixupOutputHooks=('if [ -z "${dontPatchELF-}" ]; then patchELF "$prefix"; fi' 'if [[ -z "${noAuditTmpdir-}" && -e "$prefix" ]]; then auditTmpdir "$prefix"; fi' 'if [ -z "${dontGzipMan-}" ]; then compressManPages "$prefix"; fi' '_moveLib64' '_moveSbin' '_moveSystemdUserUnits' 'patchShebangsAuto' '_pruneLibtoolFiles' '_doStrip' )
 guess='16'
@@ -161,7 +159,7 @@ declare -a pkgsBuildBuild=()
 declare -a pkgsBuildHost=('/nix/store/5rbqiz11vagap5fsk3vw8fgznw6vxyrh-patchelf-0.15.0' '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh' '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh' '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh' '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh' '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh' '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh' '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh' '/nix/store/bxsly8a56yb8kyrq03s82a3vyc8fqrb3-multiple-outputs.sh' '/nix/store/nf1lkdrhapsx5lr6diyxyjr7pb7r20gr-patch-shebangs.sh' '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh' '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh' '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh' '/nix/store/a9ndjg0b1ivi0av9m93vfkrndp7fqbw1-strip.sh' '/nix/store/lcf37pgp3rgww67v9x2990hbfwx96c1w-gcc-wrapper-12.2.0' '/nix/store/qnjzh4b0zgdkpb9x3r3h3bnc3rhdysbx-binutils-wrapper-2.40' )
 declare -a pkgsBuildTarget=()
 declare -a pkgsHostHost=()
-declare -a pkgsHostTarget=('/nix/store/b9ciz4w06pyimkznnsb4d675nsh64zaa-bundler-2.4.13' '/nix/store/v001jk4sximy2fn9c704dj64a2vwfxsm-ruby-3.1.4' '/nix/store/1l03gdg4w3cvkygvbxsq9i19flnp1p3y-nodejs-18.17.1' '/nix/store/kqllsb8p30nrz9aqvv5ybhrwy6lw01ja-npm-9.6.7' '/nix/store/si97pgvmxcfishk3b244cfa0x5xf3n6v-html-minifier-4.0.0' )
+declare -a pkgsHostTarget=('/nix/store/b9ciz4w06pyimkznnsb4d675nsh64zaa-bundler-2.4.13' '/nix/store/v001jk4sximy2fn9c704dj64a2vwfxsm-ruby-3.1.4' '/nix/store/zxqpn6f6xmbr3ydzwcy7g5y2cl2xc9xw-bun-0.6.2' )
 declare -a pkgsTargetTarget=()
 declare -a postFixupHooks=('_makeSymlinksRelativeInAllOutputs' '_multioutPropagateDev' )
 declare -a postUnpackHooks=('_updateSourceDateEpochFromSourceRoot' )
@@ -665,11 +663,6 @@ addGemPath ()
 {
  
     addToSearchPath GEM_PATH $1/lib/ruby/gems/3.1.0
-}
-addNodePath ()
-{
- 
-    addToSearchPath NODE_PATH "$1/lib/node_modules"
 }
 addRubyLibPath ()
 {

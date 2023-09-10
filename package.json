@@ -18,8 +18,11 @@
     "build:minify_css": "lightningcss --minify --targets '> 0.25%, not IE 11' _site/style/*.css -o _site/style/*.css",
     "build:eleventy": "eleventy",
     "build:minify_html": "html-minifier --input-dir _site --output-dir _site --collapse-whitespace --file-ext html",
-    "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:rm build:sass build:minify_css build:eleventy build:minify_html"
+    "remove": "bun run build:rm",
+    "build_sass": "bun run build:sass",
+    "minify_css": "bun run build:minify_css",
+    "build_eleventy": "bun run build:eleventy",
+    "minify_html": "build:minify_html"
   },
   "browserslist": [
     "> 0.25%",
