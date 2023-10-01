@@ -8,6 +8,7 @@ _site
 .nix-gems
 .nova
 .sass-cache
+nix-profile*
 Cache
 Gemfile.lock
 node_modules
