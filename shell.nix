@@ -2,6 +2,7 @@ with (import <nixpkgs> {});
   mkShell {
     buildInputs = [
       bundler
+      lightningcss
       ruby
       nodejs
       nodePackages_latest.npm

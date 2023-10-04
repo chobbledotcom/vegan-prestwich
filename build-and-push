@@ -1,7 +1,9 @@
 #!/usr/bin/env
 
 npm install
-npm run build
+npm run build_pt1
+lightningcss --minify --targets '> 0.25%, not IE 11' _site/style/*.css -o _site/style/*.css
+npm run build_pt2
 
 set +x
 export NEOCITIES_API_KEY=$(cat /home/user/.neocities/vegan-prestwich)
