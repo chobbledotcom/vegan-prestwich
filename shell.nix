@@ -3,7 +3,9 @@ with (import <nixpkgs> {});
     buildInputs = [
       bundler
       ruby
-      bun
+      nodejs
+      nodePackages_latest.npm
+      nodePackages_latest.html-minifier
     ];
     shellHook = ''
       mkdir -p .nix-gems
