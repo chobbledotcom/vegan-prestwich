@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2023-12-10
+last_modified_at: 2023-04-14
 name: Panama Hatty's Grill
 address: 2 Fairfax Road
 postcode: M25 1AS
@@ -16,5 +16,7 @@ omni: true
 restaurant: true
 delivery: false
 ---
+
+[January 2024:](https://www.instagram.com/p/C2FoNkbN9no/) "Vegan chicken fajitas and a plant based burger this afternoon @panama.hattys.prestwich - nice to find another lunch spot! They’ve greatly improved the labelling on the menu since I was last in. I’m excited to come back and try the vegan Sunday roast option some time soon as well 🌱"
 
 [December 2023:](https://www.facebook.com/groups/veganprestwich/posts/2017655695278503/?comment_id=2055483758162363) "I ate there yesterday! I had the vegan 'chicken' burrito and chips, and was really impressed - it was properly delicious"
