@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2024-01-19
+last_modified_at: 2024-01-27
 name: Milk & Miel
 address: 255 Bury New Road
 postcode: M25 9PB
@@ -17,5 +17,7 @@ delivery: true
 times:
 - "7 Days a Week: 9am-3pm"
 ---
+
+[January 2024:](https://www.instagram.com/p/C2kTUBntQtG/) "@milkmieluk have a fancy new menu! Quite a few good vegan options, both sweet and savoury. We tried the shroom toast and the avocado smash. Both were lovely though mushrooms were especially delicious."
 
 [January 2024:](https://www.instagram.com/p/C2SQne4tnHi/) "Stopped in for brunch @milkmieluk today. The vegan breakfast is top tier! Lovely vegan croissant as well."
