@@ -19,10 +19,11 @@
     "build:eleventy": "eleventy",
     "build:minify_css": "lightningcss --minify --targets '> 0.25%, not IE 11' _site/style/*.css -o _site/style/*.css",
     "build:minify_html": "html-minifier --input-dir _site --output-dir _site --collapse-whitespace --file-ext html",
+    "build:jampack": "npx --yes @divriots/jampack ./_site",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:rm build:sass build:minify_css build:eleventy build:minify_html",
     "build_pt1": "npm-run-all build:rm build:sass",
-    "build_pt2": "npm-run-all build:eleventy build:minify_html"
+    "build_pt2": "npm-run-all build:eleventy build:minify_html build:jampack"
   },
   "browserslist": [
     "> 0.25%",

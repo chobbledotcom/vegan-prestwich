@@ -2,32 +2,35 @@
 @import "minima/initialize";
 
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-size: 16px;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
+$small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit: 30px;
 
-$text-color:       #111;
+$text-color: #111;
 $background-color: #fdfdfd;
-$brand-color:      #20399D;
+$brand-color: #20399D;
 
-$green:            #00D13D;
-$grey-color:       #828282;
+$green: #00D13D;
+$grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark: darken($grey-color, 25%);
 
-$content-width:    1000px;
+$content-width: 1000px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm: 600px;
+$on-laptop: 800px;
 
 html {
-  font-size: $base-font-size;
+    font-size: $base-font-size;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     border-bottom: 1px solid $grey-color-light;
 }
 
@@ -58,15 +61,19 @@ ul {
             }
         }
     }
+
     &__address {
         font-size: small;
     }
+
     &__contact {
         font-size: small;
+
         a {
             margin-right: 5px;
         }
     }
+
     &__tags {
         font-size: small;
         opacity: 0.6;
@@ -84,7 +91,7 @@ ul {
         color: #797;
         margin-right: 5px;
     }
-    
+
     ul {
         list-style-type: none;
         padding: 0;
@@ -112,7 +119,9 @@ ul {
 
         img {
             display: block;
-            width: 100%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
         }
     }
 }
@@ -126,17 +135,20 @@ ul {
     list-style-type: circle;
 }
 
-.avoid-break{
+.avoid-break {
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
 }
+
 .site-footer {
     text-align: center;
 }
+
 .site-header {
     border-top: none;
 }
+
 @media screen and (min-width: 401px) {
     .columns {
         column-count: 3;
@@ -155,7 +167,7 @@ ul {
         display: flex;
         flex-wrap: wrap;
 
-        & >.col {
+        &>.col {
             flex-grow: 1;
             flex-basis: 220px;
             margin: 10px;

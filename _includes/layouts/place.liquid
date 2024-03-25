@@ -26,9 +26,10 @@ layout: default
         {% if absolute_folder == page.url %}
             <a
                 href="{{absolute_url}}"
-                style="background-image: url('{{ absolute_url }}')"
                 title="{{ title }}"
-            ></a>
+            >
+                <img src="{{ absolute_url }}" alt="{{ title }}">
+            </a>
         {% endif %}
     {% endfor %}
     </div>
