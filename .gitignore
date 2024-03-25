@@ -8,6 +8,7 @@ _site
 .nix-gems
 .nova
 .sass-cache
+.jampack
 nix-profile*
 Cache
 Gemfile.lock
