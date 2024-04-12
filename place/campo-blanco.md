@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2023-09-28
+last_modified_at: 2024-02-23
 name: Campo Blanco
 address: 1 Moss Ln, Whitefield
 postcode: M45 6QE
@@ -26,6 +26,8 @@ times:
 - "Saturday: 12:00 - 23:00"
 - "Sunday: 12:00 - 21:00"
 ---
+
+[February 2024:](https://www.instagram.com/p/C3r5Sr4NRz6) "New menu alert! 🚨 Campo Blanco shaking some things up and adding a new vegan option: mushroom scallops! Have you tried them yet? We were impressed!"
 
 [September 2023:](https://dumpoir.com/c/0051740412048571023) "New Campo Blanco menu! More beans and greens. Delicious! And especially good if, like me, you’re keeping an eye on your iron intake 👍"
 
