@@ -25,10 +25,7 @@ layout: default
         {% capture absolute_folder %}{{ absolute_url | slice: 0, folder_size }}{% endcapture %}
         {% capture filename %}{{ absolute_url | slice: 1, 999 }}{% endcapture %}
         {% if absolute_folder == page.url %}
-            <a
-                href="{{ absolute_url }}"
-                title="{{ title }}"
-            >
+            <a href="{{ absolute_url }}">
                 {% image filename, name, "150px" %}
             </a>
         {% endif %}
