@@ -1,15 +1,16 @@
 {
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0-beta.1"
+    "@11ty/eleventy": "^3.0.0-alpha"
   },
   "dependencies": {
-    "cross-env": "^7.0.3",
-    "fast-glob": "^3.2.12",
-    "html-minifier": "^4.0.0",
-    "lightningcss": "^1.22.0",
-    "lightningcss-cli": "^1.15.1",
-    "npm-run-all": "^4.1.5",
-    "sass": "^1.54.9"
+    "@11ty/eleventy-img": "*",
+    "cross-env": "*",
+    "fast-glob": "*",
+    "html-minifier": "*",
+    "lightningcss": "*",
+    "lightningcss-cli": "*",
+    "npm-run-all": "*",
+    "sass": "*"
   },
   "scripts": {
     "watch:sass": "sass  --no-source-map --watch style:_site/style",
@@ -20,7 +21,7 @@
     "build:minify_css": "lightningcss --minify --targets '> 0.25%, not IE 11' _site/style/*.css -o _site/style/*.css",
     "build:minify_html": "html-minifier --input-dir _site --output-dir _site --collapse-whitespace --file-ext html",
     "build:jampack": "npx --yes @divriots/jampack ./_site",
-    "start": "npm-run-all build:sass --parallel watch:*",
+    "start": "npm-run-all build:rm build:sass --parallel watch:*",
     "build": "npm-run-all build:rm build:sass build:minify_css build:eleventy build:minify_html",
     "build_pt1": "npm-run-all build:rm build:sass",
     "build_pt2": "npm-run-all build:eleventy build:minify_html build:jampack"

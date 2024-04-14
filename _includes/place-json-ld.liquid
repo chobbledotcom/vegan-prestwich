@@ -6,7 +6,7 @@
         {%- if email -%}"email": "{{ email }}",{%- endif -%}
         {%- if phone -%}"telephone": "{{ phone }}",{%- endif -%}
         {%- if web -%}"url": "{{ web }}",{%- endif -%}
-        {%- if facebook || instagram -%} "sameAs": [
+        {%- if facebook or instagram -%} "sameAs": [
 	    {%- if facebook -%}"{{ facebook }}"{%- endif -%}
 	    {%- if facebook and instagram -%},{%- endif -%}
 	    {%- if instagram -%}"{{ instagram }}"{%- endif -%}
