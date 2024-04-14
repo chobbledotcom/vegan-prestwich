@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2024-04-12
+last_modified_at: 2024-04-14
 name: Milk & Miel
 address: 255 Bury New Road
 postcode: M25 9PB
@@ -8,15 +8,17 @@ web: https://milkandmiel.uk/
 google: https://maps.app.goo.gl/JXXF2bhWmenEM66g7
 deliveroo: https://deliveroo.co.uk/menu/manchester/prestwich/milk-and-miel
 tags:
-- breakfast
-- coffee
-- cake
+  - breakfast
+  - coffee
+  - cake
 omni: true
 restaurant: true
 delivery: true
 times:
-- "7 Days a Week: 9am-3pm"
+  - "7 Days a Week: 9am-3pm"
 ---
+
+[April 2024:](https://www.facebook.com/groups/veganprestwich/posts/2146156085761796) "10/10 twice in one day! Milk and miel for full vegan brekkie this morning and Dough and Mogul at Radcliffe market this evening! Both amazing!!!"
 
 [April 2024:](https://www.instagram.com/p/C5nyUeUtBpB/) "@milkmieluk have only got vegan mayo in little packets! I didn’t even know these existed. Also I continue to be blown away by the shroom toast 💚"
 
