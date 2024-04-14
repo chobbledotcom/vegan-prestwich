@@ -1,4 +1,12 @@
 #!/usr/bin/env
+if [ ! -d ../neocities-ruby ]
+then
+  git clone https://github.com/stefan-burke/neocities-ruby ../neocities-ruby
+else
+  cd ../neocities-ruby
+  git pull
+  cd ../vegan-prestwich
+fi
 
 npm install
 npm run build_pt1
@@ -9,8 +17,8 @@ set +x
 export NEOCITIES_API_KEY=$(cat /home/user/.neocities/vegan-prestwich)
 set -x
 
-gem install --no-document neocities
-neocities push --prune _site
+# gem install --no-document neocities
+../neocities-ruby/bin/neocities push --prune _site
 
 git add .
 git commit -m "auto-updated after build"
