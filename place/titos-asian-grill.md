@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2023-10-22
+last_modified_at: 2023-05-13
 name: Tito's Asian Grill
 address: 453 Bury New Rd
 postcode: M25 3BB
@@ -21,6 +21,8 @@ times:
 - "Friday: 5–10:30pm"
 - "Saturday: 1–10:30pm"
 ---
+
+[May 2024:](https://www.instagram.com/p/C6raLtKN84I/) "Think I’m addicted to bhel puri. Very tasty stuff!"
 
 [October 2023:](https://dumpoir.com/c/5382484333733658123) "Went to Tito’s for tea for the first time in a while. Forgot to take pictures of most of the food - it was too tasty to wait!"
 

@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2023-09-03
+last_modified_at: 2024-05-13
 name: Goods In
 address: Stella House, Unit 2A, Infant St
 postcode: M25 1SS
@@ -24,6 +24,8 @@ times:
 - "Sat 9am - midnight"
 - "Sun 9am - 8pm"
 ---
+
+[May 2024:](https://www.instagram.com/p/C6jmrSUtS2v) "Friday evening trip to @thegoodsinmcr for our tea. The green goddess hamburger with some crispy tats hit the spot!"
 
 [September 2023:](https://dumpoir.com/c/9239297160456841813) "A bunch of vegan cakes at Goods In today 💜"
 
