@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2023-05-13
+last_modified_at: 2024-05-13
 name: Tito's Asian Grill
 address: 453 Bury New Rd
 postcode: M25 3BB
@@ -7,19 +7,19 @@ phone: 0161 773 1353
 google: https://goo.gl/maps/ruJc3GQZqaUFDdKH6
 facebook: https://www.facebook.com/titosasiangrill
 tags:
-- curry
-- indian
+  - curry
+  - indian
 omni: true
 restaurant: true
 delivery: false
 times:
-- "Sunday: 1–9:30pm"
-- "Monday: Closed"
-- "Tuesday: 5–10pm"
-- "Wednesday: 5–10pm"
-- "Thursday: 5–10pm"
-- "Friday: 5–10:30pm"
-- "Saturday: 1–10:30pm"
+  - "Sunday: 1–9:30pm"
+  - "Monday: Closed"
+  - "Tuesday: 5–10pm"
+  - "Wednesday: 5–10pm"
+  - "Thursday: 5–10pm"
+  - "Friday: 5–10:30pm"
+  - "Saturday: 1–10:30pm"
 ---
 
 [May 2024:](https://www.instagram.com/p/C6raLtKN84I/) "Think I’m addicted to bhel puri. Very tasty stuff!"
@@ -31,4 +31,3 @@ times:
 [January 2020:](https://www.facebook.com/groups/veganprestwich/permalink/1011984612512288/) "We checked out Tito's Grill tonight and have to say it was fabulous. As soon as we said we were vegan they were extremely helpful and informative. They had loads of options and are planning on expanding the menu, including adding a separate vegan menu. Very good news! And they have a deal on at the moment so our bill was under £30 including drinks, mains, and poppadoms. Even better!"
 
 [January 2020:](https://www.facebook.com/groups/veganprestwich/permalink/1004624103248339/?comment_id=1004868133223936) "I went there and it was really good. I had masala dosa and manchurian cauliflower for starters. Great flavours and textures. Then mushroom rice and a veggie curry. They had a lovely selection of vegetables in the curry rather than the usual menu standard ones. It was nice to be able to try different kinds of rice too. 😋" ... "They were lovely and really helpful!"
-
