@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2022-05-07
+last_modified_at: 2024-07-25
 name: Chips @ No.8
 address: 8 Clifton Rd
 postcode: M25 3HQ
@@ -20,6 +20,8 @@ times:
 - "Saturday: 17:00 - 20:00"
 - "Sunday: CLOSED"
 ---
+
+[July 2024:](https://www.instagram.com/p/C9xpC8At3XX/) "Chips and French mushroom pie with mushy peas and curry sauce from @chipsno8 . Remember you have to ask for your chips in vegetable oil for them to be vegan. Worth the wait though - the curry sauce in particular was excellent! 💚"
 
 [May 2022:](https://www.instagram.com/p/CdOeUUWgRao) "In addition to being the nicest chippy I’ve ever set foot in [@chipsno8](https://www.instagram.com/chipsno8) does a lovely vegan pie, chips, and mushy peas!"
 
