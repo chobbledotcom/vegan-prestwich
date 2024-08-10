@@ -18,3 +18,4 @@ package.json
 vendor
 venv
 .direnv/bin/nix-direnv-reload
+.idea
