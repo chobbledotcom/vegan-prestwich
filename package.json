@@ -12,7 +12,7 @@
     "watch:sass": "sass  --no-source-map --watch style:_site/style",
     "watch:eleventy": "eleventy --serve",
     "build:rm": "rm -rf _site",
-    "build:sass": "sass  --no-source-map style:_site/style"
+    "build:sass": "sass  --no-source-map style:_site/style",
     "start": "npm-run-all build:rm build:sass --parallel watch:*"
   },
   "browserslist": [
