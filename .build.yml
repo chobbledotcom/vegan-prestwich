@@ -1,13 +1,13 @@
 image: nixos/latest
 packages:
-  - bundler
-  - html-minifier
-  - lightningcss
-  - ruby
-  - neocities-cli
-  - nodejs
-  - nodePackages_latest.npm
-  - sass
+  - nixos.bundler
+  - nixos.html-minifier
+  - nixos.lightningcss
+  - nixos.ruby
+  - nixos.neocities-cli
+  - nixos.nodejs
+  - nixos.nodePackages_latest.npm
+  - nixos.sass
 environment:
   repo: vegan-prestwich
 sources:
