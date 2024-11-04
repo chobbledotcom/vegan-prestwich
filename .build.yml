@@ -1,9 +1,7 @@
 image: nixos/latest
 packages:
-  - nixos.bundler
   - nixos.html-minifier
   - nixos.lightningcss
-  - nixos.ruby
   - nixos.neocities-cli
   - nixos.nodejs
   - nixos.nodePackages_latest.npm
