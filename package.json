@@ -12,14 +12,8 @@
     "watch:sass": "sass  --no-source-map --watch style:_site/style",
     "watch:eleventy": "eleventy --serve",
     "build:rm": "rm -rf _site",
-    "build:sass": "sass  --no-source-map style:_site/style",
-    "build:eleventy": "eleventy",
-    "build:minify_css": "lightningcss --minify --targets '> 0.25%, not IE 11' _site/style/*.css -o _site/style/*.css",
-    "build:minify_html": "html-minifier --input-dir _site --output-dir _site --collapse-whitespace --file-ext html",
-    "start": "npm-run-all build:rm build:sass --parallel watch:*",
-    "build": "npm-run-all build:rm build:sass build:minify_css build:eleventy build:minify_html",
-    "build_pt1": "npm-run-all build:rm build:sass",
-    "build_pt2": "npm-run-all build:eleventy build:minify_html"
+    "build:sass": "sass  --no-source-map style:_site/style"
+    "start": "npm-run-all build:rm build:sass --parallel watch:*"
   },
   "browserslist": [
     "> 0.25%",

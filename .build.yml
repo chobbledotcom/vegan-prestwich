@@ -15,6 +15,7 @@ secrets:
 tasks:
   - build: |
       cd $repo
+      npm install fast-glob
       mkdir -p _site/style
       sass style/style.scss _site/style/style.css
       lightningcss --minify --targets '> 0.25%, not IE 11' _site/style/*.css -o _site/style/*.css
