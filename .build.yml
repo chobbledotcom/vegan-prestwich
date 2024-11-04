@@ -1,0 +1,19 @@
+image: nixos-latest
+packages:
+  - bundler
+  - html-minifier
+  - lightningcss
+  - ruby
+  - neocities-cli
+  - nodejs
+  - nodePackages_latest.npm
+environment:
+  repo: vegan-prestwich
+sources:
+  - https://git.sr.ht/~stfn/vegan-prestwich
+secrets:
+  - ff7f6e84-35b9-4aa9-afa1-1fbc3fe6a2d1 # ~/.neocities/$repo
+tasks:
+  - build: |
+      cd $repo
+      sh ./build-and-push
