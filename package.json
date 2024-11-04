@@ -6,9 +6,6 @@
     "@11ty/eleventy-img": "*",
     "cross-env": "*",
     "fast-glob": "*",
-    "html-minifier": "*",
-    "lightningcss": "*",
-    "lightningcss-cli": "*",
     "npm-run-all": "*",
     "sass": "*"
   },
