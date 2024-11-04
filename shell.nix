@@ -8,6 +8,7 @@ with (import <nixpkgs> {});
       neocities-cli
       nodejs
       nodePackages_latest.npm
+      sass
     ];
     shellHook = ''
       mkdir -p .nix-gems
