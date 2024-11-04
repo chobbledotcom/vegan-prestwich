@@ -1,10 +1,8 @@
 with (import <nixpkgs> {});
   mkShell {
     buildInputs = [
-      bundler
       html-minifier
       lightningcss
-      ruby
       neocities-cli
       nodejs
       nodePackages_latest.npm

@@ -13,9 +13,11 @@ sources:
 secrets:
   - ff7f6e84-35b9-4aa9-afa1-1fbc3fe6a2d1 # ~/.neocities/$repo
 tasks:
-  - build: |
+  - setup: |
       cd $repo
       npm install
+  - build: |
+      cd $repo
       npm run build_pt1
       lightningcss --minify --targets '> 0.25%, not IE 11' _site/style/*.css -o _site/style/*.css
       npm run build_pt2
