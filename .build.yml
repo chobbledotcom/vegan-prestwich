@@ -14,7 +14,7 @@ secrets:
   - ff7f6e84-35b9-4aa9-afa1-1fbc3fe6a2d1 # ~/.neocities/$repo
 tasks:
   - build: |
-      cd $repo
+      cd vegan-prestwich
       pnpm add fast-glob @11ty/eleventy
       mkdir -p _site/style
       sass style/style.scss _site/style/style.css
@@ -22,6 +22,6 @@ tasks:
       pnpm eleventy
       html-minifier --input-dir _site --output-dir _site --collapse-whitespace --file-ext html
       set +x
-      export NEOCITIES_API_KEY=$(cat /home/user/.neocities/vegan-prestwich)
+      export NEOCITIES_API_KEY=$(cat /home/build/.neocities/vegan-prestwich)
       set -x
       neocities push --prune _site
