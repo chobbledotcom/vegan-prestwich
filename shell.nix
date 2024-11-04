@@ -5,7 +5,7 @@ with (import <nixpkgs> {});
       lightningcss
       neocities-cli
       nodejs
-      nodePackages_latest.npm
+      nodePackages.pnpm
       sass
     ];
   }

@@ -1,16 +1,12 @@
 #!/usr/bin/env
 
-npm install
-npm run build_pt1
+pnpm add fast-glob @11ty/eleventy
+mkdir -p _site/style
+sass style/style.scss _site/style/style.css
 lightningcss --minify --targets '> 0.25%, not IE 11' _site/style/*.css -o _site/style/*.css
-npm run build_pt2
-
+pnpm eleventy
+html-minifier --input-dir _site --output-dir _site --collapse-whitespace --file-ext html
 set +x
 export NEOCITIES_API_KEY=$(cat /home/user/.neocities/vegan-prestwich)
 set -x
-
 neocities push --prune _site
-
-git add .
-git commit -m "auto-updated after build"
-git push

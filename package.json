@@ -1,12 +1,12 @@
 {
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0-alpha",
+    "@11ty/eleventy": "^3.0.0",
     "npm-run-all": "*"
   },
   "dependencies": {
     "@11ty/eleventy-img": "*",
     "cross-env": "*",
-    "fast-glob": "*"
+    "fast-glob": "^3.3.2"
   },
   "scripts": {
     "watch:sass": "sass  --no-source-map --watch style:_site/style",
