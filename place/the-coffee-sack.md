@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2023-09-08
+last_modified_at: 2024-11-02
 name: The Coffee Sack
 address: 3 Scholes Lane
 postcode: M25 0PD
@@ -26,6 +26,8 @@ times:
 - "Sunday: 9:30am–5:30pm"
 
 ---
+
+[November 2024:](https://www.instagram.com/p/DB3-l0MtFL8) "We’ve not been over to @coffeesackprestwich for a little bit so were excited to find they have new vegan options! We tried the BBQ pulled jackfruit toast topper and jacket potato filling. Really nice and as usual the salad and vegan coleslaw was fresh and delicious. Great coffee too! It is in the name after all."
 
 [September 2023:](https://www.facebook.com/groups/veganprestwich/posts/1999686563742083/) "We had lunch at the Coffee Sack today - their new spiced chickpea salad stuff is lush! They've got a full vegan menu (you gotta ask for it) and the coffee and cakes are always A++ too. Highly recommend checking them out"
 

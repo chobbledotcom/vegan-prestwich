@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2024-05-13
+last_modified_at: 2024-11-03
 name: Goods In
 address: Stella House, Unit 2A, Infant St
 postcode: M25 1SS
@@ -24,6 +24,8 @@ times:
 - "Sat 9am - midnight"
 - "Sun 9am - 8pm"
 ---
+
+[October 2024:](https://www.instagram.com/p/C_AZBYqN8OF/) "We popped in to @thegoodsinmcr to try their new vegan special. Really great, exciting flavours and as usual they had the biscoff tarts on the counter for dessert. Try it while you can!"
 
 [May 2024:](https://www.instagram.com/p/C6jmrSUtS2v) "Friday evening trip to @thegoodsinmcr for our tea. The green goddess hamburger with some crispy tats hit the spot!"
 
