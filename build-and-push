@@ -1,5 +1,6 @@
 #!/usr/bin/env
 
+rm -rf _site
 pnpm add fast-glob @11ty/eleventy
 mkdir -p _site/style
 sass style/style.scss _site/style/style.css
