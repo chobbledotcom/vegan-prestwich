@@ -1,12 +1,4 @@
 #!/usr/bin/env
-if [ ! -d ../neocities-ruby ]
-then
-  git clone https://github.com/stefan-burke/neocities-ruby ../neocities-ruby
-else
-  cd ../neocities-ruby
-  git pull
-  cd ../vegan-prestwich
-fi
 
 npm install
 npm run build_pt1

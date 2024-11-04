@@ -2,11 +2,12 @@ with (import <nixpkgs> {});
   mkShell {
     buildInputs = [
       bundler
+      html-minifier
       lightningcss
       ruby
+      neocities-cli
       nodejs
       nodePackages_latest.npm
-      nodePackages_latest.html-minifier
     ];
     shellHook = ''
       mkdir -p .nix-gems
