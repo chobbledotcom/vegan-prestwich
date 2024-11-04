@@ -9,8 +9,7 @@ set +x
 export NEOCITIES_API_KEY=$(cat /home/user/.neocities/vegan-prestwich)
 set -x
 
-# gem install --no-document neocities
-../neocities-ruby/bin/neocities push --prune _site
+neocities push --prune _site
 
 git add .
 git commit -m "auto-updated after build"
