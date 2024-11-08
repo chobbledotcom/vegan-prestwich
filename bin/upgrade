@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+nix-shell -p nodePackages.pnpm --command "
+  echo 'Upgrading packages'
+  pnpm upgrade
+"

@@ -1,22 +1,7 @@
 {
-  "devDependencies": {
-    "@11ty/eleventy": "^3.0.0",
-    "npm-run-all": "^4.1.5"
-  },
-  "dependencies": {
-    "@11ty/eleventy-img": "^5.0.0",
-    "cross-env": "^7.0.3",
-    "fast-glob": "^3.3.2"
-  },
-  "scripts": {
-    "watch:sass": "sass  --no-source-map --watch style:_site/style",
-    "watch:eleventy": "eleventy --serve",
-    "build:rm": "rm -rf _site",
-    "build:sass": "sass  --no-source-map style:_site/style",
-    "start": "npm-run-all build:rm build:sass --parallel watch:*"
-  },
-  "browserslist": [
-    "> 0.25%",
-    "not IE 11"
-  ]
+	"dependencies": {
+		"@11ty/eleventy": "^3.0.0",
+		"@11ty/eleventy-img": "^5.0.0",
+		"fast-glob": "^3.3.2"
+	}
 }
