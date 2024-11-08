@@ -6,6 +6,7 @@ Feel free to make a pull request, or join the discussion on [Facebook](https://w
 
 * [VeganPrestwich.co.uk](https://veganprestwich.co.uk)
 * [Facebook Group](https://www.facebook.com/groups/veganprestwich/)
+* [Instagram Page](https://www.instagram.com/veganprestwich/)
 
 ## Building This Site
 
