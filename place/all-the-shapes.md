@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2023-03-17
+last_modified_at: 2023-11-16
 name: All The Shapes
 address: 8 Warwick St
 postcode: M25 3HN
@@ -24,6 +24,8 @@ times:
 - "Fri: 9am - 12am"
 - "Sat: 9am - 12am"
 ---
+
+[November 2024:](https://www.instagram.com/p/DB9G6RnNaSt) "Took a friend out for lunch at @alltheshapesmcr . I’m basically always craving their vegan burrito and the new vegan burger is an exciting addition!"
 
 [March 2023:](https://www.instagram.com/p/Cp5DUX8N0-q) "Brownies and burritos today at All The Shapes <3"
 
