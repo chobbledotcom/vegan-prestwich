@@ -2,5 +2,6 @@
 
 nix-shell -p nodePackages.pnpm --command "
   echo 'Upgrading packages'
+  pnpm add -g pnpm
   pnpm upgrade
 "

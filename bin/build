@@ -14,6 +14,9 @@ nix-shell -p lightningcss --pure --command "
 "
 
 nix-shell -p nodePackages.pnpm --command "
+  echo 'Testing npm registry'
+  curl -v https://registry.npmjs.org/
+
   echo 'Building site'
   pnpm add fast-glob @11ty/eleventy @11ty/eleventy-img
   pnpm eleventy
