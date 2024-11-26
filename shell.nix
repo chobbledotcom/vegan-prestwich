@@ -58,10 +58,7 @@ pkgs.mkShell {
     # Register the cleanup function to run when the shell exits
     trap cleanup EXIT
 
-    # If no arguments were passed, show the help message
-    if [ $# -eq 0 ]; then
-      echo "Development environment ready!"
-      echo "Run 'upgrade_deps [major|minor|patch]' to upgrade your dependencies"
-    fi
+    echo "Development environment ready!"
+    echo "Run 'upgrade_deps [major|minor|patch]' to upgrade your dependencies"
   '';
 }
