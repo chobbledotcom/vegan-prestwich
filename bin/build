@@ -13,7 +13,7 @@ nix-shell -p lightningcss --pure --command "
   lightningcss --minify --targets '> 0.25%, not IE 11' _site/style/*.css -o _site/style/*.css
 "
 
-nix-shell -p nodePackages.pnpm nodejs_22 cacert curl --pure --command "
+nix-shell -p nodePackages.pnpm nodejs_22 cacert curl glib --pure --command "
   echo 'Testing npm registry'
   curl -v https://registry.npmjs.org/
 
