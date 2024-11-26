@@ -23,12 +23,3 @@ nix-shell -p html-minifier --pure --command "
   echo 'Minifying HTML'
   html-minifier --input-dir _site --output-dir _site --collapse-whitespace --file-ext html
 "
-
-nix-shell -p neocities-cli --command "
-  echo 'Pushing to Neocities'
-
-  set +x
-  export NEOCITIES_API_KEY=$(cat ~/.neocities/vegan-prestwich)
-  set -x
-  neocities push --prune _site
-"

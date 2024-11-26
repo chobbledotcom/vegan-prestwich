@@ -7,3 +7,4 @@ tasks:
   - build: |
       cd vegan-prestwich
       sh bin/build
+      sh bin/push

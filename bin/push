@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+nix-shell -p neocities-cli --command "
+  echo 'Pushing to Neocities'
+
+  set +x
+  export NEOCITIES_API_KEY=$(cat ~/.neocities/vegan-prestwich)
+  set -x
+  neocities push --prune _site
+"
