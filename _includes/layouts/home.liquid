@@ -12,6 +12,14 @@ layout: default
   
   {% include "contribute.html" %}
 
+  <p>
+    <strong>Recent updates:</strong>
+    {% assign recently_updated = collections.places | sort: "data.last_modified_at" | reverse | slice: 0, 15 %}
+    {% for place in recently_updated %}
+      <a href="{{ place.url }}">{{ place.data.name | escape }}</a>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </p>
+
   <div class="row">
       <div class="col">
           <h2>Shops</h2>
@@ -26,11 +34,4 @@ layout: default
           {% include "filtered-places", show: collections.deliveries, detailed: false %}
       </div>
   </div>
-  <p>
-    <strong>Recent updates:</strong>
-    {% assign recently_updated = collections.places | sort: "data.last_modified_at" | reverse | slice: 0, 10 %}
-    {% for place in recently_updated %}
-      <a href="{{ place.url }}">{{ place.data.name | escape }}</a>{% unless forloop.last %}, {% endunless %}
-    {% endfor %}
-  </p>
 </div>
