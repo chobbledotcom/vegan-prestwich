@@ -7,19 +7,45 @@ in
 pkgs.mkShell {
   buildInputs = with pkgs; [
     yarn
-    nodejs_22
+    sass
+    lightningcss
   ];
 
   shellHook = ''
-    # Use the same package.json and node_modules as the build
     rm -rf node_modules
     rm -rf package.json
 
     ln -sf ${packageJSON} package.json
     ln -sf ${nodeModules}/node_modules .
 
+    serve() {
+      mkdir -p _site/style
+
+      sass --watch style/style.scss:_site/style/style.css &
+      SASS_PID=$!
+
+      yarn eleventy --serve &
+      ELEVENTY_PID=$!
+
+      cleanup_serve() {
+        echo "Cleaning up serve processes..."
+        kill $SASS_PID 2>/dev/null
+        kill $ELEVENTY_PID 2>/dev/null
+        wait $SASS_PID 2>/dev/null
+        wait $ELEVENTY_PID 2>/dev/null
+      }
+
+      trap cleanup_serve EXIT INT TERM
+
+      wait -n
+
+      cleanup_serve
+
+      trap - EXIT INT TERM
+    }
+
     upgrade_deps() {
-      local mode=''${1:-"minor"}  # default to minor updates
+      local mode=''${1:-"minor"}
 
       case $mode in
         "major")
@@ -48,17 +74,17 @@ pkgs.mkShell {
     }
 
     export -f upgrade_deps
+    export -f serve
 
-    # Cleanup function
     cleanup() {
       echo "Cleaning up..."
-      rm -rf node_modules package.json
+      rm -rf node_modules _site package.json
     }
 
-    # Register the cleanup function to run when the shell exits
     trap cleanup EXIT
 
     echo "Development environment ready!"
+    echo "Run 'serve' to start development server"
     echo "Run 'upgrade_deps [major|minor|patch]' to upgrade your dependencies"
   '';
 }
