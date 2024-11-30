@@ -9,11 +9,13 @@ const placeImages = fg.sync([
 const Image = require("@11ty/eleventy-img");
 
 module.exports = function (config) {
+  config.addGlobalData("siteUrl", "https://www.veganprestwich.co.uk");
+
   config.addShortcode("image", async (src, alt, sizes) => {
     let metadata = await Image(src, {
       widths: [150, 300],
       formats: ["webp", "jpeg"],
-      outputDir: "./_site/img/"
+      outputDir: "./_site/img/",
     });
 
     let imageAttributes = {
@@ -49,15 +51,15 @@ module.exports = function (config) {
   config.addCollection("sorted_places", (api) => sortedPlaces(api));
 
   config.addCollection("shops", (api) =>
-    sortedPlaces(api).filter((a) => a.data.permalink && a.data.shop)
+    sortedPlaces(api).filter((a) => a.data.permalink && a.data.shop),
   );
 
   config.addCollection("restaurants", (api) =>
-    sortedPlaces(api).filter((a) => a.data.permalink && a.data.restaurant)
+    sortedPlaces(api).filter((a) => a.data.permalink && a.data.restaurant),
   );
 
   config.addCollection("deliveries", (api) =>
-    sortedPlaces(api).filter((a) => a.data.permalink && a.data.delivery)
+    sortedPlaces(api).filter((a) => a.data.permalink && a.data.delivery),
   );
 
   config.addWatchTarget("./style/style.scss");

@@ -1,26 +1,25 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="max-image-preview:large">
-  <meta name="generator" content="Eleventy">
-  {% capture styles %}
-    {% include "../_site/style/style.css" %}
-  {% endcapture %}
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="max-image-preview:large" />
+  <meta name="generator" content="Eleventy" />
+  {% capture styles %} {% include "../_site/style/style.css" %} {% endcapture %}
   <style>
     {{ styles }}
   </style>
   <title>
-    {%- if metaTitle %}
-      {{ metaTitle | escape }}
-    {%- elsif name %}
-      {{ name | escape }}, Prestwich
-    {%- elsif title %}
-      {{ title | escape }}, Prestwich
-    {%- else %}
-      {{ site.title | escape }}
-    {%- endif %}
+    {%- if metaTitle %} {{ metaTitle | escape }} {%- elsif name %} {{ name |
+    escape }}, Prestwich {%- elsif title %} {{ title | escape }}, Prestwich {%-
+    else %} {{ site.title | escape }} {%- endif %}
   </title>
-  <meta name="description" content="{{ excerpt | default: site.description | strip_html | truncate: 160 | escape }}">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💚</text></svg>" />
+  <meta
+    name="description"
+    content="{{ excerpt | default: site.description | strip_html | truncate: 160 | escape }}"
+  />
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💚</text></svg>"
+  />
+  <link rel="canonical" href="{{ siteUrl }}{{ page.url }}" />
 </head>
