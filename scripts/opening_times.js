@@ -46,7 +46,7 @@ async function updateOpeningTimes() {
                                                                 .text()
                                                                 .trim();
                                                         if (date && time) {
-                                                                times.push(`*${date}:* ${time}`);
+                                                                times.push(`${date}: ${time}`);
                                                         }
                                                 });
                                         } else {
@@ -64,7 +64,7 @@ async function updateOpeningTimes() {
                                                         if (line) {
                                                             const parts = line.split(":");
                                                             if (parts.length > 1) {
-                                                                times.push(`*${parts[0].trim()}:* ${parts.slice(1).join(":").trim()}`);
+                                                                times.push(`${parts[0].trim()}: ${parts.slice(1).join(":").trim()}`);
                                                             } else {
                                                                 times.push(line);
                                                             }
