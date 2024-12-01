@@ -1,5 +1,5 @@
 ---
-last_modified_at: '2024-12-01T16:23:40.785Z'
+last_modified_at: '2024-12-01T16:28:06.565Z'
 name: 'Keg, Cask & Bottle'
 address: The Longfield Centre
 postcode: M25 1AY
@@ -21,10 +21,10 @@ opening_times_page_selector: >-
   div.custom__item:nth-child(2) > div:nth-child(1) > div:nth-child(1) >
   p:nth-child(9)
 times:
-  - '*Mon & Tue:* 12pm - 8pm'
-  - '*Wed & Thurs:* 12pm - 9pm'
-  - '*Fri & Sat:* 11am - 10pm'
-  - '*Sun:* 12pm - 8pm'
+  - 'Mon & Tue: 12pm - 8pm'
+  - 'Wed & Thurs: 12pm - 9pm'
+  - 'Fri & Sat: 11am - 10pm'
+  - 'Sun: 12pm - 8pm'
 ---
 
 A cool independent beer shop / bar selling beers in cans and draft from a few vegan-friendly breweries like:
