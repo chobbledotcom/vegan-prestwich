@@ -1,4 +1,6 @@
 .DS_Store
+.aider*
+.env
 .eleventy.js.swp
 .sass-cache
 _site
