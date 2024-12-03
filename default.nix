@@ -20,7 +20,7 @@ pkgs.stdenv.mkDerivation {
 
   nativeBuildInputs = with pkgs; [
     cacert
-    html-minifier
+    minify
     lightningcss
     sass
     yarn
@@ -46,7 +46,7 @@ pkgs.stdenv.mkDerivation {
     yarn --offline eleventy
 
     echo 'Minifying HTML'
-    html-minifier --input-dir _site --output-dir _site --collapse-whitespace --file-ext html
+    minify --all --recursive --output . _site
   '';
 
   installPhase = ''

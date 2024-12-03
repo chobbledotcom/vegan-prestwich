@@ -2,16 +2,16 @@
     {
         "@context": "http://schema.org",
         "@type": "LocalBusiness",
-        "name": "{{ name }}",
-        {%- if email -%}"email": "{{ email }}",{%- endif -%}
-        {%- if phone -%}"telephone": "{{ phone }}",{%- endif -%}
-        {%- if web -%}"url": "{{ web }}",{%- endif -%}
-        {%- if facebook or instagram -%} "sameAs": [
+        "name": "{{ name }}"
+        {%- if email -%}, "email": "{{ email }}"{%- endif -%}
+        {%- if phone -%}, "telephone": "{{ phone }}"{%- endif -%}
+        {%- if web -%}, "url": "{{ web }}"{%- endif -%}
+        {%- if facebook or instagram -%}, "sameAs": [
 	    {%- if facebook -%}"{{ facebook }}"{%- endif -%}
 	    {%- if facebook and instagram -%},{%- endif -%}
 	    {%- if instagram -%}"{{ instagram }}"{%- endif -%}
-        ],{%- endif -%}
-        {%- if google -%}"hasMap": "{{ google }}"{%- endif -%}
+        ]{%- endif -%}
+        {%- if google -%}, "hasMap": "{{ google }}"{%- endif -%}
 	{%- if address -%}
        	    , "address": {
 	        "@type": "PostalAddress",
