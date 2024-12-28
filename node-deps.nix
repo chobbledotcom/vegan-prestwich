@@ -1,5 +1,7 @@
 # node-deps.nix
-{ pkgs ? import <nixpkgs> {} }:
+{
+  pkgs ? import <nixpkgs> { },
+}:
 
 let
   packageJSON = pkgs.writeTextFile {
@@ -20,7 +22,7 @@ let
     version = "1.0.0";
     packageJSON = packageJSON;
     yarnLock = ./yarn.lock;
-    yarnFlags = ["--frozen-lockfile"];
+    yarnFlags = [ "--frozen-lockfile" ];
   };
 in
 {

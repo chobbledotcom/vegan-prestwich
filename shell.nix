@@ -1,4 +1,6 @@
-{ pkgs ? import <nixpkgs> {} }:
+{
+  pkgs ? import <nixpkgs> { },
+}:
 
 let
   nodeDeps = import ./node-deps.nix { inherit pkgs; };
@@ -14,6 +16,8 @@ pkgs.mkShell {
   shellHook = ''
     rm -rf node_modules
     rm -rf package.json
+
+    git pull
 
     ln -sf ${packageJSON} package.json
     ln -sf ${nodeModules}/node_modules .
