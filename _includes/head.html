@@ -6,17 +6,18 @@
   <meta name="generator" content="Eleventy" />
   <link rel="stylesheet" href="/style/style.css">
   <title>
-    {%- if metaTitle %} {{ metaTitle | escape }} {%- elsif name %} {{ name |
-    escape }}, Prestwich {%- elsif title %} {{ title | escape }}, Prestwich {%-
-    else %} {{ site.title | escape }} {%- endif %}
+    {%- if metaTitle -%}
+    {{ metaTitle | escape }}
+    {%- elsif name -%}
+    {{ name | escape }}, Prestwich
+    {%- elsif title -%}
+    {{ title | escape }}, Prestwich
+    {%- else -%}
+    {{ site.title | escape }}
+    {%- endif -%}
   </title>
-  <meta
-    name="description"
-    content="{{ excerpt | default: site.description | strip_html | truncate: 160 | escape }}"
-  />
-  <link
-    rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💚</text></svg>"
-  />
+  <meta name="description" content="{{ excerpt | default: site.description | strip_html | truncate: 160 | escape }}" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💚</text></svg>" />
   <link rel="canonical" href="{{ siteUrl }}{{ page.url }}" />
 </head>

@@ -20,16 +20,16 @@ layout: default
     <div class="place-images">
     {% assign place_images = collections.place_images | reverse %}
     {% for image in place_images %}
-        {% capture absolute_url %}/{{image}}{% endcapture %}
-        {% assign folder_size = absolute_url.size | minus: 6 %}
-        {% capture absolute_folder %}{{ absolute_url | slice: 0, folder_size }}{% endcapture %}
-        {% capture filename %}{{ absolute_url | slice: 1, 999 }}{% endcapture %}
-        {% if absolute_folder == page.url %}
+        {%- capture absolute_url %}/{{image}}{% endcapture -%}
+        {%- assign folder_size = absolute_url.size | minus: 6 -%}
+        {%- capture absolute_folder %}{{ absolute_url | slice: 0, folder_size }}{% endcapture -%}
+        {%- capture filename %}{{ absolute_url | slice: 1, 999 }}{% endcapture -%}
+        {%- if absolute_folder == page.url -%}
             <a href="{{ absolute_url }}">
-                {% image filename, name, "150px" %}
+                {%- image filename, name, "150px" %}
             </a>
-        {% endif %}
-    {% endfor %}
+        {%- endif -%}
+    {%- endfor -%}
     </div>
 
     <p>
