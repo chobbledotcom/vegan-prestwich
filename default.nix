@@ -38,7 +38,7 @@ pkgs.stdenv.mkDerivation {
 
   buildPhase = ''
     echo 'Building CSS'
-    sass --update style:_site/css --style compressed
+    sass --update style:_site/style --style compressed
 
     echo 'Building site'
     yarn --offline eleventy
