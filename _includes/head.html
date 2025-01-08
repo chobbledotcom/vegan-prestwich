@@ -4,10 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="max-image-preview:large" />
   <meta name="generator" content="Eleventy" />
-  {% capture styles %} {% include "../_site/style/style.css" %} {% endcapture %}
-  <style>
-    {{ styles }}
-  </style>
+  <link rel="stylesheet" href="/style/style.css">
   <title>
     {%- if metaTitle %} {{ metaTitle | escape }} {%- elsif name %} {{ name |
     escape }}, Prestwich {%- elsif title %} {{ title | escape }}, Prestwich {%-

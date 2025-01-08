@@ -1,5 +1,6 @@
 .DS_Store
 .aider*
+.direnv
 .env
 .eleventy.js.swp
 .sass-cache

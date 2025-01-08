@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+sass --update style:_site/style --style compressed
+yarn eleventy
