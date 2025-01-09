@@ -25,8 +25,9 @@
 
         setupNodeModules = ''
           rm -rf node_modules package.json
-          ln -sf ${packageJSON} package.json
-          ln -sf ${nodeModules}/node_modules .
+          cp -r ${nodeModules}/node_modules .
+          chmod -R +w node_modules
+          cp ${packageJSON} package.json
         '';
 
         siteDrv = pkgs.stdenv.mkDerivation {
