@@ -9,7 +9,7 @@ const placeImages = fg.sync([
 const Image = require("@11ty/eleventy-img");
 
 module.exports = function (config) {
-  config.addGlobalData("siteUrl", "https://www.veganprestwich.co.uk");
+  config.addGlobalData("siteUrl", "https://veganprestwich.co.uk");
 
   config.addShortcode("image", async (src, alt, sizes) => {
     let metadata = await Image(src, {
