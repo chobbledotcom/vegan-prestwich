@@ -2,3 +2,4 @@
 
 sass --update style:_site/style --style compressed
 yarn eleventy
+find _site -name "*.html" -exec htmlbeautifier {} \;
