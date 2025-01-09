@@ -53,9 +53,24 @@
             ++ commonBuildInputs;
 
           configurePhase = ''
+            set -x  # Enable debug output
+            echo "Starting configure phase"
+            echo "TMPDIR=$TMPDIR"
+            echo "HOME=$HOME"
             export HOME=$TMPDIR
+            echo "HOME is now $HOME"
             mkdir -p _site/style
-            ${setupNodeModules}
+
+            echo "Setting up node modules..."
+            rm -rf node_modules package.json
+            cp -r ${nodeModules}/node_modules .
+            chmod -R +w node_modules
+            cp ${packageJSON} package.json
+
+            echo "Listing current directory:"
+            ls -la
+            echo "Configure phase complete"
+            set +x
           '';
 
           buildPhase = ''
