@@ -31,9 +31,7 @@
 
         siteDrv = pkgs.stdenv.mkDerivation {
           name = projectName;
-
-          LANG = "en_US.UTF-8";
-          LC_ALL = "en_US.UTF-8";
+          XDG_CACHE_HOME = "/tmp/nix-cache";
 
           src = builtins.filterSource (
             path: type:
