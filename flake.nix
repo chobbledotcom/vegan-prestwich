@@ -18,10 +18,7 @@
         projectName = builtins.baseNameOf ./.;
 
         commonBuildInputs = with pkgs; [
-          djlint
-          rubyPackages_3_4.htmlbeautifier
           sass
-          vscode-langservers-extracted
           yarn
           yarn2nix
         ];
@@ -35,6 +32,9 @@
         siteDrv = pkgs.stdenv.mkDerivation {
           name = projectName;
 
+          LANG = "en_US.UTF-8";
+          LC_ALL = "en_US.UTF-8";
+
           src = builtins.filterSource (
             path: type:
             !(builtins.elem (baseNameOf path) [
@@ -47,6 +47,7 @@
           nativeBuildInputs =
             with pkgs;
             [
+              bash
               cacert
               lightningcss
             ]
@@ -59,7 +60,9 @@
           '';
 
           buildPhase = ''
-            ${./bin/build}
+            echo "PATH: $PATH"
+            which htmlbeautifier
+            ${pkgs.bash}/bin/bash ${./bin/build}
           '';
 
           installPhase = ''
