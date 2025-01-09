@@ -60,8 +60,6 @@
           '';
 
           buildPhase = ''
-            echo "PATH: $PATH"
-            which htmlbeautifier
             ${pkgs.bash}/bin/bash ${./bin/build}
           '';
 
