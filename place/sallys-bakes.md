@@ -5,17 +5,18 @@ address: Market Parade (at Bury Market), Bury
 postcode: BL9 0QE
 phone: 07940 576 822
 facebook: https://www.facebook.com/sallysbakes
+web: https://sallysbakesbury.co.uk
 tags:
-- cake
-- pie
-- cookies
-- pasties
+  - cake
+  - pie
+  - cookies
+  - pasties
 omni: false
 restaurant: false
 delivery: true
 ---
 
-**Sally is usually at Bury Market but delivers to Prestwich quite regularly - check her Facebook page to know when the next delivery date is.**
+**Sally is based in Bury but delivers to Prestwich quite regularly - check her Facebook page to know when the next delivery date is.**
 
 [April 2022:](https://www.instagram.com/p/Ccfu7rHsWcS) "Having lunch in the garden this glorious bank holiday Monday. Vegan pie and pasty courtesy of @sallysbakes - look out for her Prestwich delivery days, she’s a star."
 
@@ -28,4 +29,3 @@ delivery: true
 [June 2020:](https://www.facebook.com/groups/veganprestwich/posts/1120250615019020/?comment_id=1126323901078358) "Chocolate chip cookies and flapjack to die for 😋"
 
 [May 2020:](https://www.facebook.com/groups/veganprestwich/posts/1099460807098001/?comment_id=1099462730431142) "Really enjoyed the cake for my birthday. Recommended!"
-
