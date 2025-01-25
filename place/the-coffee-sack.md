@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2024-11-02
+last_modified_at: 2025-01-22
 name: The Coffee Sack
 address: 3 Scholes Lane
 postcode: M25 0PD
@@ -9,23 +9,26 @@ facebook: https://www.facebook.com/thecoffeesack/
 instagram: https://www.instagram.com/thecoffeesack
 web: https://www.thecoffeesack.shop
 tags:
-- breakfast
-- cake
-- cafe
-- lunch
+  - breakfast
+  - cake
+  - cafe
+  - lunch
 omni: true
 restaurant: true
 delivery: false
 times:
-- "Monday: 9:30am–5:30pm"
-- "Tuesday: 8:30am–5:30pm"
-- "Wednesday: 8:30am–5:30pm"
-- "Thursday: 8:30am–5:30pm"
-- "Friday: 8:30am–5:30pm"
-- "Saturday: 9:30am–4pm"
-- "Sunday: 9:30am–5:30pm"
-
+  - "Monday: 9:30am–5:30pm"
+  - "Tuesday: 8:30am–5:30pm"
+  - "Wednesday: 8:30am–5:30pm"
+  - "Thursday: 8:30am–5:30pm"
+  - "Friday: 8:30am–5:30pm"
+  - "Saturday: 9:30am–4pm"
+  - "Sunday: 9:30am–5:30pm"
 ---
+
+[January 2025:](https://www.facebook.com/groups/630026080708145/) "new vegan menu items at Coffee Sack! We both tried the new spiced dahl, on toast and on a jacket potato. It was well fit! I was saying to my wife, Coffee Sack is one of the only places where I'm never disappointed to see menu changes, cause every new thing they come up with is dee-lish"
+
+"They have also massively upped their game with the cakes they offer now. It use to be a gluten free muffin. This time they had about 5 options. They aren’t labelled as vegan but if you ask they will let you know. We love it here."
 
 [November 2024:](https://www.instagram.com/p/DB3-l0MtFL8) "We’ve not been over to @coffeesackprestwich for a little bit so were excited to find they have new vegan options! We tried the BBQ pulled jackfruit toast topper and jacket potato filling. Really nice and as usual the salad and vegan coleslaw was fresh and delicious. Great coffee too! It is in the name after all."
 
