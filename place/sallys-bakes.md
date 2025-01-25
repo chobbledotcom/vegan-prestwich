@@ -1,10 +1,10 @@
 ---
 last_modified_at: 2022-04-19
 name: Sally's Bakes
-address: Market Parade (at Bury Market), Bury
-postcode: BL9 0QE
+address: Based in Bury but delivers to Prestwich
 phone: 07940 576 822
 facebook: https://www.facebook.com/sallysbakes
+instagram: https://www.instagram.com/sallysbakes
 web: https://sallysbakesbury.co.uk
 tags:
   - cake
