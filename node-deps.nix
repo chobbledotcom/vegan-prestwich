@@ -11,6 +11,7 @@ let
       version = "1.0.0";
       dependencies = {
         "fast-glob" = "^3.3.2";
+        "jsdom" = "^26.0.0";
         "@11ty/eleventy" = "^3.0.0";
         "@11ty/eleventy-img" = "^5.0.0";
       };
