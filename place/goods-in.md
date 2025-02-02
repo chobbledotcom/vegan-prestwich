@@ -8,21 +8,22 @@ google: https://goo.gl/maps/zouSbft8fJfh3RAU8
 facebook: https://www.facebook.com/thegoodsinmcr/
 instagram: https://www.instagram.com/thegoodsinmcr
 tags:
-- breakfast
-- cake
-- cafe
-- alcohol
-- trendy
-- lunch
-- tacos
+  - breakfast
+  - cake
+  - cafe
+  - alcohol
+  - trendy
+  - lunch
+  - tacos
 omni: true
 restaurant: true
 delivery: false
 times:
-- "Wed & Thu 10am - 10pm"
-- "Fri 10am - midnight"
-- "Sat 9am - midnight"
-- "Sun 9am - 8pm"
+  - "Wed & Thu 10am - 10pm"
+  - "Fri 10am - midnight"
+  - "Sat 9am - midnight"
+  - "Sun 9am - 8pm"
+votes: 6
 ---
 
 [October 2024:](https://www.instagram.com/p/C_AZBYqN8OF/) "We popped in to @thegoodsinmcr to try their new vegan special. Really great, exciting flavours and as usual they had the biscoff tarts on the counter for dessert. Try it while you can!"

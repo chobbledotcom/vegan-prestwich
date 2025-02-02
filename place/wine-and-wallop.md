@@ -7,21 +7,22 @@ phone: 0161 798 5219
 web: http://wineandwallop.co.uk/prestwich
 google: https://goo.gl/maps/sF9FsFu9Kav23rgi8
 tags:
-- breakfast
-- cake
-- cafe
-- pub / bar
+  - breakfast
+  - cake
+  - cafe
+  - pub / bar
 omni: true
 restaurant: true
 delivery: true
 times:
-- "Saturday: 10am–1am"
-- "Sunday: 10am–11pm"
-- "Monday: 10am–11pm"
-- "Tuesday: 10am–11pm"
-- "Wednesday: 10am–11pm"
-- "Thursday: 10am–12am"
-- "Friday: 10am–1am"
+  - "Saturday: 10am–1am"
+  - "Sunday: 10am–11pm"
+  - "Monday: 10am–11pm"
+  - "Tuesday: 10am–11pm"
+  - "Wednesday: 10am–11pm"
+  - "Thursday: 10am–12am"
+  - "Friday: 10am–1am"
+votes: 1
 ---
 
 **December 2022:** Wine & Wallop have re-added the vegan burger and vegan breakfast to their menu!

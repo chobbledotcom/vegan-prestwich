@@ -20,6 +20,7 @@ times:
   - "Thursday: 5–10pm"
   - "Friday: 5–10:30pm"
   - "Saturday: 1–10:30pm"
+votes: 4
 ---
 
 [May 2024:](https://www.instagram.com/p/C6raLtKN84I/) "Think I’m addicted to bhel puri. Very tasty stuff!"

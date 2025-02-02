@@ -16,6 +16,7 @@ restaurant: true
 delivery: true
 times:
   - "7 Days a Week: 9am-3pm"
+votes: 13
 ---
 
 [April 2024:](https://www.facebook.com/groups/veganprestwich/posts/2146156085761796) "10/10 twice in one day! Milk and miel for full vegan brekkie this morning and Dough and Mogul at Radcliffe market this evening! Both amazing!!!"

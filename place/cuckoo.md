@@ -8,18 +8,19 @@ web: https://www.cuckoobar.co.uk
 google: https://goo.gl/maps/NnrVdif77762
 facebook: https://www.facebook.com/cuckooprestwich
 tags:
-- pizza
-- trendy
-- alcohol
+  - pizza
+  - trendy
+  - alcohol
 omni: true
 is_chain: false
 restaurant: true
 delivery: false
 times:
-- "Mon: Closed"
-- "Tues-Fri: Hatch 09.00-22.00 / Bar 12.00-22.00"
-- "Sat: Hatch 10.00-22.00 / Bar 10.00-22.00"
-- "Sun: Hatch 10.00-21.00 / Bar 10.00-22.00"
+  - "Mon: Closed"
+  - "Tues-Fri: Hatch 09.00-22.00 / Bar 12.00-22.00"
+  - "Sat: Hatch 10.00-22.00 / Bar 10.00-22.00"
+  - "Sun: Hatch 10.00-21.00 / Bar 10.00-22.00"
+votes: 10
 ---
 
 Vegan cheese on their pizzas is available on request, plus they have a few vegan options nibbles-wise - sweet potato fries, falafel, hummus, pitta etc.

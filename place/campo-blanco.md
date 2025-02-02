@@ -11,20 +11,21 @@ facebook: https://www.facebook.com/campoblanco
 instagram: https://www.instagram.com/campoblanco
 tripadvisor: https://www.tripadvisor.com/Restaurant_Review-g2035407-d15094548-Reviews-Campo_Blanco_Whitefield_s_Tapas_Bar-Whitefield_Bury_Greater_Manchester_England.html
 tags:
-- tapas
-- spanish
+  - tapas
+  - spanish
 omni: true
 restaurant: true
 delivery: false
 takeaway: true
 times:
-- "Monday: CLOSED"
-- "Tuesday: CLOSED"
-- "Wednesday: 12:00 - 22:30"
-- "Thursday: 12:00 - 22:30"
-- "Friday: 12:00 - 23:00"
-- "Saturday: 12:00 - 23:00"
-- "Sunday: 12:00 - 21:00"
+  - "Monday: CLOSED"
+  - "Tuesday: CLOSED"
+  - "Wednesday: 12:00 - 22:30"
+  - "Thursday: 12:00 - 22:30"
+  - "Friday: 12:00 - 23:00"
+  - "Saturday: 12:00 - 23:00"
+  - "Sunday: 12:00 - 21:00"
+votes: 15
 ---
 
 [February 2024:](https://www.instagram.com/p/C3r5Sr4NRz6) "New menu alert! 🚨 Campo Blanco shaking some things up and adding a new vegan option: mushroom scallops! Have you tried them yet? We were impressed!"
