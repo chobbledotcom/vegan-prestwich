@@ -8,21 +8,22 @@ web: http://www.alltheshapes.co.uk
 google: https://goo.gl/maps/qHGd7PRVt752
 facebook: https://www.facebook.com/alltheshapes
 tags:
-- breakfast
-- trendy
-- alcohol
-- lunch
-- pub / bar
+  - breakfast
+  - trendy
+  - alcohol
+  - lunch
+  - pub / bar
 omni: true
 restaurant: true
 times:
-- "Sun: 9am - 6pm"
-- "Mon: 9am - 6pm"
-- "Tue: Closed"
-- "Wed: Closed"
-- "Thu: 9am -11pm"
-- "Fri: 9am - 12am"
-- "Sat: 9am - 12am"
+  - "Sun: 9am - 6pm"
+  - "Mon: 9am - 6pm"
+  - "Tue: Closed"
+  - "Wed: Closed"
+  - "Thu: 9am -11pm"
+  - "Fri: 9am - 12am"
+  - "Sat: 9am - 12am"
+votes: 11
 ---
 
 [November 2024:](https://www.instagram.com/p/DB9G6RnNaSt) "Took a friend out for lunch at @alltheshapesmcr . I’m basically always craving their vegan burrito and the new vegan burger is an exciting addition!"

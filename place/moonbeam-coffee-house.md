@@ -16,6 +16,7 @@ restaurant: true
 delivery: false
 times:
   - "Every Day: 09:00 - 15:00"
+votes: 7
 ---
 
 [January 2025:](https://www.facebook.com/photo/?fbid=1157528406380940&set=p.1157528406380940) "I was deciding between coffee sack and moonbeam cafe today and chose the latter really good avocado on toast 🥰"

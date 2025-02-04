@@ -1,7 +1,7 @@
 ---
 last_modified_at: 2023-09-08
 name: Saffron Express
-address: 391 Bury Old Rd 
+address: 391 Bury Old Rd
 postcode: M25 1PS
 phone: 0161 798 5857
 web: http://www.saffronexpressonline.co.uk
@@ -9,19 +9,20 @@ tripadvisor: https://www.tripadvisor.co.uk/Restaurant_Review-g528792-d15247605-R
 google: https://goo.gl/maps/AjE5kyM8id2acgvQ8
 facebook: https://www.facebook.com/SaffronExpressPrestwich
 tags:
-- indian
-- curry
+  - indian
+  - curry
 omni: true
 restaurant: false
 delivery: true
 times:
-- "Monday: 5–11pm"
-- "Tuesday: 5–11pm"
-- "Wednesday: 5–11pm"
-- "Thursday: 5–11pm"
-- "Friday: 4:30pm–12am"
-- "Saturday: 4:30pm–12am"
-- "Sunday: 5–11pm"
+  - "Monday: 5–11pm"
+  - "Tuesday: 5–11pm"
+  - "Wednesday: 5–11pm"
+  - "Thursday: 5–11pm"
+  - "Friday: 4:30pm–12am"
+  - "Saturday: 4:30pm–12am"
+  - "Sunday: 5–11pm"
+votes: 2
 ---
 
 [September 2023:](https://www.facebook.com/groups/veganprestwich/posts/1995410127503060) "Saffron Express has plenty of vegan options, and I'm in love with their korma"

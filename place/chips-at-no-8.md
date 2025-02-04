@@ -6,19 +6,20 @@ postcode: M25 3HQ
 google: https://goo.gl/maps/vVeWFzmRSVquK8Uv7
 facebook: https://www.facebook.com/chipsatno.8
 tags:
-- chips
-- pie
+  - chips
+  - pie
 omni: true
 restaurant: true
 delivery: true
 times:
-- "Monday: CLOSED"
-- "Tuesday: 16:30 - 20:30"
-- "Wednesday: 16:30 - 20:30"
-- "Thursday: 16:30 - 20:30"
-- "Friday: 16:30 - 20:30"
-- "Saturday: 17:00 - 20:00"
-- "Sunday: CLOSED"
+  - "Monday: CLOSED"
+  - "Tuesday: 16:30 - 20:30"
+  - "Wednesday: 16:30 - 20:30"
+  - "Thursday: 16:30 - 20:30"
+  - "Friday: 16:30 - 20:30"
+  - "Saturday: 17:00 - 20:00"
+  - "Sunday: CLOSED"
+votes: 8
 ---
 
 [August 2024](https://www.instagram.com/p/C-Z8q5LNKAk) "After getting a takeaway the other night we decided to try the dining in experience @chipsno8 - great stuff! I had the tempeh tacos and my date had the mushroom pie. Remember to ask for the chips to be vegan though as they do fry in animal fat by default! 😬💚"

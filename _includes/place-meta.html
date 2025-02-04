@@ -1,68 +1,68 @@
 <div class="place-meta">
     <ul>
-        {% if web %}
+        {%- if web -%}
             <li>
                 <strong>Web:</strong>
                 <a href="{{ web }}">
-                    {{ web | replace: "https://", "" | replace: "http://", "" | replace: "www.", "" }}
+                  {{ web | replace: "https://", "" | replace: "http://", "" | replace: "www.", "" }}
                 </a>
             </li>
-        {% endif %}
-        {% if address %}
+        {%- endif -%}
+        {%- if address -%}
             <li><strong>Address:</strong> {{ address }}</li>
-        {% endif %}
-        {% if postcode %}
+        {%- endif -%}
+        {%- if postcode -%}
             <li><strong>Postcode:</strong> {{ postcode }}</li>
-        {% endif %}
-        {% if phone %}
+        {%- endif -%}
+        {%- if phone -%}
             <li><strong>Phone:</strong> <a href="tel:{{ phone | replace: " ", "" }}">{{ phone }}</a></li>
-        {% endif %}
+        {%- endif -%}
     </ul>
     {% if google or facebook or twitter or tripadvisor or instagram %}
         <hr>
         <ul>
-            {% if google %}
+            {%- if google -%}
                 <li><strong>Google:</strong> <a href="{{ google }}">click here</a></li>
-            {% endif %}
-            {% if facebook %}
-                {% capture facebook_text %}
+            {%- endif -%}
+            {%- if facebook -%}
+                {%- capture facebook_text -%}
                     @{{ facebook | replace: "https://www.facebook.com/", "" }}
-                {% endcapture %}
-                {% assign stripped_facebook = facebook_text | replace: "/", "" %}
-                {% if stripped_facebook != facebook_text %}
+                {%- endcapture -%}
+                {%- assign stripped_facebook = facebook_text | replace: "/", "" -%}
+                {%- if stripped_facebook != facebook_text -%}
                     {% assign facebook_text = "click here" %}
-                {% endif %}
+                {%- endif -%}
                 <li><strong>Facebook:</strong> <a href="{{ facebook }}">{{ facebook_text | escape }}</a></li>
-            {% endif %}
-            {% if instagram %}
-                {% capture instagram_text %}
+            {%- endif -%}
+            {%- if instagram -%}
+                {%- capture instagram_text -%}
                     @{{ instagram | replace: "https://www.instagram.com/u/", "" | replace: "https://www.instagram.com/", "" }}
-                {% endcapture %}
-                {% assign stripped_instagram = instagram_text | replace: "/", "" %}
-                {% if stripped_instagram != instagram_text %}
-                    {% assign instagram_text = "click here" %}
-                {% endif %}
+                {%- endcapture -%}
+                {%- assign stripped_instagram = instagram_text | replace: "/", "" -%}
+                {%- if stripped_instagram != instagram_text -%}
+                    {%- assign instagram_text = "click here" -%}
+                {% endif -%}
                 <li><strong>Instagram:</strong> <a href="{{ instagram }}">{{ instagram_text | escape }}</a></li>
-            {% endif %}
-            {% if twitter %}
+            {%- endif -%}
+            {%- if twitter -%}
                 <li><strong>Twitter:</strong> <a href="{{ twitter }}">@{{ twitter | replace: "https://twitter.com/", "" }}</a></li>
-            {% endif %}
-            {% if tripadvisor %}
+            {%- endif -%}
+            {%- if tripadvisor -%}
                 <li><strong>TripAdvisor:</strong> <a href="{{ tripadvisor }}">click here</a></li>
-            {% endif %}
+            {%- endif -%}
         </ul>
-    {% endif %}
-    {% if times %}
+    {%- endif -%}
+    {%- if times -%}
         <hr>
         <ul>
             <li>
                 <strong>Times</strong>
                 <ul class="small">
-                    {% for time in times %}
+                    {%- for time in times -%}
                     <li>{{ time  }}</li>
-                    {% endfor %}
+                    {%- endfor -%}
                 </ul>
             </li>
         </ul>    
-    {% endif %}
+    {%- endif -%}
 </div>

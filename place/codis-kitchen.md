@@ -9,12 +9,13 @@ instagram: https://www.instagram.com/codiskitchen
 google: https://goo.gl/maps/Qw6MQcG4bz5P8jMRA
 facebook: https://www.facebook.com/people/Codis-kitchen/100063609155295/
 tags:
-- asian
-- thai
-- sushi
+  - asian
+  - thai
+  - sushi
 omni: true
 restaurant: true
 delivery: true
+votes: 21
 ---
 
 [January 2024:](https://www.facebook.com/groups/veganprestwich/posts/2095713317472740) "Salt & pepper tofu, bang bang cauliflower, and firecracker tofu from Codis kitchen…. Wow😍😍😍 so fresh and absolutely delicious, can’t believe we’ve never tried it before"
@@ -28,4 +29,3 @@ delivery: true
 the tofu poke bowl (very nice and light and varied), the pumpkin katsu curry (rich sauce and really tasty sweet innards), the mushroom karaage bao bun (fit! lovely and crispy and spiced) and the salt and pepper chips (pretty good). I've also had the vegan sushi and liked it"
 
 [May 2022:](https://www.facebook.com/groups/veganprestwich/posts/1654415841602492) Just got a Deliveroo from Codi's Kitchen, the newly opened 'pan Asian' place on Heywood Road - very tasty and super fast delivery! I got the pumpkin katsu curry and the salt and pepper tofu, both were dee-lish!
-
