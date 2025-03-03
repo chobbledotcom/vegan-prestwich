@@ -8,7 +8,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
       - name: Build
-        run: nix-build
-      - name: Deploy
-        run: neocities push --prune result
+        id: build
+        run: |
+          BUILD_PATH=$(nix-build)
+          DEPLOY_PATH="$GITHUB_WORKSPACE/dist"
+          mkdir -p "$DEPLOY_PATH"
+          cp -r "$BUILD_PATH"/* "$DEPLOY_PATH"/
+
+      - name: Deploy to neocities
+        uses: bcomnes/deploy-to-neocities@v3
+        with:
+          api_key: ${{ secrets.NEOCITIES_API_KEY }}
+          cleanup: true
+          neocities_supporter: true
+          preview_before_deploy: false
+          dist_dir: dist
