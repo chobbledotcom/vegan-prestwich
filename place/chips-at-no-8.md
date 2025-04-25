@@ -5,6 +5,7 @@ address: 8 Clifton Rd
 postcode: M25 3HQ
 google: https://goo.gl/maps/vVeWFzmRSVquK8Uv7
 facebook: https://www.facebook.com/chipsatno.8
+web: https://chipsatno8.co.uk
 tags:
   - chips
   - pie
