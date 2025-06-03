@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2023-09-08
+last_modified_at: 2025-03-20
 name: Saffron Express
 address: 391 Bury Old Rd
 postcode: M25 1PS
@@ -24,6 +24,12 @@ times:
   - "Sunday: 5–11pm"
 votes: 2
 ---
+
+[March 2025:](https://www.facebook.com/groups/veganprestwich/posts/2432426203801448/) "A vegan free option menu has been added onto Saffron Express menu online - Just Eat & Uber Eats! Guys check it out and share for the vegan community, great dishes to choose from and Vegan Meal Deals on there as well. They will also try their best to accommodate new vegan dishes to suit your needs 🌱 please share!"
+
+"That's great news. I've had stuff from them before that they've made vegan"
+
+"I love their korma! And their daal! Gutted I moved out the area, but I'll always pop I'm if I'm around. Try em, you won't be disappointed"
 
 [September 2023:](https://www.facebook.com/groups/veganprestwich/posts/1995410127503060) "Saffron Express has plenty of vegan options, and I'm in love with their korma"
 

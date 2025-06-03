@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2025-01-22
+last_modified_at: 2025-05-19
 name: The Coffee Sack
 address: 3 Scholes Lane
 postcode: M25 0PD
@@ -26,6 +26,14 @@ times:
   - "Sunday: 9:30am–5:30pm"
 votes: 13
 ---
+
+[May 2025:](https://www.facebook.com/groups/veganprestwich/posts/2493428487701219/) "We had the new (I think?) vegan reuben sandwiches from the Coffee Sack yesterday - well good! vegan pastrami, pickle, melty cheese, Russian sauce, it was A++. and we had the roasted cauliflower bowl too. and, not pictured, pecan cinnamon swirls and biscoff cookie!"
+
+"Coffee sack is soooooo good for food allergies and preferences, I'm vegan and gluten free and everything has been so good from there!"
+
+[March 2025:](https://www.facebook.com/photo/?fbid=10163003894825616) "Again The Coffee Sack not disappointing on the vegan front."
+
+"We often go for their Tiramisuy milkshakes, made with coffee! always a good pick-me-up!"
 
 [January 2025:](https://www.facebook.com/groups/630026080708145/) "new vegan menu items at Coffee Sack! We both tried the new spiced dahl, on toast and on a jacket potato. It was well fit! I was saying to my wife, Coffee Sack is one of the only places where I'm never disappointed to see menu changes, cause every new thing they come up with is dee-lish"
 

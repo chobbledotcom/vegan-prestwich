@@ -9,23 +9,22 @@ google: https://goo.gl/maps/tcQ2Hsgg9aB2
 facebook: https://www.facebook.com/villagegreensprestwich
 email: info@village-greens-coop.co.uk
 tags:
-- organic
-- alcohol
-- groceries
-- supermarket
-- cake
+  - organic
+  - alcohol
+  - groceries
+  - supermarket
+  - cake
 omni: true
 shop: true
-bold: true
 is_chain: false
 times:
-- "Sunday: 11am–5pm"
-- "Monday: 9am–6pm"
-- "Tuesday: 9am–6pm"
-- "Wednesday: 9am–6pm"
-- "Thursday: 9am–6pm"
-- "Friday: 9am–6pm"
-- "Saturday: 9am–5pm"
+  - "Sunday: 11am–5pm"
+  - "Monday: 9am–6pm"
+  - "Tuesday: 9am–6pm"
+  - "Wednesday: 9am–6pm"
+  - "Thursday: 9am–6pm"
+  - "Friday: 9am–6pm"
+  - "Saturday: 9am–5pm"
 ---
 
 Loads of veggie / organic options, fresh hot and cold food, very little plastic on the vegetables and pulses, and you can take your empty grains, pasta, rice, soap, shampoo bottles etc to be refilled!
