@@ -9,14 +9,20 @@
     {%- if metaTitle -%}
     {{ metaTitle | escape }}
     {%- elsif name -%}
-    {{ name | escape }}, Prestwich
+      Vegan Options at {{ name | escape }}, Prestwich | VeganPrestwich.co.uk
     {%- elsif title -%}
-    {{ title | escape }}, Prestwich
+      {{ title | escape }}, Prestwich | VeganPrestwich.co.uk
     {%- else -%}
-    {{ site.title | escape }}
+      {{ site.title | escape }}
     {%- endif -%}
   </title>
-  <meta name="description" content="{{ excerpt | default: site.description | strip_html | truncate: 160 | escape }}" />
+  <meta name="description" content="
+    {%- if name -%}
+      Vegan options at {{ name | escape }} in Prestwich, Manchester - Vegan Prestwich - Food recommendations and a friendly vegan community
+    {%- else -%}
+      {{ excerpt | default: site.description | strip_html | truncate: 160 | escape }}
+    {%- endif -%}
+  " />
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💚</text></svg>" />
   <link rel="canonical" href="{{ siteUrl }}{{ page.url }}" />
