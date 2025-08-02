@@ -8,6 +8,10 @@ layout: default
 
 <div class="content">
     {% include "place-meta.html" %}
+    
+    {% comment %}Include reviews from the reviews collection{% endcomment %}
+    {% include "place-reviews" %}
+    
     {{ content }}
 
     <p>

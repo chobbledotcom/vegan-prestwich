@@ -118,7 +118,7 @@ module.exports = (config) => {
 
 	const CDN_URL = "https://cdn.veganprestwich.co.uk";
 	config.addTransform("prependBaseUrl", (content, outputPath) => {
-		if (!outputPath?.endsWith(".html")) return content;
+		if (!outputPath || !outputPath.endsWith(".html")) return content;
 
 		const dom = new JSDOM(content);
 		const document = dom.window.document;

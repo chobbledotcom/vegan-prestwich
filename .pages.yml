@@ -98,6 +98,30 @@ content:
       - { name: last_modified_at, type: date, label: Last Modified }
       - { name: body, label: Description, type: code, options: { language: markdown } }
 
+  - name: reviews
+    label: Reviews
+    path: _data
+    type: file
+    file: reviews.json
+    fields:
+      - name: reviews
+        label: Reviews
+        type: object
+        list: true
+        fields:
+          - { name: text, type: text, label: Review Text, required: true }
+          - name: place
+            label: Place
+            type: reference
+            required: true
+            options:
+              collection: places
+              search: "name"
+              value: "{primary}"
+              label: "{name}"
+          - { name: date, type: date, label: Date, required: true }
+          - { name: url, type: string, label: URL (Instagram/Facebook) }
+
   - name: site_data
     label: Site Configuration
     path: _data
