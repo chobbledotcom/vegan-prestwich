@@ -75,7 +75,7 @@ content:
       
       - { name: votes, type: number, label: Votes }
       
-      - { name: body, label: Description/Reviews, type: code, options: { language: markdown } }
+      - { name: body, label: Description, type: code, options: { language: markdown } }
 
   - name: tags
     label: Tags
@@ -100,9 +100,8 @@ content:
 
   - name: reviews
     label: Reviews
-    path: _data
+    path: src/_data/reviews.json
     type: file
-    file: reviews.json
     fields:
       - name: reviews
         label: Reviews
