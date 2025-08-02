@@ -100,7 +100,7 @@ content:
 
   - name: reviews
     label: Reviews
-    path: src/_data/reviews.json
+    path: _data/reviews.json
     type: file
     fields:
       - name: reviews
