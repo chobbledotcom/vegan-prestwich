@@ -1,5 +1,6 @@
 const fg = require("fast-glob");
 const { JSDOM } = require("jsdom");
+const { configureScss } = require("./_lib/scss");
 
 const placeImages = fg.sync([
 	"place/*/*.jpg",
@@ -63,7 +64,13 @@ module.exports = (config) => {
 		sortedPlaces(api).filter((a) => a.data.permalink && a.data.delivery),
 	);
 
-	config.addWatchTarget("./style/style.scss");
+	config.addWatchTarget("./style/");
+
+	// Configure SCSS compilation
+	configureScss(config);
+	
+	// Only process style.scss in the root style directory
+	config.ignores.add("style/minima/**/*.scss");
 
 	config.addCollection("place_images", (collection) => placeImages);
 	config.addPassthroughCopy("place/*/*.jpg");

@@ -1,135 +1,184 @@
 {
-  description = "vegan-prestwich";
   inputs = {
-    flake-utils.url = "github:numtide/flake-utils/11707dc2f618dd54ca8739b309ec4fc024de578b?narHash=sha256-l0KFg5HjrsfsO/JpG%2Br7fRrqm12kzFHyUHqHCVpMMbI%3D";
+    nixpkgs.url = "nixpkgs";
   };
+
   outputs =
-    {
-      self,
-      nixpkgs,
-      flake-utils,
-    }:
-    flake-utils.lib.eachDefaultSystem (
-      system:
-      let
-        pkgs = import nixpkgs { inherit system; };
-        nodeDeps = import ./node-deps.nix { inherit pkgs; };
-        inherit (nodeDeps) packageJSON nodeModules;
-        projectName = builtins.baseNameOf ./.;
+    { self, nixpkgs }:
+    let
+      systems = [ "x86_64-linux" ];
+      forAllSystems = nixpkgs.lib.genAttrs systems;
 
-        commonBuildInputs = with pkgs; [
-          sass
-          yarn
-          yarn2nix
-        ];
+      # Shared configuration values
+      npmDepsHash = "sha256-c56CGwkzuM/aQGG4797suSmc8beAqLRDmJIiAlCRiIA=";
 
-        setupNodeModules = ''
-          rm -rf node_modules package.json
-          cp -r ${nodeModules}/node_modules .
-          chmod -R +w node_modules
-          cp ${packageJSON} package.json
-        '';
-
-        siteDrv = pkgs.stdenv.mkDerivation {
-          name = projectName;
-          XDG_CACHE_HOME = "/tmp/nix-cache";
-
-          src = builtins.filterSource (
-            path: type:
-            !(builtins.elem (baseNameOf path) [
-              "_site"
-              "node_modules"
-              ".git"
-            ])
-          ) ./.;
-
-          nativeBuildInputs =
-            with pkgs;
-            [
-              bash
-              cacert
-              lightningcss
-            ]
-            ++ commonBuildInputs;
-
-          configurePhase = ''
-            set -x  # Enable debug output
-            echo "Starting configure phase"
-            echo "TMPDIR=$TMPDIR"
-            echo "HOME=$HOME"
-            export HOME=$TMPDIR
-            echo "HOME is now $HOME"
-            mkdir -p _site/style
-
-            echo "Setting up node modules..."
-            rm -rf node_modules package.json
-            cp -r ${nodeModules}/node_modules .
-            chmod -R +w node_modules
-            cp ${packageJSON} package.json
-
-            echo "Listing current directory:"
-            ls -la
-            echo "Configure phase complete"
-            set +x
-          '';
-
-          buildPhase = ''
-            ${pkgs.bash}/bin/bash ${./bin/build}
-          '';
-
-          installPhase = ''
+      # Function to create nodeModules for a given pkgs
+      makeNodeModules =
+        pkgs:
+        pkgs.buildNpmPackage {
+          pname = "vegan-prestwich-dependencies";
+          version = "1.0.0";
+          src = pkgs.runCommand "source" { } ''
             mkdir -p $out
-            cp -r _site/* $out/
-            rm -rf node_modules _site package.json
+            cp ${./package.json} $out/package.json
+            cp ${./package-lock.json} $out/package-lock.json
           '';
+          inherit npmDepsHash;
+          installPhase = "mkdir -p $out && cp -r node_modules $out/";
+          dontNpmBuild = true;
         };
 
-        mkScript =
-          name:
-          (pkgs.writeScriptBin name (builtins.readFile ./bin/${name})).overrideAttrs (old: {
-            buildCommand = "${old.buildCommand}\n patchShebangs $out";
-          });
+      # Function to create script packages
+      makeScriptPackages =
+        { pkgs, dependencies }:
+        let
+          makeScript =
+            name:
+            let
+              baseScript = pkgs.writeScriptBin name (builtins.readFile ./bin/${name});
+              patchedScript = baseScript.overrideAttrs (old: {
+                buildCommand = "${old.buildCommand}\n patchShebangs $out";
+              });
+            in
+            pkgs.symlinkJoin {
+              name = name;
+              paths = [ patchedScript ] ++ dependencies;
+              buildInputs = [ pkgs.makeWrapper ];
+              postBuild = ''
+                wrapProgram $out/bin/${name} --prefix PATH : $out/bin
+              '';
+            };
+          scriptNames = builtins.attrNames (builtins.readDir ./bin);
+        in
+        nixpkgs.lib.genAttrs scriptNames makeScript;
 
-        mkPackage =
-          name:
-          pkgs.symlinkJoin {
-            inherit name;
-            paths = [ (mkScript name) ] ++ commonBuildInputs;
-            buildInputs = [ pkgs.makeWrapper ];
-            postBuild = "wrapProgram $out/bin/${name} --prefix PATH : $out/bin";
+      # Function to set up the common environment for a system
+      makeEnvForSystem =
+        system:
+        let
+          pkgs = import nixpkgs { system = system; };
+
+          # Default dependencies for packages
+          defaultDependencies = with pkgs; [ nodejs_23 ];
+
+          # Extended dependencies for development
+          devDependencies = defaultDependencies ++ (with pkgs; [ biome ]);
+
+          # Create node modules for this system
+          nodeModules = makeNodeModules pkgs;
+        in
+        {
+          inherit pkgs nodeModules;
+
+          # For packages
+          packageEnv = {
+            inherit pkgs nodeModules;
+            dependencies = defaultDependencies;
+            scriptPackages = makeScriptPackages {
+              inherit pkgs;
+              dependencies = defaultDependencies;
+            };
           };
 
-        scripts = [
-          "build"
-          "serve"
-        ];
-
-        scriptPackages = builtins.listToAttrs (
-          map (name: {
-            inherit name;
-            value = mkPackage name;
-          }) scripts
-        );
-
-      in
-      {
-        defaultPackage = siteDrv;
-        packages = scriptPackages // {
-          site = siteDrv;
+          # For dev shells
+          devEnv = {
+            inherit pkgs nodeModules;
+            dependencies = devDependencies;
+            scriptPackages = makeScriptPackages {
+              inherit pkgs;
+              dependencies = devDependencies;
+            };
+            scriptPackageList = builtins.attrValues (makeScriptPackages {
+              inherit pkgs;
+              dependencies = devDependencies;
+            });
+          };
         };
+    in
+    {
+      packages = forAllSystems (
+        system:
+        let
+          env = makeEnvForSystem system;
+          inherit (env.packageEnv)
+            pkgs
+            dependencies
+            nodeModules
+            scriptPackages
+            ;
 
-        devShells = rec {
-          default = dev;
-          dev = pkgs.mkShell {
-            buildInputs = commonBuildInputs ++ (builtins.attrValues scriptPackages);
+          sitePackage = pkgs.stdenv.mkDerivation {
+            name = "vegan-prestwich";
+            src = ./.;
+            buildInputs = dependencies ++ [ nodeModules ];
+
+            buildPhase = ''
+              mkdir -p $TMPDIR/build_dir
+              cd $TMPDIR/build_dir
+
+              cp -r $src/* .
+              cp $src/.eleventy.js .
+
+              ln -s ${nodeModules}/node_modules node_modules
+
+              mkdir -p _data
+              chmod -R +w _data
+
+              ${scriptPackages.build}/bin/build
+            '';
+
+            installPhase = ''
+              mkdir -p $out
+              mv $TMPDIR/build_dir/_site $out/
+            '';
+
+            dontFixup = true;
+          };
+
+          allPackages = {
+            site = sitePackage;
+            nodeModules = nodeModules;
+          } // scriptPackages;
+        in
+        allPackages
+      );
+
+      defaultPackage = forAllSystems (system: self.packages.${system}.site);
+
+      devShells = forAllSystems (
+        system:
+        let
+          env = makeEnvForSystem system;
+          inherit (env.devEnv)
+            pkgs
+            dependencies
+            nodeModules
+            scriptPackages
+            scriptPackageList
+            ;
+        in
+        {
+          default = pkgs.mkShell {
+            buildInputs = dependencies ++ scriptPackageList;
+
             shellHook = ''
-              ${setupNodeModules}
-              echo "Development environment ready!"
-              echo "Run 'serve' to start development server"
-              echo "Run 'build' to build the site in the _site directory"
+              rm -rf node_modules
+              ln -s ${nodeModules}/node_modules node_modules
+              cat <<EOF
+
+              Development environment ready!
+
+              Available commands:
+               - 'serve'      - Start development server
+               - 'build'      - Build the site in the _site directory
+               - 'lint'       - Lint all files using Biome
+
+              EOF
+
+              git pull
             '';
           };
-        };
-      }
-    );
+        }
+      );
+    };
 }

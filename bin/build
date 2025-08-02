@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-set -ex
-export LANG=en_GB.UTF-8
-export LC_ALL=en_GB.UTF-8
 
-sass --update style:_site/style --style compressed
-yarn eleventy
+rm -rf _site
+npx @11ty/eleventy
