@@ -75,6 +75,15 @@ content:
       
       - { name: votes, type: number, label: Votes }
       
+      - name: reviews
+        label: Reviews
+        type: object
+        list: true
+        fields:
+          - { name: text, type: text, label: Review Text, required: true }
+          - { name: date, type: date, label: Date, required: true }
+          - { name: url, type: string, label: URL (Instagram/Facebook) }
+      
       - { name: body, label: Description, type: code, options: { language: markdown } }
 
   - name: tags
@@ -97,27 +106,6 @@ content:
       - { name: non_chain_intro, type: string, label: Non-Chain Introduction }
       - { name: last_modified_at, type: date, label: Last Modified }
       - { name: body, label: Description, type: code, options: { language: markdown } }
-
-  - name: reviews
-    label: Reviews
-    path: _data/reviews.json
-    type: file
-    fields:
-      - name: reviews
-        label: Reviews
-        type: object
-        list: true
-        fields:
-          - { name: text, type: text, label: Review Text, required: true }
-          - name: place
-            label: Place
-            type: reference
-            required: true
-            options:
-              collection: places
-              search: "name"
-          - { name: date, type: date, label: Date, required: true }
-          - { name: url, type: string, label: URL (Instagram/Facebook) }
 
   - name: site_data
     label: Site Configuration
