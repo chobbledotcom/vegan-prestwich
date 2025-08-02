@@ -3,14 +3,20 @@ Display reviews for the current place using the computed placeReviews data
 {% endcomment %}
 
 {% if placeReviews.size > 0 %}
+    {% assign prevDate = null %}
+    {% assign prevUrl = null %}
     {% for review in placeReviews %}
         <p>
-            {% if review.url %}
-                <a href="{{ review.url }}">{{ review.date | date: "%B %Y" }}:</a>
-            {% else %}
-                {{ review.date | date: "%B %Y" }}:
-            {% endif %}
+            {% unless review.date == prevDate and review.url == prevUrl %}
+                {% if review.url %}
+                    <a href="{{ review.url }}">{{ review.date | date: "%B %Y" }}:</a>
+                {% else %}
+                    {{ review.date | date: "%B %Y" }}:
+                {% endif %}
+            {% endunless %}
             "{{ review.text | newline_to_br }}"
         </p>
+        {% assign prevDate = review.date %}
+        {% assign prevUrl = review.url %}
     {% endfor %}
 {% endif %}
