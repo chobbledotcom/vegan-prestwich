@@ -1,0 +1,121 @@
+media:
+  input: place
+  output: /place
+  path: place
+  categories: [image]
+content:
+  - name: pages
+    label: Pages
+    path: pages
+    type: collection
+    subfolders: false
+    view:
+      fields: [permalink, title, metaTitle]
+      primary: title
+      sort: [order, title]
+    fields:
+      - { name: title, type: string, label: Title }
+      - { name: metaTitle, type: string, label: Meta Title }
+      - { name: order, type: number, label: Order }
+      - { name: permalink, type: string, label: Permalink }
+      - { name: layout, type: string, label: Layout }
+      - { name: body, label: Body, type: code, options: { language: markdown } }
+
+  - name: places
+    label: Places
+    path: place
+    type: collection
+    subfolders: false
+    filename: "{primary}.md"
+    view:
+      fields: [name, tags, omni, restaurant, shop, delivery]
+      primary: name
+      sort: [name]
+    fields:
+      - { name: name, type: string, label: Name, required: true }
+      - { name: last_modified_at, type: date, label: Last Modified }
+      
+      # Location fields
+      - name: location
+        label: Location
+        type: object
+        fields:
+          - { name: address, type: string, label: Address }
+          - { name: postcode, type: string, label: Postcode }
+          - { name: google, type: string, label: Google Maps URL }
+      
+      # Contact fields
+      - name: contact
+        label: Contact Information
+        type: object
+        fields:
+          - { name: phone, type: string, label: Phone }
+          - { name: email, type: string, label: Email }
+          - { name: web, type: string, label: Website }
+      
+      # Social media fields
+      - name: social
+        label: Social Media
+        type: object
+        fields:
+          - { name: facebook, type: string, label: Facebook }
+          - { name: twitter, type: string, label: Twitter }
+          - { name: tripadvisor, type: string, label: TripAdvisor }
+      
+      # Business type fields
+      - { name: omni, type: boolean, label: Serves Non-Vegan Food Too }
+      - { name: shop, type: boolean, label: Shop }
+      - { name: restaurant, type: boolean, label: Restaurant }
+      - { name: delivery, type: boolean, label: Delivery Available }
+      - { name: is_chain, type: boolean, label: Is Chain }
+      
+      # Other fields
+      - name: tags
+        label: Tags
+        type: reference
+        options:
+          collection: tags
+          multiple: true
+          search: "link-text"
+          value: "{primary}"
+          label: "{link-text}"
+      
+      - name: times
+        label: Opening Times
+        type: string
+        list: true
+      
+      - { name: votes, type: number, label: Votes }
+      
+      - { name: body, label: Description/Reviews, type: code, options: { language: markdown } }
+
+  - name: tags
+    label: Tags
+    path: tags
+    type: collection
+    subfolders: false
+    filename: "{primary}.md"
+    view:
+      fields: [link-text, title, show]
+      primary: link-text
+      sort: [link-text]
+    fields:
+      - { name: link-text, type: string, label: Tag Name }
+      - { name: title, type: string, label: Page Title }
+      - { name: metaTitle, type: string, label: Meta Title }
+      - { name: show, type: string, label: Show Tag }
+      - { name: layout, type: string, label: Layout }
+      - { name: chain_intro, type: string, label: Chain Introduction }
+      - { name: non_chain_intro, type: string, label: Non-Chain Introduction }
+      - { name: last_modified_at, type: date, label: Last Modified }
+      - { name: body, label: Description, type: code, options: { language: markdown } }
+
+  - name: site_data
+    label: Site Configuration
+    path: _data
+    type: file
+    file: site.json
+    fields:
+      - { name: title, type: string, label: Site Title }
+      - { name: description, type: string, label: Site Description }
+      - { name: url, type: string, label: Site URL }
