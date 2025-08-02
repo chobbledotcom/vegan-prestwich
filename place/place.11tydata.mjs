@@ -2,7 +2,7 @@ export default {
 	eleventyComputed: {
 		placeReviews: (data) => {
 			// Get all reviews from the global data
-			const allReviews = data.reviews || [];
+			const allReviews = data.reviews?.reviews || [];
 			
 			// Get the current place's slug
 			const currentSlug = data.page.fileSlug;
