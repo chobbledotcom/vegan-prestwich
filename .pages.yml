@@ -36,31 +36,19 @@ content:
       - { name: last_modified_at, type: date, label: Last Modified }
       
       # Location fields
-      - name: location
-        label: Location
-        type: object
-        fields:
-          - { name: address, type: string, label: Address }
-          - { name: postcode, type: string, label: Postcode }
-          - { name: google, type: string, label: Google Maps URL }
+      - { name: address, type: string, label: Address }
+      - { name: postcode, type: string, label: Postcode }
+      - { name: google, type: string, label: Google Maps URL }
       
       # Contact fields
-      - name: contact
-        label: Contact Information
-        type: object
-        fields:
-          - { name: phone, type: string, label: Phone }
-          - { name: email, type: string, label: Email }
-          - { name: web, type: string, label: Website }
+      - { name: phone, type: string, label: Phone }
+      - { name: email, type: string, label: Email }
+      - { name: web, type: string, label: Website }
       
       # Social media fields
-      - name: social
-        label: Social Media
-        type: object
-        fields:
-          - { name: facebook, type: string, label: Facebook }
-          - { name: twitter, type: string, label: Twitter }
-          - { name: tripadvisor, type: string, label: TripAdvisor }
+      - { name: facebook, type: string, label: Facebook }
+      - { name: twitter, type: string, label: Twitter }
+      - { name: tripadvisor, type: string, label: TripAdvisor }
       
       # Business type fields
       - { name: omni, type: boolean, label: Serves Non-Vegan Food Too }
