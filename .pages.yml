@@ -116,8 +116,6 @@ content:
             options:
               collection: places
               search: "name"
-              value: "{primary}"
-              label: "{name}"
           - { name: date, type: date, label: Date, required: true }
           - { name: url, type: string, label: URL (Instagram/Facebook) }
 
