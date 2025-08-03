@@ -77,6 +77,7 @@ module.exports = (config) => {
 	config.addPassthroughCopy({ "static/robots.txt": "/robots.txt" });
 	config.addPassthroughCopy({ "static/not_found.html": "/not_found.html" });
 	config.addPassthroughCopy({ "static/favicon.ico": "/favicon.ico" });
+	config.addPassthroughCopy({ "static/botpoison-0.1.30.js": "/botpoison-0.1.30.js" });
 
 	config.addFilter("where", (array, key, value) => {
 		return (array || []).filter((item) => {
