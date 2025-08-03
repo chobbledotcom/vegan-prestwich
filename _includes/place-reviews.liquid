@@ -6,7 +6,7 @@ Display reviews for the current place using the computed placeReviews data
     {% assign prevDate = null %}
     {% assign prevUrl = null %}
     {% for review in placeReviews %}
-        <p>
+        <div class="review">
             {% unless review.date == prevDate and review.url == prevUrl %}
                 {% if review.url %}
                     <a href="{{ review.url }}">{{ review.date | date: "%B %Y" }}:</a>
@@ -14,8 +14,8 @@ Display reviews for the current place using the computed placeReviews data
                     {{ review.date | date: "%B %Y" }}:
                 {% endif %}
             {% endunless %}
-            "{{ review.text | newline_to_br }}"
-        </p>
+            {{ review.text | markdown }}
+        </div>
         {% assign prevDate = review.date %}
         {% assign prevUrl = review.url %}
     {% endfor %}
