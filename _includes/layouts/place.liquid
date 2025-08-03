@@ -43,4 +43,9 @@ layout: default
             {{ sorted_tags | remove: ", places" | remove: "places, " | remove: "places" }}
         </small>
     </p>
+
+    <details>
+        <summary>Suggest an update</summary>
+        {% include "contact-form.liquid", place_name: name %}
+    </details>
 </div>

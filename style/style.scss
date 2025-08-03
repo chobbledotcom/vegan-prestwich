@@ -184,3 +184,18 @@ a {
     column-gap: 20px;
   }
 }
+
+.contact-form {
+  max-width: 30rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  label,
+  input,
+  button,
+  textarea {
+    display: block;
+  }
+}
