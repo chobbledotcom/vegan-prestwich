@@ -187,11 +187,13 @@ a {
 
 .contact-form {
   max-width: 30rem;
-  margin: 2rem auto;
+  margin: 2rem 0;
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
   label,
   input,
   button,
