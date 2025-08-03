@@ -1,4 +1,6 @@
 <form action="https://submit-form.com/{{ site.formspark_id }}" method="POST" data-botpoison-public-key="{{ site.botpoison_public_key }}" class="contact-form">
+  <input type="hidden" name="_redirect" value="{{ site.url }}/thank-you/">
+  
   <fieldset>
     <legend>Suggest an update</legend>
     
