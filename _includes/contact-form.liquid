@@ -1,0 +1,16 @@
+<form action="https://submit-form.com/{{ site.formspark_id }}" method="POST" data-botpoison-public-key="{{ site.botpoison_public_key }}">
+  <fieldset>
+    <legend>Suggest an update</legend>
+    
+    <label for="contact">Your contact details</label>
+    <input type="text" id="contact" name="contact" required>
+    
+    <label for="place_name">Place name</label>
+    <input type="text" id="place_name" name="place_name" value="{{ place_name }}" readonly>
+    
+    <label for="suggestion">Your suggestion</label>
+    <textarea id="suggestion" name="suggestion" rows="5" placeholder="Please note: This form is for suggesting updates to this listing on VeganPrestwich.co.uk only. It is NOT for contacting the restaurant directly. To update information like opening hours, menu items, or correct any details, please describe your suggestion here." required></textarea>
+    
+    <button type="submit">Send suggestion</button>
+  </fieldset>
+</form>
