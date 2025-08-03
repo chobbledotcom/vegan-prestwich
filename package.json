@@ -12,6 +12,7 @@
     "@11ty/eleventy-img": "^5.0.0",
     "fast-glob": "^3.3.2",
     "jsdom": "^26.0.0",
+    "markdown-it": "^14.1.0",
     "prettier": "^3.5.3",
     "sass": "^1.86.3"
   }

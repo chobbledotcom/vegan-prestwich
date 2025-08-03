@@ -101,6 +101,14 @@ module.exports = (config) => {
 		});
 	});
 
+	// Add markdown filter for rendering markdown content
+	const markdownIt = require("markdown-it");
+	const md = markdownIt({ html: true, linkify: true });
+	
+	config.addFilter("markdown", (content) => {
+		return md.render(content || "");
+	});
+
 	function updateSrc(img) {
 		const src = img.getAttribute("src");
 		if (src.startsWith("/")) {
