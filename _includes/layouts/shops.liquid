@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% assign all_shops = collections.shops %}
+{% assign not_chains = all_shops | where: "data.is_chain", false %}
+{% assign chains = all_shops | where: "data.is_chain", true %}
+
+<h1>{{ title | escape }}</h1>
+
+<div class="content">
+  {{ content }}
+
+  {% if chains.size > 0 %}
+    <h2>{{ non_chain_intro }}</h2>
+  {% endif %}
+
+  <ul class="places-list places-list--detailed">
+      {% for place in not_chains %}
+        {% include "filtered-place", place: place, detailed: true %}
+      {% endfor %}
+  </ul>
+
+  {% if chains.size > 0 %}
+
+    <h2>{{ chain_intro }}</h2>
+
+    <ul class="places-list places-list--detailed">
+        {% for place in chains %}
+          {% include "filtered-place", place: place, detailed: true %}
+        {% endfor %}
+    </ul>
+
+  {% endif %}
+
+  <hr>
+
+  {% include "contribute.html" %}
+</div>

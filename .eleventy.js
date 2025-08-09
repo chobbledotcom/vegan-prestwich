@@ -36,6 +36,7 @@ module.exports = (config) => {
 	config.addLayoutAlias("home", "layouts/home.liquid");
 	config.addLayoutAlias("page", "layouts/page.liquid");
 	config.addLayoutAlias("place", "layouts/place.liquid");
+	config.addLayoutAlias("shops", "layouts/shops.liquid");
 	config.addLayoutAlias("tag", "layouts/tag.liquid");
 	config.addLayoutAlias("tags", "layouts/tags.liquid");
 
