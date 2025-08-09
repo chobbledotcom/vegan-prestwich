@@ -3,7 +3,12 @@ layout: default
 ---
 
 {% assign all_shops = collections.shops %}
-{% assign not_chains = all_shops | where: "data.is_chain", false %}
+{% assign not_chains = "" | split: "" %}
+{% for shop in all_shops %}
+  {% if shop.data.is_chain != true %}
+    {% assign not_chains = not_chains | concat: shop %}
+  {% endif %}
+{% endfor %}
 {% assign chains = all_shops | where: "data.is_chain", true %}
 
 <h1>{{ title | escape }}</h1>
