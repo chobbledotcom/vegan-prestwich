@@ -3,6 +3,7 @@ address: 3 Rowan Place
 delivery: true
 facebook: https://www.facebook.com/taosrestaurant
 google: https://goo.gl/maps/3oezJcYfe8C2
+web: https://taosprestwich.co.uk
 last_modified_at: 2020-01-06
 name: Tao's Restaurant
 omni: true
