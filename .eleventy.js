@@ -126,7 +126,7 @@ module.exports = (config) => {
 		img.setAttribute("srcset", newSources.join(", "));
 	}
 
-	const CDN_URL = "https://cdn.veganprestwich.co.uk";
+	const CDN_URL = "";
 	config.addTransform("prependBaseUrl", (content, outputPath) => {
 		if (!outputPath || !outputPath.endsWith(".html")) return content;
 
