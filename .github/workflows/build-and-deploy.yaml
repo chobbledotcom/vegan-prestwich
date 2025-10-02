@@ -36,36 +36,16 @@ jobs:
           npm ci
           npx @11ty/eleventy
 
-      - name: Format with Prettier
-        run: npm run format
-
-      - name: Check formatting with Prettier
-        run: npm run format:check
-
-      - name: Upload built site
-        uses: actions/upload-artifact@v4
+      - name: Deploy to Bunny
+        uses: R-J-dev/bunny-deploy@v2.0.6
         with:
-          name: built-site
-          path: _site/
-          retention-days: 1
-
-  deploy:
-    name: Deploy to Neocities
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-    steps:
-      - name: Download built site
-        uses: actions/download-artifact@v4
-        with:
-          name: built-site
-          path: _site
-
-      - name: Deploy to neocities
-        uses: bcomnes/deploy-to-neocities@v3
-        with:
-          api_key: ${{ secrets.NEOCITIES_API_KEY }}
-          cleanup: true
-          neocities_supporter: true
-          preview_before_deploy: false
-          dist_dir: _site
+          access-key: ${{ secrets.BUNNY_ACCESS_KEY }}
+          directory-to-upload: _site
+          storage-endpoint: "https://storage.bunnycdn.com"
+          storage-zone-name: "vegan-prestwich"
+          storage-zone-password: ${{ secrets.BUNNY_STORAGE_ZONE_PASSWORD }}
+          concurrency: "5"
+          enable-delete-action: true
+          enable-purge-pull-zone: true
+          pull-zone-id: "4583153"
+          replication-timeout: "15000"
