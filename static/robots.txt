@@ -1,4 +1,4 @@
-Sitemap: https://veganprestwich.co.uk/sitemap.xml
+Sitemap: https://www.veganprestwich.co.uk/sitemap.xml
 
 User-agent: *
 Disallow:
