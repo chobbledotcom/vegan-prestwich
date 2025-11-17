@@ -14,6 +14,12 @@ reviews:
       the other day - well tasty! And you get sooo much for your money. Highly recommend
       the three bean chilli.
     url: https://www.facebook.com/groups/veganprestwich/posts/2594275370949863/
+  - date: "2024-08-22"
+    text:
+      Prestwich-adjacent. New potato place near Besses has plenty of vegan options
+      including vegan cheese, chilli, bolognese and curry and you can have a regular
+      or sweet potato. Pretty decent and large portions.
+    url: https://www.facebook.com/groups/veganprestwich/posts/2584209258623141/
 tags:
   - jacket potatoes
   - lunch
