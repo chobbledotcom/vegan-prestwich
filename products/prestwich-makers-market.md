@@ -1,28 +1,25 @@
 ---
 title: Prestwich Makers Market
-address: Outside Longfield Centre
-google: https://maps.app.goo.gl/sZsKMkGB4nXcpyPX8
-is_chain: false
 last_modified_at: 2024-12-08
-name: Prestwich Makers Market
 omni: true
-postcode: M25 1BR
-reviews:
-- date: '2024-08-01'
-  text: Just been to the Prestwich Makers Market . My favourite stalls are ICED, The
-    Samosa Man and now added Rachael's Bakes to the list. Rachael makes amazing vegan
-    cookies in flavours like maple and pecan, apple pie, chocolate, raspberry and
-    white chocolate. I'm working my way through the flavours!!! If you're planning
-    a visit its really busy there.
-  url: https://www.facebook.com/groups/veganprestwich/posts/2236880386689365/
 shop: true
 categories:
-- market
-- cake
-- indian
-times:
-- 2nd Sunday of every month
-web: https://www.themakersmarket.co.uk/pages/nq-makers-market
+  - market
+  - cake
+  - indian
+specs:
+  - name: Address
+    value: Outside Longfield Centre, M25 1BR
+  - name: Website
+    value: https://www.themakersmarket.co.uk/pages/nq-makers-market
+  - name: Google Maps
+    value: https://maps.app.goo.gl/sZsKMkGB4nXcpyPX8
+  - name: Opening Times
+    value: 2nd Sunday of every month
+reviews:
+  - date: 2024-08-01
+    text: Just been to the Prestwich Makers Market . My favourite stalls are ICED, The Samosa Man and now added Rachael's Bakes to the list. Rachael makes amazing vegan cookies in flavours like maple and pecan, apple pie, chocolate, raspberry and white chocolate. I'm working my way through the flavours!!! If you're planning a visit its really busy there.
+    url: https://www.facebook.com/groups/veganprestwich/posts/2236880386689365/
 ---
 Prestwich Makers Market always has a good selection of stalls selling vegan food and goodies. Here's some of them:
 

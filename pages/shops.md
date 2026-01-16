@@ -2,10 +2,12 @@
 title: Shops Selling Vegan Food
 metaTitle: Vegan Food in Prestwich's Shops
 permalink: /shops/
-show: shops
-chain_intro: Chain Shops in Prestwich
-non_chain_intro: Independent Shops in Prestwich
-nav_order: 3
+layout: filtered-products.html
+filter_field: shop
+filter_value: true
+eleventyNavigation:
+  key: Shops
+  order: 3
 ---
 
 Shops selling vegan-friendly food, booze, and household goods.

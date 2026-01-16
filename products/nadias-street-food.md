@@ -1,17 +1,17 @@
 ---
 title: Nadia's Street Food
 last_modified_at: 2022-11-08
-name: Nadia's Street Food
-web:
-phone: 07305 939181
-email:
-instagram:
-facebook: https://www.facebook.com/NadiasStreetFood
-categories:
-- curry
 omni: true
-restaurant: false
 delivery: true
+categories:
+  - curry
+gallery:
+  - /images/products/nadias-street-food/01.jpg
+specs:
+  - name: Phone
+    value: 07305 939181
+  - name: Facebook
+    value: https://www.facebook.com/NadiasStreetFood
 ---
 
 [November 2022:](https://anar.chi.st/i/web/post/495395906384376399) "Last night I placed an order from Nadia's Street Food - home-style traditional Pakistani curry, with rice and chapattis - which she delivered this morning and was eaten for lunch and tea and I am well impressed!

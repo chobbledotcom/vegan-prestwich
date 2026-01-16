@@ -1,21 +1,20 @@
 ---
 title: Bakers' Bakery
 last_modified_at: 2020-11-25
-name: Bakers' Bakery
-address:
-postcode:
-email: tasha.baker1234@gmail.com
-phone: 0161 359 4039
-web: https://www.getvegangrub.com/chef/BAKERSBAKERY
-google: https://g.page/bakersbakerymcr
-twitter: 
-facebook: https://www.facebook.com/bakersbakerymcr
-tripadvisor: 
-categories:
-- cake
-omni: false
-restaurant: false
 delivery: true
+categories:
+  - cake
+specs:
+  - name: Phone
+    value: 0161 359 4039
+  - name: Email
+    value: tasha.baker1234@gmail.com
+  - name: Website
+    value: https://www.getvegangrub.com/chef/BAKERSBAKERY
+  - name: Google Maps
+    value: https://g.page/bakersbakerymcr
+  - name: Facebook
+    value: https://www.facebook.com/bakersbakerymcr
 ---
 
 **Online independent bakery based in Manchester, we specialise in seasonal plant based treats. Specialises in seasonal brownie boxes as well as seasonal specials**
