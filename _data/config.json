@@ -20,7 +20,8 @@
 		"gallery_thumb_widths": null,
 		"gallery_image_widths": null,
 		"header_image_widths": null,
-		"max_images": null
+		"max_images": null,
+		"item_list_aspect_ratio": "4/3"
 	},
 	"timezone": "Europe/London",
 	"reviews_truncate_limit": null,
