@@ -6,8 +6,8 @@ votes: 1
 categories:
   - restaurant
   - delivery
-  - frozen yoghurt
-  - ice cream
+  - frozen-yoghurt
+  - ice-cream
   - cake
   - flapjacks
 specs:
@@ -33,4 +33,4 @@ specs:
       Friday: 12–10:45pm
       Saturday: 11am–10:45pm
 ---
-Loads of vegan frozen yoghurt options, delivery via Deliveroo and all clearly labelled!
+Loads of vegan frozen-yoghurt options, delivery via Deliveroo and all clearly labelled!

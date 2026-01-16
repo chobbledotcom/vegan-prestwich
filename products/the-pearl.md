@@ -6,7 +6,7 @@ votes: 1
 categories:
   - restaurant
   - british
-  - fine dining
+  - fine-dining
   - coffee
   - alcohol
 gallery:

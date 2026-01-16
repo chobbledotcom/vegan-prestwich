@@ -4,7 +4,7 @@ last_modified_at: 2020-01-06
 omni: true
 categories:
   - restaurant
-  - pub / bar
+  - pub-bar
   - cake
 gallery:
   - /images/products/woodthorpe-hotel/01.jpg

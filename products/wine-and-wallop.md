@@ -9,7 +9,7 @@ categories:
   - breakfast
   - cake
   - cafe
-  - pub / bar
+  - pub-bar
 gallery:
   - /images/products/wine-and-wallop/01.jpg
   - /images/products/wine-and-wallop/02.jpg

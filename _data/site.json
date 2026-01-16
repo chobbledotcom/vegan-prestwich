@@ -5,6 +5,7 @@
 	"socials": {
 		"facebook": "https://www.facebook.com/groups/veganprestwich/",
 		"instagram": "https://www.instagram.com/veganprestwich/",
+		"pixelfed": "https://anar.chi.st/veganprestwich",
 		"rss": "/feed.xml"
 	},
 	"sticky_mobile_nav": true,

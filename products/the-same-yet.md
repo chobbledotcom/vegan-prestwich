@@ -4,7 +4,7 @@ last_modified_at: 2023-06-12
 omni: true
 categories:
   - restaurant
-  - pub / bar
+  - pub-bar
   - burgers
 gallery:
   - /images/products/the-same-yet/01.jpg

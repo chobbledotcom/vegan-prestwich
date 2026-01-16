@@ -9,7 +9,7 @@ categories:
   - trendy
   - alcohol
   - lunch
-  - pub / bar
+  - pub-bar
 gallery:
   - /images/products/all-the-shapes/01.jpg
   - /images/products/all-the-shapes/02.jpg

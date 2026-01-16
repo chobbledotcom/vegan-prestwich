@@ -4,7 +4,7 @@ last_modified_at: 2022-06-27
 omni: true
 categories:
   - restaurant
-  - pub / bar
+  - pub-bar
 gallery:
   - /images/products/friendship-inn/01.jpg
   - /images/products/friendship-inn/02.jpg
