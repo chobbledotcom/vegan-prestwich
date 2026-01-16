@@ -19,11 +19,4 @@ specs:
     value: https://www.facebook.com/FrancosPrestwich/
   - name: Opening Times
     value: Tuesday – Sunday 5pm – 9.30pm
-reviews:
-  - date: 2022-04-01
-    text: Just had a vegan pizza from Franco's Cucina and it was lovely. I just specified vegan cheese on the special requests
-    url: https://www.facebook.com/groups/veganprestwich/posts/1635346520176091
-  - date: 2022-04-01
-    text: We had the potato and rosemary pizza the other day and it was very tasty. Nice fries too!
-    url: https://www.facebook.com/groups/veganprestwich/posts/1635346520176091/?comment_id=1637502756627134
 ---

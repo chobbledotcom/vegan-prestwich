@@ -32,9 +32,5 @@ specs:
       Thursday: 12–10:45pm
       Friday: 12–10:45pm
       Saturday: 11am–10:45pm
-reviews:
-  - date: 2019-06-01
-    text: Mango and chocolate frozen soya yogurts from Frurt on Bury New Road. A real treat!
-    url: https://www.facebook.com/groups/veganprestwich/permalink/849923218718429/
 ---
 Loads of vegan frozen yoghurt options, delivery via Deliveroo and all clearly labelled!

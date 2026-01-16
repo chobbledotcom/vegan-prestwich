@@ -24,10 +24,6 @@ specs:
       Thursday: 7am–6pm
       Friday: 7am–6pm
       Saturday: 8am–5pm
-reviews:
-  - date: 2021-12-01
-    text: The new festive pasty is now in Greggs in the village.  It’s weird! 😂
-    url: https://www.facebook.com/groups/veganprestwich/posts/1524492964594781/
 ---
 
 They have also got a new vegan donut"

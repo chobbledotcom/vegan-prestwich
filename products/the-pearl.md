@@ -32,8 +32,4 @@ specs:
       Fri: 5-11pm
       Sat: 12-11pm
       Sun: 12-6pm
-reviews:
-  - date: 2024-01-01
-    text: Stunning Sunday lunch @thepearlmcr this afternoon 😍 We got in contact before we booked as we’ve been burned before with fine dining places not catering to vegans. The response we got was such a warm welcome. They have a continually evolving menu of seasonal dishes with locally sourced ingredients. Four courses on offer and they say at least one option for each will be able to be made vegan 🌱 Thanks guys, we’ll definitely be in again!
-    url: https://www.instagram.com/p/C2Xg-svNIzG/
 ---

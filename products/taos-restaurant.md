@@ -28,8 +28,4 @@ specs:
       Thursday: 5–11pm
       Friday: 5pm–12am
       Saturday: 5pm–12am
-reviews:
-  - date: 2018-07-01
-    text: ...delighted to find their menu is fully labelled with all allergen info (dairy, gluten, egg, etc all clearly colour coded). Plenty of vegan options..
-    url: https://www.facebook.com/groups/630026080708145/permalink/630038250706928/
 ---

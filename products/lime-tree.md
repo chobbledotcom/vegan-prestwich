@@ -31,11 +31,4 @@ specs:
       Friday: 17:00–23:00
       Saturday: 17:00–23:00
       Sunday: 15:00–22:30
-reviews:
-  - date: 2022-08-01
-    text: The Lime Tree now has a full vegan menu! We ate there last night, it was delicious (as always) - highly recommend the Balti Garlic Chilli special dish, and the garlic chapattis!
-    url: https://www.facebook.com/groups/veganprestwich/posts/1733654597011949/
-  - date: 2022-05-01
-    text: Curry night in opulent surroundings at [@limetreeprestwich](https://www.instagram.com/limetreeprestwich). Really helpful staff and some delicious vegan options! 🌱
-    url: https://www.instagram.com/p/Cdl0G-DNiP3
 ---

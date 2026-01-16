@@ -33,8 +33,4 @@ specs:
       Sun: 10am - 8pm
       Mon: Closed
       Tue: Closed
-reviews:
-  - date: 2025-10-31
-    text: We went to Lupo Cafe today, a tiny authentic Italian cafe hidden away on an industrial estate in Sedgley Park - it was well good! There weren't loads of vegan options on the menu but there are a few, and the things we had were properly delicious - aside from the vegano pizza and penne arabiata, we had the charred peppers, the salad, and some really nice coffees. Sadly they didn't have any vegan desserts beyond sorbet - the non-vegan pastries and stuff they had looked really nice and indulgent
-    url: https://www.facebook.com/groups/veganprestwich/posts/2593428354367898/
 ---

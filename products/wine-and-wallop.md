@@ -33,13 +33,6 @@ specs:
       Wednesday: 10am–11pm
       Thursday: 10am–12am
       Friday: 10am–1am
-reviews:
-  - date: 2022-03-01
-    text: Not an easy subject to photograph, the ol’ vegan burger. Look at that healthy sized portion of chips though! NGL, the removal of half the vegan options at @wineandwallop_prestwich after the rebrand stung but it’s a decent burger and a nice atmosphere in the afternoons.
-    url: https://www.instagram.com/p/Cbu1QLyNlkx
-  - date: 2019-12-01
-    text: Managed to pop over to Folk (on bury new road, where solita used to be) today for lunch. They have a few good options for us and cake! Nice atmosphere, friendly staff. We'll definitely be back.
-    url: https://www.facebook.com/groups/veganprestwich/permalink/984591835251566/
 ---
 **December 2022:** Wine & Wallop have re-added the vegan burger and vegan breakfast to their menu!
 

@@ -25,8 +25,4 @@ specs:
       Thursday: 8am–7pm
       Friday: 8am–7pm
       Saturday: 8am–7pm
-reviews:
-  - date: 2018-09-01
-    text: "Big news: our local Iceland just got a big ol' vegan section upgrade. Check out this treasure trove!"
-    url: https://www.facebook.com/groups/veganprestwich/permalink/678464785864274/
 ---

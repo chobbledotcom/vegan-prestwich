@@ -26,8 +26,4 @@ specs:
       Thursday: 12–11pm
       Friday: 12pm–12am
       Saturday: 12pm–12am
-reviews:
-  - date: 2019-01-01
-    text: Papa John's Prestwich have got the new vegan menu!
-    url: https://www.facebook.com/groups/veganprestwich/permalink/774765632900855/
 ---
