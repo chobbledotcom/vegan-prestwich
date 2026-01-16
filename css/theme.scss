@@ -1,0 +1,111 @@
+// Vegan Prestwich - Clean white and green theme
+// Wikipedia-inspired minimal design
+
+:root {
+  // Colors
+  --color-background: #ffffff;
+  --color-text: #222222;
+  --color-text-muted: #666666;
+  --color-primary: #22863a; // Green for branding
+  --color-secondary: #f6f8fa;
+  --color-accent: #22863a;
+
+  // Links - standard web blue
+  --color-link: #0645ad;
+  --color-link-hover: #0b0080;
+  --color-link-visited: #0b0080;
+
+  // Borders
+  --color-border: #e1e4e8;
+  --border-style: 1px solid var(--color-border);
+
+  // Typography
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-size-base: 16px;
+  --line-height: 1.6;
+
+  // Spacing
+  --spacing-base: 1rem;
+  --content-width: 960px;
+
+  // Remove shadows for cleaner look
+  --box-shadow: none;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+}
+
+// Links
+a {
+  color: var(--color-link);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: var(--color-link-hover);
+  }
+}
+
+// Header styling
+header {
+  background: var(--color-background);
+  border-bottom: var(--border-style);
+  color: var(--color-text);
+
+  a {
+    color: var(--color-text);
+  }
+}
+
+// Navigation
+nav a {
+  color: var(--color-text);
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+// Remove dark theme elements
+.header-centered-dark {
+  background: var(--color-background);
+}
+
+// Cards and list items - keep them simple
+.list-item, .card {
+  background: var(--color-background);
+  border: var(--border-style);
+  box-shadow: none;
+}
+
+// Buttons
+.button, button, [type="submit"] {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+
+  &:hover {
+    background-color: darken(#22863a, 10%);
+  }
+}
+
+// Footer
+footer {
+  background: var(--color-secondary);
+  border-top: var(--border-style);
+  color: var(--color-text-muted);
+}
+
+// Override any remaining gray backgrounds
+main, article, section, .content, .wrapper {
+  background: var(--color-background);
+}
+
+// Ensure page background is white
+html {
+  background: var(--color-background);
+}
