@@ -9,3 +9,5 @@ result
 .build
 bun.lock
 .image-cache
+combined
+template
