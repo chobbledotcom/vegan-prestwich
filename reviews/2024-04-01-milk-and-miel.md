@@ -1,5 +1,6 @@
 ---
-products: milk-and-miel
+products:
+  - milk-and-miel
 url: https://www.facebook.com/groups/veganprestwich/posts/2146156085761796
 ---
 

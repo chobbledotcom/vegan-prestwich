@@ -1,5 +1,6 @@
 ---
-products: village-greens
+products:
+  - village-greens
 url: https://www.facebook.com/groups/veganprestwich/posts/1746312282412847
 ---
 

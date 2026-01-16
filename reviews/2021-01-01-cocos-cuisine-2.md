@@ -1,5 +1,6 @@
 ---
-products: cocos-cuisine
+products:
+  - cocos-cuisine
 url: https://www.facebook.com/groups/veganprestwich/permalink/1301148333595913/
 ---
 

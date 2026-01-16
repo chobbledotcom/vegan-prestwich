@@ -1,5 +1,6 @@
 ---
-products: woodthorpe-hotel
+products:
+  - woodthorpe-hotel
 url: https://www.facebook.com/groups/veganprestwich/permalink/716475685396517/
 ---
 

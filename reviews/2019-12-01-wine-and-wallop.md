@@ -1,5 +1,6 @@
 ---
-products: wine-and-wallop
+products:
+  - wine-and-wallop
 url: https://www.facebook.com/groups/veganprestwich/permalink/984591835251566/
 ---
 

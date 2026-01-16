@@ -1,5 +1,6 @@
 ---
-products: heaton-park-cafes
+products:
+  - heaton-park-cafes
 url: https://dumpoir.com/c/4636779984223473813
 ---
 

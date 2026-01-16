@@ -1,5 +1,6 @@
 ---
-products: saffron-express
+products:
+  - saffron-express
 url: https://www.facebook.com/groups/veganprestwich/permalink/704028329974586/?comment_id=704036569973762
 ---
 

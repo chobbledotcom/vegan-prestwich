@@ -1,5 +1,6 @@
 ---
-products: the-same-yet
+products:
+  - the-same-yet
 url: https://dumpoir.com/c/3337506739586182213
 ---
 

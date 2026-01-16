@@ -1,5 +1,6 @@
 ---
-products: the-coffee-sack
+products:
+  - the-coffee-sack
 url: https://www.instagram.com/p/CmMJ0XoNCrp
 ---
 

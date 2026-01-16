@@ -1,5 +1,6 @@
 ---
-products: panama-hattys
+products:
+  - panama-hattys
 url: https://www.instagram.com/p/C2FoNkbN9no/
 ---
 

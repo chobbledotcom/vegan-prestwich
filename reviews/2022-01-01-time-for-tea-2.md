@@ -1,5 +1,6 @@
 ---
-products: time-for-tea
+products:
+  - time-for-tea
 url: https://www.facebook.com/groups/veganprestwich/posts/1572619226448821/
 ---
 

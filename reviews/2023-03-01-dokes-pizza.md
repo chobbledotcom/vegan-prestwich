@@ -1,5 +1,6 @@
 ---
-products: dokes-pizza
+products:
+  - dokes-pizza
 url: https://www.instagram.com/p/CqSWGe1N
 ---
 

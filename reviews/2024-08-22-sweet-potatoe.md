@@ -1,5 +1,6 @@
 ---
-products: sweet-potatoe
+products:
+  - sweet-potatoe
 url: https://www.facebook.com/groups/veganprestwich/posts/2584209258623141/
 ---
 

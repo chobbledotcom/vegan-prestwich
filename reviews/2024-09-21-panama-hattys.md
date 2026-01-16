@@ -1,5 +1,6 @@
 ---
-products: panama-hattys
+products:
+  - panama-hattys
 url: https://www.facebook.com/groups/veganprestwich/posts/2613798865664180/
 ---
 

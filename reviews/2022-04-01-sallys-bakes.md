@@ -1,5 +1,6 @@
 ---
-products: sallys-bakes
+products:
+  - sallys-bakes
 url: https://www.instagram.com/p/Ccfu7rHsWcS
 ---
 

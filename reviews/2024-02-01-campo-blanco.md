@@ -1,5 +1,6 @@
 ---
-products: campo-blanco
+products:
+  - campo-blanco
 url: https://www.instagram.com/p/C3r5Sr4NRz6
 ---
 

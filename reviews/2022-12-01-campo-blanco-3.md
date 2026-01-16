@@ -1,5 +1,6 @@
 ---
-products: campo-blanco
+products:
+  - campo-blanco
 url: https://www.facebook.com/groups/veganprestwich/posts/1816682708709137
 ---
 

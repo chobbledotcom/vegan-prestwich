@@ -1,5 +1,6 @@
 ---
-products: the-coffee-sack
+products:
+  - the-coffee-sack
 url: https://dumpoir.com/c/6069534814710169413
 ---
 

@@ -1,5 +1,6 @@
 ---
-products: friendship-inn
+products:
+  - friendship-inn
 url: https://www.instagram.com/p/CfT
 ---
 

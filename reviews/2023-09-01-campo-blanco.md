@@ -1,5 +1,6 @@
 ---
-products: campo-blanco
+products:
+  - campo-blanco
 url: https://dumpoir.com/c/0051740412048571023
 ---
 

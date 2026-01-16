@@ -1,5 +1,6 @@
 ---
-products: anatolian-grill
+products:
+  - anatolian-grill
 url: https://www.facebook.com/groups/veganprestwich/posts/1651629258547817
 ---
 

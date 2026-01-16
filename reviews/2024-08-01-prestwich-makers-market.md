@@ -1,5 +1,6 @@
 ---
-products: prestwich-makers-market
+products:
+  - prestwich-makers-market
 url: https://www.facebook.com/groups/veganprestwich/posts/2236880386689365/
 ---
 

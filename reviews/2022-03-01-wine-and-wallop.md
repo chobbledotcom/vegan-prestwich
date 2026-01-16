@@ -1,5 +1,6 @@
 ---
-products: wine-and-wallop
+products:
+  - wine-and-wallop
 url: https://www.instagram.com/p/Cbu1QLyNlkx
 ---
 

@@ -1,5 +1,6 @@
 ---
-products: heaton-park-cafes
+products:
+  - heaton-park-cafes
 url: https://www.instagram.com/p/CpK7gVDNlPT/
 ---
 

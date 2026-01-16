@@ -1,5 +1,6 @@
 ---
-products: the-coffee-sack
+products:
+  - the-coffee-sack
 url: https://www.facebook.com/groups/630026080708145/
 ---
 

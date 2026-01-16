@@ -1,5 +1,6 @@
 ---
-products: prestwich-milk-deliveries
+products:
+  - prestwich-milk-deliveries
 url: http://www.instagram.com/p/CkIa5vzNLnK
 ---
 

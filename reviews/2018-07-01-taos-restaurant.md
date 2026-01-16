@@ -1,5 +1,6 @@
 ---
-products: taos-restaurant
+products:
+  - taos-restaurant
 url: https://www.facebook.com/groups/630026080708145/permalink/630038250706928/
 ---
 

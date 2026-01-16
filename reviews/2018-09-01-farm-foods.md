@@ -1,5 +1,6 @@
 ---
-products: farm-foods
+products:
+  - farm-foods
 url: https://www.facebook.com/groups/veganprestwich/permalink/696672494043503/
 ---
 

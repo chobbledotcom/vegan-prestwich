@@ -1,5 +1,6 @@
 ---
-products: francos-cucina
+products:
+  - francos-cucina
 url: https://www.facebook.com/groups/veganprestwich/posts/1635346520176091
 ---
 

@@ -1,5 +1,6 @@
 ---
-products: pizzology
+products:
+  - pizzology
 url: https://www.facebook.com/groups/veganprestwich/permalink/1159916451052436/
 ---
 

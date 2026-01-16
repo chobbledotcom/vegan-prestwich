@@ -1,5 +1,6 @@
 ---
-products: all-the-shapes
+products:
+  - all-the-shapes
 url: https://www.facebook.com/groups/veganprestwich/permalink/696672494043503/
 ---
 

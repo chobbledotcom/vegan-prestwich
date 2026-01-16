@@ -1,5 +1,6 @@
 ---
-products: sallys-bakes
+products:
+  - sallys-bakes
 url: https://www.facebook.com/groups/veganprestwich/posts/1526742151036529/
 ---
 

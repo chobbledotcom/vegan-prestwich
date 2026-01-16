@@ -1,5 +1,6 @@
 ---
-products: the-same-yet
+products:
+  - the-same-yet
 url: https://www.facebook.com/groups/veganprestwich/posts/1739491083094967/
 ---
 

@@ -1,5 +1,6 @@
 ---
-products: dinner-by-ness
+products:
+  - dinner-by-ness
 url: https://www.instagram.com/p/ChH
 ---
 

@@ -1,5 +1,6 @@
 ---
-products: milk-and-miel
+products:
+  - milk-and-miel
 url: https://www.instagram.com/p/C2kTUBntQtG/
 ---
 

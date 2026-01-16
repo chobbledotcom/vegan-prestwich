@@ -1,5 +1,6 @@
 ---
-products: sweet-bay-bakery
+products:
+  - sweet-bay-bakery
 url: https://www.facebook.com/groups/veganprestwich/permalink/1241760616201352/
 ---
 

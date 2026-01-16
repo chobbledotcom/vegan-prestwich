@@ -1,5 +1,6 @@
 ---
-products: village-greens
+products:
+  - village-greens
 url: https://www.instagram.com/p/CjQSJ10NUvS
 ---
 
