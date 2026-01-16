@@ -51,11 +51,17 @@ jobs:
           cd combined/src/_data
           jq '.formspark_id = "${{ secrets.FORMSPARK_ID }}" | .botpoison_public_key = "${{ secrets.BOTPOISON_PUBLIC_KEY }}"' config.json > config.tmp.json && mv config.tmp.json config.json
 
+      - name: Verify .eleventy.js exists
+        run: |
+          ls -la combined/.eleventy.js
+          ls -la combined/src/_layouts/ | head -5
+
       - name: Upload combined directory
         uses: actions/upload-artifact@v4
         with:
           name: combined-site
           path: combined
+          include-hidden-files: true
           retention-days: 1
 
   build:
@@ -68,6 +74,11 @@ jobs:
         with:
           name: combined-site
           path: site
+
+      - name: Verify downloaded files
+        run: |
+          ls -la site/.eleventy.js
+          ls -la site/src/_layouts/ | head -5
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
