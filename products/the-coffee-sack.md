@@ -2,9 +2,9 @@
 title: The Coffee Sack
 last_modified_at: 2025-05-19
 omni: true
-restaurant: true
 votes: 13
 categories:
+  - restaurant
   - breakfast
   - cake
   - cafe

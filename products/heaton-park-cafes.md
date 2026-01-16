@@ -2,8 +2,8 @@
 title: Heaton Park Cafés
 last_modified_at: 2023-09-03
 omni: true
-restaurant: true
 categories:
+  - restaurant
   - burgers
   - american
   - cake

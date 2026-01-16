@@ -2,8 +2,8 @@
 title: Woodthorpe Hotel
 last_modified_at: 2020-01-06
 omni: true
-restaurant: true
 categories:
+  - restaurant
   - pub / bar
   - cake
 gallery:

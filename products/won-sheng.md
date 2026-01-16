@@ -2,9 +2,9 @@
 title: Won Sheng
 last_modified_at: 2020-01-06
 omni: true
-restaurant: true
-delivery: true
 categories:
+  - restaurant
+  - delivery
   - chinese
 specs:
   - name: Address

@@ -1,9 +1,10 @@
 ---
 title: Milk & Miel
 last_modified_at: 2025-11-17
+categories:
+  - restaurant
+  - delivery
 omni: true
-restaurant: true
-delivery: true
 votes: 13
 gallery:
   - /images/products/milk-and-miel/01.jpg

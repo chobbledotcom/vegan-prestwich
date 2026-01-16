@@ -2,9 +2,9 @@
 title: Moonbeam Coffee House
 last_modified_at: 2025-01-22
 omni: true
-restaurant: true
 votes: 7
 categories:
+  - restaurant
   - coffee
   - sandwiches
   - breakfast

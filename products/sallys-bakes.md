@@ -1,8 +1,8 @@
 ---
 title: Sally's Bakes
 last_modified_at: 2022-04-19
-delivery: true
 categories:
+  - delivery
   - cake
   - pie
   - cookies

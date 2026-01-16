@@ -2,8 +2,8 @@
 title: Prestwich Makers Market
 last_modified_at: 2024-12-08
 omni: true
-shop: true
 categories:
+  - shop
   - market
   - cake
   - indian

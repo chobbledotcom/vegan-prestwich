@@ -2,9 +2,9 @@
 title: Dokes Pizza
 last_modified_at: 2023-12-10
 omni: true
-restaurant: true
 votes: 4
 categories:
+  - restaurant
   - pizza
 gallery:
   - /images/products/dokes-pizza/01.jpg

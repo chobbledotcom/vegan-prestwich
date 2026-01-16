@@ -2,8 +2,8 @@
 title: Nadia's Street Food
 last_modified_at: 2022-11-08
 omni: true
-delivery: true
 categories:
+  - delivery
   - curry
 gallery:
   - /images/products/nadias-street-food/01.jpg

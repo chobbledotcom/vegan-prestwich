@@ -2,8 +2,8 @@
 title: Grape to Grain
 last_modified_at: 2022-09-11
 omni: true
-shop: true
 categories:
+  - shop
   - alcohol
   - deli
 specs:

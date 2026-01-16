@@ -2,9 +2,9 @@
 title: Saffron Express
 last_modified_at: 2025-03-20
 omni: true
-delivery: true
 votes: 2
 categories:
+  - delivery
   - indian
   - curry
 gallery:

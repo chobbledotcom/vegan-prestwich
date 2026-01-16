@@ -2,9 +2,9 @@
 title: Campo Blanco
 last_modified_at: 2024-02-23
 omni: true
-restaurant: true
 votes: 15
 categories:
+  - restaurant
   - tapas
   - spanish
 gallery:

@@ -2,9 +2,9 @@
 title: Cuckoo
 last_modified_at: 2022-12-05
 omni: true
-restaurant: true
 votes: 10
 categories:
+  - restaurant
   - pizza
   - trendy
   - alcohol

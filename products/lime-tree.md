@@ -2,9 +2,9 @@
 title: Lime Tree
 last_modified_at: 2022-08-30
 omni: true
-restaurant: true
 votes: 7
 categories:
+  - restaurant
   - curry
   - indian
 gallery:

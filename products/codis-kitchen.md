@@ -1,9 +1,10 @@
 ---
 title: Codi's Kitchen
 last_modified_at: 2024-01-31
+categories:
+  - restaurant
+  - delivery
 omni: true
-restaurant: true
-delivery: true
 votes: 21
 gallery:
   - /images/products/codis-kitchen/01.jpg

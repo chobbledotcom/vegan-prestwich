@@ -2,8 +2,8 @@
 title: Mozzarella
 last_modified_at: 2020-01-06
 omni: true
-delivery: true
 categories:
+  - delivery
   - pizza
   - pasta
 gallery:

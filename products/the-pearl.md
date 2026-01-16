@@ -2,9 +2,9 @@
 title: The Pearl
 last_modified_at: 2024-01-21
 omni: true
-restaurant: true
 votes: 1
 categories:
+  - restaurant
   - british
   - fine dining
   - coffee

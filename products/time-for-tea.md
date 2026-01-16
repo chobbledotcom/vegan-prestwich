@@ -1,8 +1,9 @@
 ---
 title: Time For Tea
 last_modified_at: 2025-11-17
+categories:
+  - restaurant
 omni: true
-restaurant: true
 gallery:
   - /images/products/time-for-tea/01.jpg
   - /images/products/time-for-tea/02.jpg

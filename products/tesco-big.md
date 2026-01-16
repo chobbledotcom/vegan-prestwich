@@ -3,8 +3,8 @@ title: Tesco (big)
 last_modified_at: 2023-01-26
 omni: true
 is_chain: true
-shop: true
 categories:
+  - shop
   - freezer
   - groceries
   - alcohol

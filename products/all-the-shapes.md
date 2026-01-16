@@ -2,9 +2,9 @@
 title: All The Shapes
 last_modified_at: 2024-11-16
 omni: true
-restaurant: true
 votes: 11
 categories:
+  - restaurant
   - breakfast
   - trendy
   - alcohol

@@ -2,8 +2,8 @@
 title: Prestwich Milk Deliveries
 last_modified_at: 2022-10-26
 omni: true
-shop: true
 categories:
+  - shop
   - oat milk
   - groceries
 gallery:

@@ -3,8 +3,8 @@ title: Aldi Supermarket
 last_modified_at: 2022-12-30
 omni: true
 is_chain: true
-shop: true
 categories:
+  - shop
   - freezer
   - groceries
   - alcohol

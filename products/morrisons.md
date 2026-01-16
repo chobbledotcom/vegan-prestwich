@@ -3,8 +3,8 @@ title: Morrisons
 last_modified_at: 2020-01-06
 omni: true
 is_chain: true
-shop: true
 categories:
+  - shop
   - supermarket
 specs:
   - name: Address

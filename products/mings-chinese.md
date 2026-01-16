@@ -1,8 +1,9 @@
 ---
 title: Ming's Chinese
 last_modified_at: 2025-11-17
+categories:
+  - delivery
 omni: true
-delivery: true
 specs:
   - name: Address
     value: 165 Radcliffe New Road, Whitefield, M45 7RG

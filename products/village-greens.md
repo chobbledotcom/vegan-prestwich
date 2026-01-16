@@ -2,8 +2,8 @@
 title: Village Greens
 last_modified_at: 2022-11-06
 omni: true
-shop: true
 categories:
+  - shop
   - organic
   - alcohol
   - groceries

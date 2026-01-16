@@ -2,10 +2,10 @@
 title: Anatolian Grill
 last_modified_at: 2022-05-17
 omni: true
-restaurant: true
-delivery: true
 votes: 4
 categories:
+  - restaurant
+  - delivery
   - turkish
 specs:
   - name: Address

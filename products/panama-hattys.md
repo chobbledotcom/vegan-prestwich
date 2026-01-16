@@ -1,8 +1,9 @@
 ---
 title: Panama Hatty's Grill
 last_modified_at: 2025-11-17
+categories:
+  - restaurant
 omni: true
-restaurant: true
 votes: 3
 gallery:
   - /images/products/panama-hattys/01.jpg

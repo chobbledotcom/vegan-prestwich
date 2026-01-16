@@ -2,10 +2,10 @@
 title: Chips @ No.8
 last_modified_at: 2024-08-11
 omni: true
-restaurant: true
-delivery: true
 votes: 8
 categories:
+  - restaurant
+  - delivery
   - chips
   - pie
 gallery:

@@ -2,10 +2,10 @@
 title: Frurt Frozen Yogurt
 last_modified_at: 2020-01-06
 omni: true
-restaurant: true
-delivery: true
 votes: 1
 categories:
+  - restaurant
+  - delivery
   - frozen yoghurt
   - ice cream
   - cake

@@ -2,10 +2,10 @@
 title: Wine and Wallop
 last_modified_at: 2022-12-18
 omni: true
-restaurant: true
-delivery: true
 votes: 1
 categories:
+  - restaurant
+  - delivery
   - breakfast
   - cake
   - cafe

@@ -1,8 +1,9 @@
 ---
 title: Sweet Potatoe
 last_modified_at: 2025-11-17
+categories:
+  - restaurant
 omni: true
-restaurant: true
 votes: 1
 gallery:
   - /images/products/sweet-potatoe/01.jpg

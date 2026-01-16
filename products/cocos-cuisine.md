@@ -2,8 +2,8 @@
 title: Coco's Cuisine
 last_modified_at: 2021-01-18
 omni: true
-delivery: true
 categories:
+  - delivery
   - italian
   - french
   - pasta

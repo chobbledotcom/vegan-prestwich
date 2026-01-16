@@ -2,8 +2,8 @@
 title: Friendship Inn
 last_modified_at: 2022-06-27
 omni: true
-restaurant: true
 categories:
+  - restaurant
   - pub / bar
 gallery:
   - /images/products/friendship-inn/01.jpg

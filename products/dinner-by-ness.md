@@ -2,8 +2,8 @@
 title: Dinner By Ness
 last_modified_at: 2022-08-11
 omni: true
-delivery: true
 categories:
+  - delivery
   - middle eastern
 gallery:
   - /images/products/dinner-by-ness/01.jpg

@@ -2,8 +2,8 @@
 title: Francos Cucina Italiana Prestwich
 last_modified_at: 2022-05-17
 omni: true
-delivery: true
 categories:
+  - delivery
   - pizza
   - pasta
 specs:

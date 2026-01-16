@@ -2,8 +2,8 @@
 title: Pizzology
 last_modified_at: 2020-08-09
 omni: true
-delivery: true
 categories:
+  - delivery
   - pizza
 specs:
   - name: Address

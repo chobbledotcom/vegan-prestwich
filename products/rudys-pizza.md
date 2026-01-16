@@ -2,9 +2,9 @@
 title: Rudy's Pizza Napoletana
 last_modified_at: 2025-01-22
 omni: true
-restaurant: true
-delivery: true
 categories:
+  - restaurant
+  - delivery
   - pizza
 gallery:
   - /images/products/rudys-pizza/01.jpg

@@ -2,8 +2,8 @@
 title: The Same Yet Inn
 last_modified_at: 2023-06-12
 omni: true
-restaurant: true
 categories:
+  - restaurant
   - pub / bar
   - burgers
 gallery:

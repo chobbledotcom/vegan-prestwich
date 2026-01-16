@@ -1,8 +1,8 @@
 ---
 title: Sweet Bay Bakery
 last_modified_at: 2020-11-25
-delivery: true
 categories:
+  - delivery
   - cake
   - cookies
 gallery:

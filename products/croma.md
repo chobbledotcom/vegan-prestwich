@@ -2,10 +2,10 @@
 title: Croma
 last_modified_at: 2022-05-23
 omni: true
-restaurant: true
-delivery: true
 votes: 8
 categories:
+  - restaurant
+  - delivery
   - pizza
 gallery:
   - /images/products/croma/01.jpg

@@ -2,9 +2,9 @@
 title: Goods In
 last_modified_at: 2024-11-03
 omni: true
-restaurant: true
 votes: 6
 categories:
+  - restaurant
   - breakfast
   - cake
   - cafe

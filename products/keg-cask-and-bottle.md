@@ -1,8 +1,9 @@
 ---
 title: Keg, Cask & Bottle
 last_modified_at: 2024-12-01T16:28:06.565Z
+categories:
+  - shop
 omni: true
-shop: true
 specs:
   - name: Address
     value: The Longfield Centre, M25 1AY

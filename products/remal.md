@@ -2,10 +2,10 @@
 title: Remal
 last_modified_at: 2020-08-09
 omni: true
-restaurant: true
-delivery: true
 votes: 12
 categories:
+  - restaurant
+  - delivery
   - lebanese
 specs:
   - name: Address

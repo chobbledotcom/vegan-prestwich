@@ -1,9 +1,10 @@
 ---
 title: Greggs
 last_modified_at: 2022-02-19
+categories:
+  - shop
 omni: true
 is_chain: true
-shop: true
 gallery:
   - /images/products/greggs/01.jpg
   - /images/products/greggs/02.jpg

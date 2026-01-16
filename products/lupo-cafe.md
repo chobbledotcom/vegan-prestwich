@@ -2,9 +2,9 @@
 title: Lupo Cafe
 last_modified_at: 2025-10-01
 omni: true
-restaurant: true
-delivery: true
 categories:
+  - restaurant
+  - delivery
   - italian
   - coffee
   - pizza
