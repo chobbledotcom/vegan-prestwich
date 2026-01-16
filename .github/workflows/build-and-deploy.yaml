@@ -10,13 +10,13 @@ concurrency:
 
 jobs:
   setup:
-    name: Setup Build Environment
+    name: Merge Repos
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout site content
+      - name: Checkout source
         uses: actions/checkout@v4
         with:
-          path: site
+          path: source
 
       - name: Checkout chobble-template
         uses: actions/checkout@v4
@@ -24,12 +24,27 @@ jobs:
           repository: chobbledotcom/chobble-template
           path: template
 
-      - name: Merge template with site content
+      - name: Combine files
         run: |
-          mkdir combined
-          rsync -av --exclude='.git' template/ combined/
-          rm -rf combined/src/*.md combined/src/**/*.md 2>/dev/null || true
-          rsync -av --exclude='.git' --exclude='node_modules' --exclude='package.json' --exclude='bun.lock' --exclude='package-lock.json' --exclude='.envrc' --exclude='flake.nix' --exclude='flake.lock' --exclude='README.md' --exclude='LICENSE' --exclude='.pages.yml' --exclude='scripts' site/src/ combined/src/
+          rsync \
+            --recursive \
+            --verbose \
+            --delete \
+            --exclude=".git" \
+            --exclude="*.md" \
+            --exclude="images" \
+            template/ \
+            combined/
+
+          rsync \
+            --recursive \
+            --verbose \
+            --exclude=".*" \
+            --exclude="README.md" \
+            --exclude="package.json" \
+            --exclude="bun.lock" \
+            source/ \
+            combined/src/
 
       - name: Inject secrets into config
         run: |
@@ -44,7 +59,7 @@ jobs:
           retention-days: 1
 
   build:
-    name: Build and Deploy
+    name: Build Site
     runs-on: ubuntu-latest
     needs: setup
     steps:
@@ -72,7 +87,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd site
-          bun install
+          bun install --frozen-lockfile
 
       - name: Build site
         run: |

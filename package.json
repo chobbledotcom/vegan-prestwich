@@ -3,14 +3,5 @@
 	"version": "1.0.0",
 	"type": "module",
 	"packageManager": "bun@1.2.13",
-	"description": "VeganPrestwich.co.uk - The best vegan finds in Prestwich",
-	"scripts": {
-		"preinstall": "node -e \"if(!process.env.npm_config_user_agent.startsWith('bun')){console.error('Use bun, not npm/yarn/pnpm');process.exit(1)}\"",
-		"serve": "bun scripts/serve.js",
-		"build": "bun scripts/build.js",
-		"prepare-dev": "bun scripts/prepare-dev.js",
-		"sync-files": "bun scripts/sync-files.js",
-		"watch": "bun scripts/watch.js",
-		"clean": "rm -rf .build _site"
-	}
+	"description": "VeganPrestwich.co.uk - The best vegan finds in Prestwich"
 }

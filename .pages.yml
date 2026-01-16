@@ -1,12 +1,12 @@
 media:
-  input: src/images
+  input: images
   output: /images
   path: images
   categories: [image]
 content:
   - name: pages
     label: Pages
-    path: src/pages
+    path: pages
     type: collection
     subfolders: false
     view:
@@ -23,7 +23,7 @@ content:
 
   - name: products
     label: Places
-    path: src/products
+    path: products
     type: collection
     subfolders: false
     filename: "{primary}.md"
@@ -90,7 +90,7 @@ content:
 
   - name: categories
     label: Categories
-    path: src/categories
+    path: categories
     type: collection
     subfolders: false
     filename: "{primary}.md"
@@ -110,7 +110,7 @@ content:
 
   - name: site_config
     label: Site Configuration
-    path: src/_data
+    path: _data
     type: file
     file: site.json
     fields:
@@ -127,7 +127,7 @@ content:
 
   - name: meta_config
     label: Site Metadata
-    path: src/_data
+    path: _data
     type: file
     file: meta.json
     fields:
