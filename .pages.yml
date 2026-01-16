@@ -1,80 +1,82 @@
 media:
-  input: place
-  output: /place
-  path: place
+  input: src/images
+  output: /images
+  path: images
   categories: [image]
 content:
   - name: pages
     label: Pages
-    path: pages
+    path: src/pages
     type: collection
     subfolders: false
     view:
       fields: [permalink, title, metaTitle]
       primary: title
-      sort: [order, title]
+      sort: [nav_order, title]
     fields:
       - { name: title, type: string, label: Title }
       - { name: metaTitle, type: string, label: Meta Title }
-      - { name: order, type: number, label: Order }
+      - { name: nav_order, type: number, label: Navigation Order }
       - { name: permalink, type: string, label: Permalink }
       - { name: layout, type: string, label: Layout }
       - { name: body, label: Body, type: code, options: { language: markdown } }
 
-  - name: places
+  - name: products
     label: Places
-    path: place
+    path: src/products
     type: collection
     subfolders: false
     filename: "{primary}.md"
     view:
-      fields: [name, tags, omni, restaurant, shop, delivery]
-      primary: name
-      sort: [name]
+      fields: [title, categories, omni, restaurant, shop, delivery]
+      primary: title
+      sort: [title]
     fields:
-      - { name: name, type: string, label: Name, required: true }
+      - { name: title, type: string, label: Name, required: true }
+      - { name: name, type: string, label: Name (Display) }
       - { name: last_modified_at, type: date, label: Last Modified }
-      
+
       # Location fields
       - { name: address, type: string, label: Address }
       - { name: postcode, type: string, label: Postcode }
       - { name: google, type: string, label: Google Maps URL }
-      
+
       # Contact fields
       - { name: phone, type: string, label: Phone }
       - { name: email, type: string, label: Email }
       - { name: web, type: string, label: Website }
-      
+
       # Social media fields
       - { name: facebook, type: string, label: Facebook }
       - { name: twitter, type: string, label: Twitter }
+      - { name: instagram, type: string, label: Instagram }
       - { name: tripadvisor, type: string, label: TripAdvisor }
-      
+
       # Business type fields
       - { name: omni, type: boolean, label: Serves Non-Vegan Food Too }
       - { name: shop, type: boolean, label: Shop }
       - { name: restaurant, type: boolean, label: Restaurant }
       - { name: delivery, type: boolean, label: Delivery Available }
       - { name: is_chain, type: boolean, label: Is Chain }
-      
-      # Other fields
-      - name: tags
-        label: Tags
+
+      # Category reference
+      - name: categories
+        label: Categories
         type: reference
         options:
-          collection: tags
+          collection: categories
           multiple: true
-          search: "link-text"
+          search: "title"
           value: "{primary}"
-          label: "{link-text}"
-      
+          label: "{title}"
+
       - name: times
         label: Opening Times
         type: string
         list: true
-      
+
       - { name: votes, type: number, label: Votes }
-      
+
       - name: reviews
         label: Reviews
         type: object
@@ -83,36 +85,54 @@ content:
           - { name: text, type: text, label: Review Text, required: true }
           - { name: date, type: date, label: Date, required: true }
           - { name: url, type: string, label: URL (Instagram/Facebook) }
-      
+
       - { name: body, label: Description, type: code, options: { language: markdown } }
 
-  - name: tags
-    label: Tags
-    path: tags
+  - name: categories
+    label: Categories
+    path: src/categories
     type: collection
     subfolders: false
     filename: "{primary}.md"
     view:
-      fields: [link-text, title, show]
-      primary: link-text
-      sort: [link-text]
+      fields: [title, subtitle, featured]
+      primary: title
+      sort: [title]
     fields:
-      - { name: link-text, type: string, label: Tag Name }
-      - { name: title, type: string, label: Page Title }
-      - { name: metaTitle, type: string, label: Meta Title }
+      - { name: title, type: string, label: Title }
+      - { name: subtitle, type: string, label: Subtitle }
+      - { name: featured, type: boolean, label: Featured }
       - { name: show, type: string, label: Show Tag }
-      - { name: layout, type: string, label: Layout }
       - { name: chain_intro, type: string, label: Chain Introduction }
       - { name: non_chain_intro, type: string, label: Non-Chain Introduction }
       - { name: last_modified_at, type: date, label: Last Modified }
       - { name: body, label: Description, type: code, options: { language: markdown } }
 
-  - name: site_data
+  - name: site_config
     label: Site Configuration
-    path: _data
+    path: src/_data
     type: file
     file: site.json
     fields:
-      - { name: title, type: string, label: Site Title }
+      - { name: name, type: string, label: Site Name }
       - { name: description, type: string, label: Site Description }
       - { name: url, type: string, label: Site URL }
+      - name: socials
+        label: Social Media
+        type: object
+        fields:
+          - { name: facebook, type: string, label: Facebook }
+          - { name: instagram, type: string, label: Instagram }
+          - { name: rss, type: string, label: RSS Feed }
+
+  - name: meta_config
+    label: Site Metadata
+    path: src/_data
+    type: file
+    file: meta.json
+    fields:
+      - { name: language, type: string, label: Language Code }
+      - { name: legalName, type: string, label: Legal Name }
+      - { name: foundingDate, type: number, label: Founding Year }
+      - { name: founder, type: string, label: Founder }
+      - { name: description, type: text, label: Description }

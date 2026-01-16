@@ -1,0 +1,7 @@
+---
+title: "Error 404: Page Not Found"
+metaTitle: "Page not found"
+permalink: /not_found.html
+---
+
+I couldn't find the page you're looking for. Sorry!

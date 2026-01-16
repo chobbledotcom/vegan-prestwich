@@ -1,0 +1,13 @@
+{
+	"name": "VeganPrestwich.co.uk",
+	"url": "https://www.veganprestwich.co.uk",
+	"description": "The best vegan finds in Prestwich and possibly Whitefield.",
+	"socials": {
+		"facebook": "https://www.facebook.com/groups/veganprestwich/",
+		"instagram": "https://www.instagram.com/veganprestwich/",
+		"rss": "/feed.xml"
+	},
+	"sticky_mobile_nav": true,
+	"horizontal_nav": true,
+	"template_repo_url": "https://github.com/chobbledotcom/chobble-client"
+}

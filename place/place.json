@@ -1,6 +1,0 @@
-{
-  "tags": ["places"],
-  "layout": "place",
-  "permalink": "/place/{{ page.fileSlug }}/index.html",
-  "votes": 0
-}

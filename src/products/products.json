@@ -1,0 +1,7 @@
+{
+	"layout": "item.html",
+	"tags": ["products"],
+	"reviewsField": "products",
+	"permalink": "/place/{{ page.fileSlug }}/index.html",
+	"votes": 0
+}

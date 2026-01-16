@@ -1,4 +1,4 @@
-name: Build and Deploy to Neocities
+name: Build and Deploy
 
 on:
   push:
@@ -9,38 +9,81 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
-    name: Build Site
+  setup:
+    name: Setup Build Environment
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout site content
         uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
         with:
-          node-version: 23
+          path: site
+
+      - name: Checkout chobble-template
+        uses: actions/checkout@v4
+        with:
+          repository: chobbledotcom/chobble-template
+          path: template
+
+      - name: Merge template with site content
+        run: |
+          mkdir combined
+          rsync -av --exclude='.git' template/ combined/
+          rm -rf combined/src/*.md combined/src/**/*.md 2>/dev/null || true
+          rsync -av --exclude='.git' --exclude='node_modules' --exclude='package.json' --exclude='bun.lock' --exclude='package-lock.json' --exclude='.envrc' --exclude='flake.nix' --exclude='flake.lock' --exclude='README.md' --exclude='LICENSE' --exclude='.pages.yml' --exclude='scripts' site/src/ combined/src/
+
+      - name: Inject secrets into config
+        run: |
+          cd combined/src/_data
+          jq '.formspark_id = "${{ secrets.FORMSPARK_ID }}" | .botpoison_public_key = "${{ secrets.BOTPOISON_PUBLIC_KEY }}"' config.json > config.tmp.json && mv config.tmp.json config.json
+
+      - name: Upload combined directory
+        uses: actions/upload-artifact@v4
+        with:
+          name: combined-site
+          path: combined
+          retention-days: 1
+
+  build:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - name: Download combined site
+        uses: actions/download-artifact@v4
+        with:
+          name: combined-site
+          path: site
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
 
       - name: Restore cache
         uses: actions/cache@v4
         with:
           path: |
-            node_modules
-            .image-cache
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+            site/node_modules
+            site/.image-cache
+          key: ${{ runner.os }}-bun-${{ hashFiles('site/bun.lock') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-bun-
 
-      - name: Build with Node
+      - name: Install dependencies
         run: |
-          npm ci
-          npx @11ty/eleventy
+          cd site
+          bun install
+
+      - name: Build site
+        run: |
+          cd site
+          bun run build
 
       - name: Deploy to Bunny
         uses: R-J-dev/bunny-deploy@v2.0.6
         with:
           access-key: ${{ secrets.BUNNY_ACCESS_KEY }}
-          directory-to-upload: _site
+          directory-to-upload: site/_site
           storage-endpoint: "https://storage.bunnycdn.com"
           storage-zone-name: "veganprestwich"
           storage-zone-password: ${{ secrets.BUNNY_STORAGE_ZONE_PASSWORD }}
@@ -53,7 +96,7 @@ jobs:
   notify-failure:
     name: Notify on Failure
     runs-on: ubuntu-latest
-    needs: [build]
+    needs: [setup, build]
     if: failure()
     steps:
       - name: Send failure notification

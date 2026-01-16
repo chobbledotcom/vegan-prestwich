@@ -2,8 +2,10 @@
 .aider*
 .direnv
 .env
-.eleventy.js.swp
 .sass-cache
 _site
 node_modules
 result
+.build
+bun.lock
+.image-cache

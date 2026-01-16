@@ -1,0 +1,31 @@
+{
+	"has_products_filter": true,
+	"has_properties_filter": null,
+	"placeholder_images": null,
+	"product_mode": null,
+	"contact_form_target": null,
+	"formspark_id": "nx375xVLs",
+	"botpoison_public_key": "pk_bbb182a9-1ff3-4d9a-839c-06e45f41a6e6",
+	"map_embed_src": null,
+	"sticky_mobile_nav": true,
+	"horizontal_nav": true,
+	"enable_theme_switcher": false,
+	"externalLinksTargetBlank": true,
+	"template_repo_url": null,
+	"chobble_link": null,
+	"cart_mode": null,
+	"checkout_api_url": null,
+	"products": {
+		"item_widths": null,
+		"gallery_thumb_widths": null,
+		"gallery_image_widths": null,
+		"header_image_widths": null,
+		"max_images": null
+	},
+	"timezone": "Europe/London",
+	"reviews_truncate_limit": null,
+	"list_item_fields": null,
+	"category_order": null,
+	"navigation_content_anchor": null,
+	"screenshots": null
+}
