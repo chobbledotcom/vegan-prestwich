@@ -1,171 +1,32 @@
 // Vegan Prestwich - Clean white and green theme
-// Wikipedia-inspired minimal design
 
 :root {
-  // Colors
-  --color-background: #ffffff;
+  // Colors - using chobble-template variable names
+  --color-bg: #ffffff;
+  --color-bg-alt: #f6f8fa;
+  --color-card-bg: #ffffff;
   --color-text: #222222;
   --color-text-muted: #666666;
-  --color-primary: #22863a; // Green for branding
+  --color-primary: #22863a;
+  --color-primary-dark: #1a6b2e;
+  --color-primary-light: #e6f4ea;
   --color-secondary: #f6f8fa;
   --color-accent: #22863a;
+  --color-hover-bg: rgba(0, 0, 0, 0.03);
 
   // Links - standard web blue
   --color-link: #0645ad;
   --color-link-hover: #0b0080;
-  --color-link-visited: #0b0080;
 
   // Borders
-  --color-border: #e1e4e8;
-  --border-style: 1px solid var(--color-border);
+  --border-light: 1px solid #e1e4e8;
+  --border-medium: 1px solid #d1d5db;
 
-  // Border radius - rounded corners
-  --border-radius-sm: 4px;
-  --border-radius: 8px;
-  --border-radius-lg: 12px;
+  // Border radius
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
 
-  // Typography
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-size-base: 16px;
-  --line-height: 1.6;
-
-  // Spacing
-  --spacing-base: 1rem;
-  --content-width: 960px;
-
-  // Remove shadows for cleaner look
+  // Remove shadows
   --box-shadow: none;
-}
-
-body {
-  background-color: var(--color-background);
-  color: var(--color-text);
-  font-family: var(--font-family);
-  line-height: var(--line-height);
-}
-
-// Links
-a {
-  color: var(--color-link);
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-    color: var(--color-link-hover);
-  }
-}
-
-// Header styling
-header {
-  background: var(--color-background);
-  border-bottom: var(--border-style);
-  color: var(--color-text);
-
-  a {
-    color: var(--color-text);
-  }
-}
-
-// Navigation
-nav a {
-  color: var(--color-text);
-
-  &:hover {
-    color: var(--color-primary);
-  }
-}
-
-// Remove dark theme elements
-.header-centered-dark {
-  background: var(--color-background);
-}
-
-// Cards and list items - keep them simple
-.list-item, .card {
-  background: var(--color-background);
-  border: var(--border-style);
-  box-shadow: none;
-}
-
-// Buttons
-.button, button, [type="submit"] {
-  background-color: var(--color-primary);
-  color: white;
-  border: none;
-
-  &:hover {
-    background-color: darken(#22863a, 10%);
-  }
-}
-
-// Footer
-footer {
-  background: var(--color-secondary);
-  border-top: var(--border-style);
-  color: var(--color-text-muted);
-}
-
-// Override any remaining gray backgrounds
-main, article, section, .content, .wrapper {
-  background: var(--color-background);
-}
-
-// Ensure page background is white
-html {
-  background: var(--color-background);
-}
-
-// Reviews - clean light styling
-.review, .reviews-list li, [class*="review"] {
-  background: var(--color-secondary) !important;
-  border: var(--border-style);
-  border-radius: var(--border-radius);
-  color: var(--color-text);
-}
-
-// Blockquotes (used for reviews)
-blockquote {
-  background: #ffffff !important;
-  border: 1px solid #e1e4e8 !important;
-  border-left: 4px solid var(--color-primary) !important;
-  border-radius: var(--border-radius);
-  color: var(--color-text) !important;
-  margin: 1rem 0;
-  padding: 1rem;
-}
-
-blockquote * {
-  background: transparent !important;
-  color: var(--color-text) !important;
-}
-
-blockquote footer {
-  background: transparent !important;
-  border: none !important;
-}
-
-blockquote a {
-  color: var(--color-link) !important;
-}
-
-// Reviews list
-#reviews + ul,
-h2 + ul:has(blockquote),
-ul:has(> li > blockquote) {
-  list-style: none;
-  padding: 0;
-
-  li {
-    background: transparent !important;
-    margin-bottom: 1rem;
-  }
-}
-
-// Apply rounded corners globally
-.card, .list-item, article, .box, .panel, input, textarea, select, button, .button {
-  border-radius: var(--border-radius);
-}
-
-img {
-  border-radius: var(--border-radius-sm);
 }
