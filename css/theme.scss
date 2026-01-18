@@ -19,6 +19,11 @@
   --color-border: #e1e4e8;
   --border-style: 1px solid var(--color-border);
 
+  // Border radius - rounded corners
+  --border-radius-sm: 4px;
+  --border-radius: 8px;
+  --border-radius-lg: 12px;
+
   // Typography
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-size-base: 16px;
@@ -108,4 +113,32 @@ main, article, section, .content, .wrapper {
 // Ensure page background is white
 html {
   background: var(--color-background);
+}
+
+// Reviews - clean light styling
+.review, .reviews-list li, [class*="review"] {
+  background: var(--color-secondary) !important;
+  border: var(--border-style);
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+}
+
+// Blockquotes (used for reviews)
+blockquote {
+  background: var(--color-secondary) !important;
+  border: var(--border-style);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+// Apply rounded corners globally
+.card, .list-item, article, .box, .panel, input, textarea, select, button, .button {
+  border-radius: var(--border-radius);
+}
+
+img {
+  border-radius: var(--border-radius-sm);
 }
