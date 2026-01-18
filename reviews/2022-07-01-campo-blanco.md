@@ -1,4 +1,5 @@
 ---
+date: 2022-07-01
 products:
   - campo-blanco
 url: https://www.instagram.com/p/Cfjb18HNXzO

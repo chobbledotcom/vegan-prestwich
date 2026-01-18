@@ -1,4 +1,5 @@
 ---
+date: 2025-01-01
 products:
   - sweet-potatoe
 url: https://www.facebook.com/groups/veganprestwich/posts/2594275370949863/

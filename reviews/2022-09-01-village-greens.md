@@ -1,4 +1,5 @@
 ---
+date: 2022-09-01
 products:
   - village-greens
 url: https://www.facebook.com/groups/veganprestwich/posts/1746312282412847

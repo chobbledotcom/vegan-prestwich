@@ -1,4 +1,5 @@
 ---
+date: 2024-01-01
 products:
   - panama-hattys
 url: https://www.instagram.com/p/C2FoNkbN9no/

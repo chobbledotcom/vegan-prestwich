@@ -1,4 +1,5 @@
 ---
+date: 2025-05-01
 products:
   - the-coffee-sack
 url: https://www.facebook.com/groups/veganprestwich/posts/2493428487701219/

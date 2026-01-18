@@ -1,4 +1,5 @@
 ---
+date: 2022-06-01
 products:
   - friendship-inn
 url: https://www.instagram.com/p/CfT

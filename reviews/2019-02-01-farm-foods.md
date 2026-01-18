@@ -1,4 +1,5 @@
 ---
+date: 2019-02-01
 products:
   - farm-foods
 url: https://www.facebook.com/groups/veganprestwich/permalink/782763925434359/

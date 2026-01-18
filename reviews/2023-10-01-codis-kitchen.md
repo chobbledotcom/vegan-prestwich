@@ -1,4 +1,5 @@
 ---
+date: 2023-10-01
 products:
   - codis-kitchen
 url: https://dumpoir.com/c/6594430583085954023

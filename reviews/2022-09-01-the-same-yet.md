@@ -1,4 +1,5 @@
 ---
+date: 2022-09-01
 products:
   - the-same-yet
 url: https://www.facebook.com/groups/veganprestwich/posts/1739491083094967/

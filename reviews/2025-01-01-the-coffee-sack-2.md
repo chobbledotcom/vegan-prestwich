@@ -1,4 +1,5 @@
 ---
+date: 2025-01-01
 products:
   - the-coffee-sack
 url: https://www.facebook.com/groups/630026080708145/

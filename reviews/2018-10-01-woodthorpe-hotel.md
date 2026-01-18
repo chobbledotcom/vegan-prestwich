@@ -1,4 +1,5 @@
 ---
+date: 2018-10-01
 products:
   - woodthorpe-hotel
 url: https://www.facebook.com/groups/veganprestwich/permalink/716475685396517/

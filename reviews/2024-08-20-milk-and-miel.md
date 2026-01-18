@@ -1,4 +1,5 @@
 ---
+date: 2024-08-20
 products:
   - milk-and-miel
 url: https://www.facebook.com/groups/veganprestwich/posts/2582370705473663/

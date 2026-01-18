@@ -1,4 +1,5 @@
 ---
+date: 2021-11-01
 products:
   - sallys-bakes
 url: https://www.facebook.com/groups/veganprestwich/posts/1526742151036529/

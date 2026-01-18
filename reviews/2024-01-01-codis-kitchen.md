@@ -1,4 +1,5 @@
 ---
+date: 2024-01-01
 products:
   - codis-kitchen
 url: https://www.facebook.com/groups/veganprestwich/posts/2095713317472740

@@ -1,4 +1,5 @@
 ---
+date: 2023-12-01
 products:
   - dokes-pizza
 url: https://www.facebook.com/groups/veganprestwich/posts/2060608410983231/?comment_id=2060641980979874

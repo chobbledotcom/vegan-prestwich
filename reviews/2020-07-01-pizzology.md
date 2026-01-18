@@ -1,4 +1,5 @@
 ---
+date: 2020-07-01
 products:
   - pizzology
 url: https://www.facebook.com/groups/veganprestwich/permalink/1159916451052436/

@@ -1,4 +1,5 @@
 ---
+date: 2019-12-01
 products:
   - wine-and-wallop
 url: https://www.facebook.com/groups/veganprestwich/permalink/984591835251566/

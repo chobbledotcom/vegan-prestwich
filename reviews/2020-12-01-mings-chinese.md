@@ -1,4 +1,5 @@
 ---
+date: 2020-12-01
 products:
   - mings-chinese
 url: https://www.facebook.com/groups/veganprestwich/permalink/1281424545568292/

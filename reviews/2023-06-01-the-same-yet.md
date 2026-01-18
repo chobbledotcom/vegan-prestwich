@@ -1,4 +1,5 @@
 ---
+date: 2023-06-01
 products:
   - the-same-yet
 url: https://dumpoir.com/c/3337506739586182213

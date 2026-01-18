@@ -1,4 +1,5 @@
 ---
+date: 2020-10-01
 products:
   - sweet-bay-bakery
 url: https://www.facebook.com/groups/veganprestwich/permalink/1241760616201352/

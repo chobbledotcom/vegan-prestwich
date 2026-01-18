@@ -1,4 +1,5 @@
 ---
+date: 2022-09-01
 products:
   - all-the-shapes
 url: https://www.facebook.com/groups/veganprestwich/posts/1752619308448811/?comment_id=1752741675103241

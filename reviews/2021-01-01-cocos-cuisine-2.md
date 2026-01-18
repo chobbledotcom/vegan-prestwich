@@ -1,4 +1,5 @@
 ---
+date: 2021-01-01
 products:
   - cocos-cuisine
 url: https://www.facebook.com/groups/veganprestwich/permalink/1301148333595913/

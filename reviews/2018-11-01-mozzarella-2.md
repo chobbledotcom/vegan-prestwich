@@ -1,4 +1,5 @@
 ---
+date: 2018-11-01
 products:
   - mozzarella
 url: https://www.facebook.com/groups/veganprestwich/permalink/734806753563410/

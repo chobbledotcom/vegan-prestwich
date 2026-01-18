@@ -1,4 +1,5 @@
 ---
+date: 2024-08-01
 products:
   - prestwich-makers-market
 url: https://www.facebook.com/groups/veganprestwich/posts/2236880386689365/
