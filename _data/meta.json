@@ -1,0 +1,20 @@
+{
+	"language": "en-GB",
+	"legalName": "Vegan Prestwich",
+	"foundingDate": 2020,
+	"founder": "Community Project",
+	"address": {
+		"streetAddress": "Prestwich",
+		"addressLocality": "Manchester",
+		"addressRegion": "Greater Manchester",
+		"postalCode": "M25",
+		"addressCountry": "GB"
+	},
+	"contactPoint": {
+		"telephone": null,
+		"contactType": "community support",
+		"areaServed": "GB",
+		"availableLanguage": "English"
+	},
+	"description": "A community project showcasing vegan food options in Prestwich and Whitefield, Greater Manchester."
+}

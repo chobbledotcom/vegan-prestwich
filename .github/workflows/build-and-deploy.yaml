@@ -1,4 +1,4 @@
-name: Build and Deploy to Neocities
+name: Build and Deploy
 
 on:
   push:
@@ -9,38 +9,106 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  setup:
+    name: Merge Repos
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          path: source
+
+      - name: Checkout chobble-template
+        uses: actions/checkout@v4
+        with:
+          repository: chobbledotcom/chobble-template
+          path: template
+
+      - name: Combine files
+        run: |
+          rsync \
+            --recursive \
+            --verbose \
+            --delete \
+            --exclude=".git" \
+            --exclude="*.md" \
+            template/ \
+            combined/
+
+          rsync \
+            --recursive \
+            --verbose \
+            --exclude=".*" \
+            --exclude="README.md" \
+            --exclude="package.json" \
+            --exclude="bun.lock" \
+            source/ \
+            combined/src/
+
+      - name: Inject secrets into config
+        run: |
+          cd combined/src/_data
+          jq '.formspark_id = "${{ secrets.FORMSPARK_ID }}" | .botpoison_public_key = "${{ secrets.BOTPOISON_PUBLIC_KEY }}"' config.json > config.tmp.json && mv config.tmp.json config.json
+
+      - name: Verify .eleventy.js exists
+        run: |
+          ls -la combined/.eleventy.js
+          ls -la combined/src/_layouts/ | head -5
+
+      - name: Upload combined directory
+        uses: actions/upload-artifact@v4
+        with:
+          name: combined-site
+          path: combined
+          include-hidden-files: true
+          retention-days: 1
+
   build:
     name: Build Site
     runs-on: ubuntu-latest
+    needs: setup
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Download combined site
+        uses: actions/download-artifact@v4
         with:
-          node-version: 23
+          name: combined-site
+          path: site
+
+      - name: Verify downloaded files
+        run: |
+          ls -la site/.eleventy.js
+          ls -la site/src/_layouts/ | head -5
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
 
       - name: Restore cache
         uses: actions/cache@v4
         with:
           path: |
-            node_modules
-            .image-cache
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+            site/node_modules
+            site/.image-cache
+          key: ${{ runner.os }}-bun-${{ hashFiles('site/bun.lock') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-bun-
 
-      - name: Build with Node
+      - name: Install dependencies
         run: |
-          npm ci
-          npx @11ty/eleventy
+          cd site
+          bun install --frozen-lockfile
+
+      - name: Build site
+        run: |
+          cd site
+          bun run build
 
       - name: Deploy to Bunny
         uses: R-J-dev/bunny-deploy@v2.0.6
         with:
           access-key: ${{ secrets.BUNNY_ACCESS_KEY }}
-          directory-to-upload: _site
+          directory-to-upload: site/_site
           storage-endpoint: "https://storage.bunnycdn.com"
           storage-zone-name: "veganprestwich"
           storage-zone-password: ${{ secrets.BUNNY_STORAGE_ZONE_PASSWORD }}
@@ -53,7 +121,7 @@ jobs:
   notify-failure:
     name: Notify on Failure
     runs-on: ubuntu-latest
-    needs: [build]
+    needs: [setup, build]
     if: failure()
     steps:
       - name: Send failure notification

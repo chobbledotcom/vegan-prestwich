@@ -1,8 +1,7 @@
 ---
-layout: tags
+layout: categories.html
 title: Tags
-link-text: Tags
 metaTitle: Tags - VeganPrestwich.co.uk
 permalink: /tags/
-order: 4
+nav_order: 4
 ---

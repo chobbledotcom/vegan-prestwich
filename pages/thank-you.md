@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Thank You"
 metaTitle: "Thank you for your suggestion"
 permalink: /thank-you/

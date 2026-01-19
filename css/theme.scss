@@ -1,0 +1,32 @@
+// Vegan Prestwich - Clean white and green theme
+
+:root {
+  // Colors - using chobble-template variable names
+  --color-bg: #ffffff;
+  --color-bg-alt: #f6f8fa;
+  --color-card-bg: #ffffff;
+  --color-text: #222222;
+  --color-text-muted: #666666;
+  --color-primary: #22863a;
+  --color-primary-dark: #1a6b2e;
+  --color-primary-light: #e6f4ea;
+  --color-secondary: #f6f8fa;
+  --color-accent: #22863a;
+  --color-hover-bg: rgba(0, 0, 0, 0.03);
+
+  // Links - standard web blue
+  --color-link: #0645ad;
+  --color-link-hover: #0b0080;
+
+  // Borders
+  --border-light: 1px solid #e1e4e8;
+  --border-medium: 1px solid #d1d5db;
+
+  // Border radius
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  // Remove shadows
+  --box-shadow: none;
+}

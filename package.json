@@ -1,19 +1,7 @@
 {
-  "name": "veganprestwich-co-uk",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "eleventy",
-    "serve": "eleventy --serve",
-    "format": "prettier --write _site/**/*.html",
-    "format:check": "prettier --check _site/**/*.html"
-  },
-  "dependencies": {
-    "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-img": "^5.0.0",
-    "fast-glob": "^3.3.2",
-    "jsdom": "^26.0.0",
-    "markdown-it": "^14.1.0",
-    "prettier": "^3.5.3",
-    "sass": "^1.86.3"
-  }
+	"name": "vegan-prestwich",
+	"version": "1.0.0",
+	"type": "module",
+	"packageManager": "bun@1.2.13",
+	"description": "VeganPrestwich.co.uk - The best vegan finds in Prestwich"
 }
