@@ -32,6 +32,7 @@ jobs:
             --delete \
             --exclude=".git" \
             --exclude="*.md" \
+            --exclude="landing-pages" \
             template/ \
             combined/
 
