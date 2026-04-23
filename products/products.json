@@ -3,5 +3,6 @@
 	"tags": ["products"],
 	"reviewsField": "products",
 	"permalink": "/place/{{ page.fileSlug }}/index.html",
-	"votes": 0
+	"votes": 0,
+	"filter_attributes": []
 }
