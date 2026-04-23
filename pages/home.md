@@ -11,6 +11,10 @@ blocks:
     title: 💚 Vegan Food in Prestwich
     lead: Prestwich has a surprisingly wide choice when it comes to vegan food. This site details some of that.
   - type: content
+  - type: section-header
+    intro: "## Product Categories"
+  - type: items
+    collection: featuredCategories
   - type: cta
     title: Own a food business?
     description: We've put together some tips on attracting vegan customers.
