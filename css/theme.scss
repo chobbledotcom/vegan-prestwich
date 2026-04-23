@@ -184,13 +184,6 @@ body > nav {
   }
 }
 
-// Ensure nav is sticky & gets that fresh feel on scroll
-body.sticky-mobile-nav > nav,
-body.horizontal-nav > nav {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}
 
 // -----------------------------------------------------------------------------
 // HERO - big, bold, full of flavour
