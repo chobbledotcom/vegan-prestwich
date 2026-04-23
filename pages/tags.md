@@ -1,7 +1,8 @@
 ---
 layout: design-system-base.html
 title: Tags
-metaTitle: Tags - VeganPrestwich.co.uk
+meta_title: Tags — Vegan Prestwich
+meta_description: Browse places on VeganPrestwich.co.uk by category.
 permalink: /tags/
 nav_order: 4
 blocks:

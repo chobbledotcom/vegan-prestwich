@@ -2,7 +2,8 @@
 permalink: /
 layout: design-system-base.html
 title: Home
-metaTitle: VeganPrestwich.co.uk - Vegan Food, Shops, Restaurants & Takeaways in Prestwich
+meta_title: Vegan Food, Shops, Restaurants & Takeaways in Prestwich
+meta_description: Your guide to vegan food, shops, restaurants, and takeaways in Prestwich and Whitefield.
 eleventyNavigation:
   key: Home
   order: 1

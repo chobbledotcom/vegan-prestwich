@@ -1,6 +1,7 @@
 ---
 title: "Thank You"
-metaTitle: "Thank you for your suggestion"
+meta_title: "Thank you for your suggestion"
+meta_description: We've received your suggestion and will review it soon.
 permalink: /thank-you/
 blocks:
   - type: hero

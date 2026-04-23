@@ -1,6 +1,7 @@
 ---
 title: 7 Tips for Making Your Restaurant Vegan-Friendly
-metaTitle: How to make your cafe or restaurant attractive to vegan customers
+meta_title: How to make your cafe or restaurant attractive to vegan customers
+meta_description: Seven practical tips for cafes and restaurants in Prestwich to win vegan customers.
 permalink: /vegan-business-advice/
 blocks:
   - type: hero
