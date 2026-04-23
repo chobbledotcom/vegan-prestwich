@@ -1,32 +1,613 @@
-// Vegan Prestwich - Clean white and green theme
+// =============================================================================
+// VEGAN PRESTWICH - THEME
+// Fresh, inviting, modern. Loaded last so it wins over the design system.
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// FONTS - self-hosted (mirrored from Bunny Fonts / Fontsource)
+// -----------------------------------------------------------------------------
+
+$latin-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+  U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+  U+2212, U+2215, U+FEFF, U+FFFD;
+
+@mixin vp-font($family, $weight, $file) {
+  @font-face {
+    font-family: $family;
+    font-style: normal;
+    font-weight: $weight;
+    font-display: swap;
+    src:
+      url("/assets/fonts/#{$file}-normal.woff2") format("woff2"),
+      url("/assets/fonts/#{$file}-normal.woff") format("woff");
+    unicode-range: #{$latin-range};
+  }
+}
+
+@include vp-font("DM Sans", 400, "dm-sans-latin-400");
+@include vp-font("DM Sans", 500, "dm-sans-latin-500");
+@include vp-font("DM Sans", 600, "dm-sans-latin-600");
+@include vp-font("DM Sans", 700, "dm-sans-latin-700");
+
+@include vp-font("Fraunces", 500, "fraunces-latin-500");
+@include vp-font("Fraunces", 600, "fraunces-latin-600");
+@include vp-font("Fraunces", 700, "fraunces-latin-700");
+@include vp-font("Fraunces", 900, "fraunces-latin-900");
+
+// -----------------------------------------------------------------------------
+// CSS CUSTOM PROPERTIES
+// -----------------------------------------------------------------------------
 
 :root {
-  // Colors - using chobble-template variable names
-  --color-bg: #ffffff;
-  --color-bg-alt: #f6f8fa;
+  --vp-bg: #fbfaf5;
+  --vp-bg-warm: #f7f1df;
+  --vp-bg-mint: #e6f7ea;
+  --vp-ink: #14291a;
+  --vp-ink-muted: #5c6b5e;
+  --vp-green: #2f9e44;
+  --vp-green-dark: #1e7c33;
+  --vp-green-deeper: #0f3a19;
+  --vp-peach: #ff8c42;
+  --vp-peach-soft: #ffd7bd;
+  --vp-sun: #ffc94d;
+
+  --color-bg: var(--vp-bg);
+  --color-bg-alt: var(--vp-bg-warm);
   --color-card-bg: #ffffff;
-  --color-text: #222222;
-  --color-text-muted: #666666;
-  --color-primary: #22863a;
-  --color-primary-dark: #1a6b2e;
-  --color-primary-light: #e6f4ea;
-  --color-secondary: #f6f8fa;
-  --color-accent: #22863a;
-  --color-hover-bg: rgba(0, 0, 0, 0.03);
+  --color-text: var(--vp-ink);
+  --color-text-muted: var(--vp-ink-muted);
+  --color-primary: var(--vp-green);
+  --color-primary-dark: var(--vp-green-dark);
+  --color-primary-light: var(--vp-bg-mint);
+  --color-tint: var(--vp-bg-mint);
+  --color-secondary: var(--vp-peach);
+  --color-accent: var(--vp-green);
+  --color-hover-bg: rgba(47, 158, 68, 0.06);
 
-  // Links - standard web blue
-  --color-link: #0645ad;
-  --color-link-hover: #0b0080;
+  --color-link: var(--vp-green-dark);
+  --color-link-hover: var(--vp-green);
 
-  // Borders
-  --border-light: 1px solid #e1e4e8;
-  --border-medium: 1px solid #d1d5db;
+  --font-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
 
-  // Border radius
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
+  --vp-shadow-sm: 0 2px 8px rgba(20, 41, 26, 0.06);
+  --vp-shadow-md: 0 10px 28px rgba(20, 41, 26, 0.08);
+  --vp-shadow-lg: 0 20px 45px rgba(20, 41, 26, 0.12);
+}
 
-  // Remove shadows
-  --box-shadow: none;
+// -----------------------------------------------------------------------------
+// BASE - warm background, crisp typography
+// -----------------------------------------------------------------------------
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+  background: var(--vp-bg);
+  color: var(--vp-ink);
+
+  // Warm dappled background - two soft radial gradients
+  background-image:
+    radial-gradient(
+      ellipse 900px 600px at 85% -10%,
+      rgba(255, 201, 77, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 800px 500px at -10% 20%,
+      rgba(47, 158, 68, 0.1),
+      transparent 55%
+    );
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6,
+.design-system h1,
+.design-system h2,
+.design-system h3,
+.design-system h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--vp-ink);
+}
+
+.design-system h1 {
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+::selection {
+  background: var(--vp-green);
+  color: #fff;
+}
+
+// -----------------------------------------------------------------------------
+// NAVIGATION - clean, sticky, modern
+// -----------------------------------------------------------------------------
+
+.design-system nav,
+body > nav {
+  background: rgba(251, 250, 245, 0.82);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid rgba(47, 158, 68, 0.1);
+  box-shadow: var(--vp-shadow-sm);
+
+  .site-title,
+  a.site-title {
+    font-family: var(--font-display) !important;
+    font-weight: 800 !important;
+    font-size: 1.35rem !important;
+    letter-spacing: -0.02em;
+    text-decoration: none !important;
+    background: none !important;
+
+    span:first-child {
+      color: var(--vp-green-dark) !important;
+      font-weight: 800;
+    }
+
+    span:last-child {
+      color: var(--vp-ink) !important;
+      font-weight: 700;
+      opacity: 0.75;
+    }
+  }
+
+  .nav-thumbnails a {
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 0.45rem 0.95rem;
+    transition: all 200ms ease;
+    color: var(--vp-ink);
+
+    &:hover {
+      background: var(--vp-bg-mint);
+      color: var(--vp-green-dark);
+    }
+
+    &.active {
+      background: var(--vp-green);
+      color: #fff;
+
+      &:hover {
+        background: var(--vp-green-dark);
+        color: #fff;
+      }
+    }
+  }
+}
+
+// Ensure nav is sticky & gets that fresh feel on scroll
+body.sticky-mobile-nav > nav,
+body.horizontal-nav > nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+// -----------------------------------------------------------------------------
+// HERO - big, bold, full of flavour
+// -----------------------------------------------------------------------------
+
+.design-system .hero {
+  position: relative;
+  padding: 5rem 1.5rem 3.5rem !important;
+  margin: 1.5rem auto 0;
+  max-width: 1200px;
+  border-radius: 32px;
+  overflow: hidden;
+  isolation: isolate;
+
+  // Layered background: gradient + organic blob
+  background:
+    radial-gradient(
+      ellipse 600px 400px at 20% 100%,
+      rgba(255, 140, 66, 0.2),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 800px 500px at 100% 0%,
+      rgba(47, 158, 68, 0.18),
+      transparent 55%
+    ),
+    linear-gradient(135deg, #f0fbe8 0%, #fffaee 55%, #fff1e0 100%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%232f9e44' fill-opacity='0.08'%3E%3Ccircle cx='20' cy='20' r='2'/%3E%3Ccircle cx='60' cy='60' r='2'/%3E%3Cpath d='M10 50 q5 -8 10 0 q5 8 10 0' stroke='%232f9e44' stroke-opacity='.2' stroke-width='1' fill='none'/%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.4;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 4.25rem) !important;
+    font-weight: 900;
+    letter-spacing: -0.035em;
+    line-height: 1.02;
+    color: var(--vp-green-deeper);
+    max-width: 16ch;
+    margin: 0 auto;
+
+    // Highlight the last word with a brush-stroke-esque background
+    em,
+    strong {
+      font-style: normal;
+      color: var(--vp-peach);
+      position: relative;
+    }
+  }
+
+  .lead {
+    font-family: var(--font-sans);
+    font-size: clamp(1.1rem, 1.5vw, 1.3rem) !important;
+    color: var(--vp-ink-muted);
+    max-width: 52ch;
+    margin: 0 auto;
+    line-height: 1.55;
+  }
+
+}
+
+// -----------------------------------------------------------------------------
+// SECTIONS & CONTAINERS
+// -----------------------------------------------------------------------------
+
+.design-system main section {
+  padding-block: 2.5rem;
+}
+
+.design-system .section-header h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 800;
+
+  // Decorative underline
+  &::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 4px;
+    background: linear-gradient(90deg, var(--vp-green), var(--vp-peach));
+    border-radius: 99px;
+    margin: 0.75rem auto 0;
+  }
+}
+
+// Business-advice intro link, make it a chunky pill
+.design-system main > section:nth-of-type(1) + section .container-wide > p {
+  text-align: center;
+  margin: 0;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none !important;
+    background: linear-gradient(135deg, #fff, var(--vp-bg-warm));
+    color: var(--vp-ink);
+    padding: 0.85rem 1.5rem;
+    border-radius: 999px;
+    border: 1px solid rgba(47, 158, 68, 0.15);
+    box-shadow: var(--vp-shadow-sm);
+    font-weight: 600;
+    transition: transform 200ms ease, box-shadow 200ms ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--vp-shadow-md);
+      color: var(--vp-green-dark);
+    }
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// CARDS (items grid)
+// -----------------------------------------------------------------------------
+
+.design-system ul.items > li {
+  border-radius: 22px !important;
+  border: 1px solid rgba(47, 158, 68, 0.1) !important;
+  background: #ffffff !important;
+  box-shadow: var(--vp-shadow-sm);
+  transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease !important;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--vp-shadow-md);
+    border-color: rgba(47, 158, 68, 0.3) !important;
+  }
+
+  &.featured {
+    border-color: rgba(47, 158, 68, 0.25) !important;
+  }
+
+  h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+    margin-block: 1.1rem 0.35rem;
+
+    a {
+      text-decoration: none;
+      color: var(--vp-ink);
+      background-image: linear-gradient(var(--vp-green), var(--vp-green));
+      background-size: 0% 2px;
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 250ms ease, color 200ms ease;
+
+      &:hover {
+        color: var(--vp-green-dark);
+        background-size: 100% 2px;
+      }
+    }
+  }
+
+  p:not(.price) {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    color: var(--vp-green-dark) !important;
+    margin-block-end: 1.25rem;
+  }
+
+  // Image treatment
+  .image-link {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        transparent 60%,
+        rgba(20, 41, 26, 0.08)
+      );
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 250ms ease;
+    }
+  }
+
+  &:hover .image-link::after {
+    opacity: 1;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// CTA - replace blue gradient with warm green->peach
+// -----------------------------------------------------------------------------
+
+.design-system .cta {
+  background: linear-gradient(
+    135deg,
+    var(--vp-green-deeper) 0%,
+    var(--vp-green-dark) 45%,
+    var(--vp-peach) 120%
+  ) !important;
+  border-radius: 32px !important;
+  padding: 3.5rem 2rem !important;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -40%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 201, 77, 0.35), transparent 65%);
+    pointer-events: none;
+  }
+
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    color: #fff;
+    letter-spacing: -0.02em;
+    position: relative;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.92);
+    position: relative;
+  }
+
+  .btn,
+  a.btn,
+  .btn--secondary {
+    background: #ffffff !important;
+    color: var(--vp-green-deeper) !important;
+    border: none !important;
+    padding: 0.9rem 1.75rem !important;
+    border-radius: 999px !important;
+    font-weight: 700 !important;
+    font-family: var(--font-sans);
+    letter-spacing: -0.01em;
+    transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      transform: translateY(-2px);
+      background: var(--vp-sun) !important;
+      color: var(--vp-green-deeper) !important;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// BUTTONS (general)
+// -----------------------------------------------------------------------------
+
+.design-system .btn,
+.design-system a.btn {
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
+}
+
+.design-system .btn--primary {
+  background: var(--vp-green);
+  color: #fff;
+
+  &:hover {
+    background: var(--vp-green-dark);
+    transform: translateY(-1px);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// LINKS (body content)
+// -----------------------------------------------------------------------------
+
+.design-system main .prose a,
+.design-system main section > .container-wide > .prose a,
+.design-system main > section > .container-wide > p > a {
+  color: var(--vp-green-dark);
+  text-decoration-color: rgba(47, 158, 68, 0.35);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+  transition: color 200ms ease, text-decoration-color 200ms ease;
+
+  &:hover {
+    color: var(--vp-peach);
+    text-decoration-color: var(--vp-peach);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// PROSE (long-form content like /vegan-business-advice/)
+// -----------------------------------------------------------------------------
+
+.design-system .prose {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    margin-top: 2.5rem;
+  }
+
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.015em;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// FOOTER - warm dark forest, cosy
+// -----------------------------------------------------------------------------
+
+.design-system footer {
+  background: linear-gradient(180deg, #0f3a19 0%, #0a2812 100%) !important;
+  color: #d3e5d6 !important;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  margin-top: 3rem;
+  padding: 3rem 1.5rem 2.5rem !important;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 201, 77, 0.35),
+      transparent
+    );
+  }
+
+  .socials {
+    font-size: 1.6rem !important;
+
+    a {
+      color: #a5c4ab !important;
+      transition: color 200ms ease, transform 200ms ease;
+      display: inline-flex;
+
+      &:hover {
+        color: var(--vp-sun) !important;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  p {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+  }
+
+  a:not(.socials a) {
+    color: var(--vp-sun) !important;
+    text-decoration-color: rgba(255, 201, 77, 0.4);
+
+    &:hover {
+      color: #fff !important;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// CONTAINER WIDTHS
+// -----------------------------------------------------------------------------
+
+.design-system .container-wide {
+  max-width: min(1200px, calc(100% - 2rem));
+}
+
+// -----------------------------------------------------------------------------
+// PRINT & REDUCED MOTION
+// -----------------------------------------------------------------------------
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .design-system ul.items > li:hover {
+    transform: none;
+  }
 }
