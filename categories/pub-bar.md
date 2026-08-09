@@ -1,4 +1,4 @@
 ---
-title: Pub / Bar
+name: Pub / Bar
 subtitle: Pub / Bar
 ---

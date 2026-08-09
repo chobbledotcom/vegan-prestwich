@@ -1,4 +1,4 @@
 ---
-title: Groceries
+name: Groceries
 subtitle: Groceries
 ---

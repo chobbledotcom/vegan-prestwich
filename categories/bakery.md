@@ -1,4 +1,4 @@
 ---
-title: Bakery
+name: Bakery
 subtitle: Bakery
 ---

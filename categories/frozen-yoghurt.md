@@ -1,4 +1,4 @@
 ---
-title: Frozen Yoghurt
+name: Frozen Yoghurt
 subtitle: Frozen Yoghurt
 ---

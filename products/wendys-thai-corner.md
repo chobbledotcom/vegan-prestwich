@@ -1,5 +1,5 @@
 ---
-title: Wendy's Thai Corner
+name: Wendy's Thai Corner
 last_modified_at: 2026-07-29
 omni: true
 categories:

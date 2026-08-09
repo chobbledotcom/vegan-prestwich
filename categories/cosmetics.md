@@ -1,4 +1,4 @@
 ---
-title: Cosmetics
+name: Cosmetics
 subtitle: Cosmetics
 ---

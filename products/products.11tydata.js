@@ -1,5 +1,4 @@
 export default {
-	layout: "design-system-base.html",
 	tags: ["products"],
 	reviewsField: "products",
 	permalink: "/place/{{ page.fileSlug }}/index.html",
@@ -8,7 +7,8 @@ export default {
 	eleventyComputed: {
 		blocks: (data) => {
 			const {
-				title,
+				name,
+				content_markdown,
 				gallery = [],
 				specs = [],
 				categories = [],
@@ -29,24 +29,24 @@ export default {
 			}));
 
 			return [
-				{ type: "hero", title, badge },
+				{ type: "hero", content: `# ${name}`, badge },
 				gallery.length && {
 					type: "gallery",
 					aspect_ratio: "4/3",
 					items: gallery.map((src) => ({ image: src })),
 				},
-				{ type: "content" },
+				content_markdown && { type: "markdown", content: content_markdown },
 				specs.length && {
 					type: "features",
 					items: specs.map((s) => ({
-						title: s.name,
+						name: s.name,
 						description: s.value,
 					})),
 				},
 				{ type: "reviews", current_item: true },
 				categoryLinks.length && {
 					type: "icon-links",
-					intro: "### Tags",
+					intro_content: "### Tags",
 					items: categoryLinks,
 				},
 			].filter(Boolean);

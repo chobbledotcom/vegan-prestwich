@@ -1,5 +1,5 @@
 ---
-title: Farmfoods
+name: Farmfoods
 last_modified_at: 2022-02-19
 omni: true
 is_chain: true

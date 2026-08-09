@@ -1,4 +1,4 @@
 ---
-title: Middle Eastern
+name: Middle Eastern
 subtitle: Middle Eastern
 ---

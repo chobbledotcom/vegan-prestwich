@@ -1,5 +1,5 @@
 ---
-title: Sally's Bakes
+name: Sally's Bakes
 last_modified_at: 2026-04-28
 categories:
   - delivery
@@ -33,5 +33,6 @@ specs:
     value: https://www.facebook.com/sallysbakes
   - name: Instagram
     value: https://www.instagram.com/sallysbakes
+content_markdown: |
+  **Sally is based in Bury but delivers to Prestwich quite regularly - check her Facebook page to know when the next delivery date is.**
 ---
-**Sally is based in Bury but delivers to Prestwich quite regularly - check her Facebook page to know when the next delivery date is.**

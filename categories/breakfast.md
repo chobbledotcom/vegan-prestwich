@@ -1,4 +1,4 @@
 ---
-title: Breakfast
+name: Breakfast
 subtitle: Breakfast
 ---

@@ -1,4 +1,4 @@
 ---
-title: Coffee
+name: Coffee
 subtitle: Coffee
 ---

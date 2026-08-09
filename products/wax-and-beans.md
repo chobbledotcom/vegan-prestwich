@@ -1,5 +1,5 @@
 ---
-title: Wax and Beans
+name: Wax and Beans
 last_modified_at: 2025-04-18
 omni: true
 categories:

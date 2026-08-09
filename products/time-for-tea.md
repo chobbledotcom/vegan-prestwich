@@ -1,5 +1,5 @@
 ---
-title: Time For Tea
+name: Time For Tea
 last_modified_at: 2025-11-17
 categories:
   - restaurant

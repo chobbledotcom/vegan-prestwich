@@ -1,4 +1,4 @@
 ---
-title: Cafe
+name: Cafe
 subtitle: Cafe
 ---

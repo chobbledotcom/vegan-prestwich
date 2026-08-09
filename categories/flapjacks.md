@@ -1,4 +1,4 @@
 ---
-title: Flapjacks
+name: Flapjacks
 subtitle: Flapjacks
 ---

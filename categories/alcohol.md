@@ -1,4 +1,4 @@
 ---
-title: Alcohol
+name: Alcohol
 subtitle: Alcohol
 ---

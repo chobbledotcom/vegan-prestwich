@@ -1,5 +1,5 @@
 ---
-title: Pizzology
+name: Pizzology
 last_modified_at: 2025-03-01
 omni: true
 categories:

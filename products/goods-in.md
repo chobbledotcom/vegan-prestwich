@@ -1,5 +1,5 @@
 ---
-title: Goods In
+name: Goods In
 last_modified_at: 2024-11-03
 omni: true
 votes: 6

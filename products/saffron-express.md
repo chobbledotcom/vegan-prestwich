@@ -1,5 +1,5 @@
 ---
-title: Saffron Express
+name: Saffron Express
 last_modified_at: 2025-03-20
 omni: true
 votes: 2
@@ -31,7 +31,8 @@ specs:
       Friday: 4:30pm–12am
       Saturday: 4:30pm–12am
       Sunday: 5–11pm
----
-I just swung by (first time I'd collected) and the friendly fella running it totally understood what 'vegan' means, offered to customise every dish to our taste, and didn't blink at being given our containers to fill (although they're not the worst offfenders on the plastic front anyway). You can get a pint at Maggies next door while you wait, too.
+content_markdown: |
+  I just swung by (first time I'd collected) and the friendly fella running it totally understood what 'vegan' means, offered to customise every dish to our taste, and didn't blink at being given our containers to fill (although they're not the worst offfenders on the plastic front anyway). You can get a pint at Maggies next door while you wait, too.
 
-And the curry is lush!"
+  And the curry is lush!"
+---

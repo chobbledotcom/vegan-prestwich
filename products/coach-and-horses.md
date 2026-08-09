@@ -1,5 +1,5 @@
 ---
-title: Coach & Horses
+name: Coach & Horses
 last_modified_at: 2025-09-12
 omni: true
 categories:

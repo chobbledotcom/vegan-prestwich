@@ -1,5 +1,5 @@
 ---
-title: Sweet Potatoe
+name: Sweet Potatoe
 last_modified_at: 2025-11-17
 categories:
   - restaurant

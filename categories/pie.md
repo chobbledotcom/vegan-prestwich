@@ -1,4 +1,4 @@
 ---
-title: Pie
+name: Pie
 subtitle: Pie
 ---

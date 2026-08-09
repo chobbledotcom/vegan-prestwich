@@ -1,5 +1,5 @@
 ---
-title: Papa John's
+name: Papa John's
 last_modified_at: 2020-01-06
 omni: true
 is_chain: true

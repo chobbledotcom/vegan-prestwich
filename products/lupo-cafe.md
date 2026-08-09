@@ -1,5 +1,5 @@
 ---
-title: Lupo Cafe
+name: Lupo Cafe
 last_modified_at: 2025-10-01
 omni: true
 categories:

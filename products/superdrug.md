@@ -1,5 +1,5 @@
 ---
-title: Superdrug
+name: Superdrug
 last_modified_at: 2023-01-26
 omni: true
 is_chain: true
@@ -24,6 +24,6 @@ specs:
       Thursday: 9am–5.30pm
       Friday: 9am–5.30pm
       Saturday: 9am–5.30pm
+content_markdown: |
+  Superdrug clearly label their own-brand cosmetics when they are suitable for vegans, which they usually are. Their products are also cruelty-free and are not tested on animals, nor do they instruct third parties to do so, and they don't sell products where animal testing is required by law.
 ---
-
-Superdrug clearly label their own-brand cosmetics when they are suitable for vegans, which they usually are. Their products are also cruelty-free and are not tested on animals, nor do they instruct third parties to do so, and they don't sell products where animal testing is required by law.

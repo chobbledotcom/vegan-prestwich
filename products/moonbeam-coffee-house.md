@@ -1,5 +1,5 @@
 ---
-title: Moonbeam Coffee House
+name: Moonbeam Coffee House
 last_modified_at: 2025-01-22
 omni: true
 votes: 7

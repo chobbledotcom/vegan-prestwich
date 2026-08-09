@@ -1,5 +1,5 @@
 ---
-title: Tao's Restaurant
+name: Tao's Restaurant
 last_modified_at: 2020-01-06
 categories:
   - restaurant

@@ -1,4 +1,4 @@
 ---
-title: Trendy
+name: Trendy
 subtitle: Trendy
 ---

@@ -1,5 +1,5 @@
 ---
-title: Chips @ No.8
+name: Chips @ No.8
 last_modified_at: 2025-02-25
 omni: true
 votes: 8

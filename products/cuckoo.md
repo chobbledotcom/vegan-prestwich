@@ -1,5 +1,5 @@
 ---
-title: Cuckoo
+name: Cuckoo
 last_modified_at: 2022-12-05
 omni: true
 votes: 10
@@ -29,5 +29,6 @@ specs:
       Tues-Fri: Hatch 09.00-22.00 / Bar 12.00-22.00
       Sat: Hatch 10.00-22.00 / Bar 10.00-22.00
       Sun: Hatch 10.00-21.00 / Bar 10.00-22.00
+content_markdown: |
+  Vegan cheese on their pizzas is available on request, plus they have a few vegan options nibbles-wise - sweet potato fries, falafel, hummus, pitta etc.
 ---
-Vegan cheese on their pizzas is available on request, plus they have a few vegan options nibbles-wise - sweet potato fries, falafel, hummus, pitta etc.

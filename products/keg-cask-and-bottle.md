@@ -1,5 +1,5 @@
 ---
-title: Keg, Cask & Bottle
+name: Keg, Cask & Bottle
 last_modified_at: 2024-12-01T16:28:06.565Z
 categories:
   - shop
@@ -23,11 +23,11 @@ specs:
       Wed & Thurs: 12pm - 9pm
       Fri & Sat: 11am - 10pm
       Sun: 12pm - 8pm
+content_markdown: |
+  A cool independent beer shop / bar selling beers in cans and draft from a few vegan-friendly breweries like:
+
+  - Marble
+  - First Chop
+  - Cloudwater
+  - Duvel
 ---
-
-A cool independent beer shop / bar selling beers in cans and draft from a few vegan-friendly breweries like:
-
-- Marble
-- First Chop
-- Cloudwater
-- Duvel

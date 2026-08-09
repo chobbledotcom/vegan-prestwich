@@ -1,5 +1,5 @@
 ---
-title: Codi's Kitchen
+name: Codi's Kitchen
 last_modified_at: 2024-01-31
 categories:
   - restaurant

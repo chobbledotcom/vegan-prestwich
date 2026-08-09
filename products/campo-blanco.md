@@ -1,5 +1,5 @@
 ---
-title: Campo Blanco
+name: Campo Blanco
 last_modified_at: 2025-11-17
 omni: true
 votes: 15

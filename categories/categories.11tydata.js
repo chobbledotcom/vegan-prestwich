@@ -1,11 +1,11 @@
 export default {
-	layout: "design-system-base.html",
 	tags: ["categories"],
 	permalink: "/tags/{{ page.fileSlug }}/index.html",
 	eleventyComputed: {
 		blocks: (data) => {
 			const {
-				title,
+				name,
+				content_markdown,
 				subtitle,
 				chain_intro,
 				non_chain_intro,
@@ -24,10 +24,15 @@ export default {
 
 			const toPaths = (items) => items.map((i) => i.inputPath);
 
-			const blocks = [
-				{ type: "hero", title, lead: subtitle },
-				{ type: "content" },
-			];
+			const heroContent =
+				subtitle && subtitle !== name
+					? `# ${name}\n\n${subtitle}`
+					: `# ${name}`;
+
+			const blocks = [{ type: "hero", content: heroContent }];
+			if (content_markdown) {
+				blocks.push({ type: "markdown", content: content_markdown });
+			}
 
 			if (independents.length) {
 				if (non_chain_intro && chains.length) {

@@ -1,4 +1,4 @@
 ---
-title: Cake
+name: Cake
 subtitle: Cake
 ---

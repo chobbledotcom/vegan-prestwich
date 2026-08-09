@@ -1,4 +1,4 @@
 ---
-title: Deli
+name: Deli
 subtitle: Deli
 ---

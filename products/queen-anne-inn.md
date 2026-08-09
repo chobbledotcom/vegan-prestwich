@@ -1,5 +1,5 @@
 ---
-title: Queen Anne Inn
+name: Queen Anne Inn
 last_modified_at: 2026-02-01
 omni: true
 categories:

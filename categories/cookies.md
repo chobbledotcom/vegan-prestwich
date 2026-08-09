@@ -1,4 +1,4 @@
 ---
-title: Cookies
+name: Cookies
 subtitle: Cookies
 ---

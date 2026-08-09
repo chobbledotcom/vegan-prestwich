@@ -1,4 +1,4 @@
 ---
-title: Oat Milk
+name: Oat Milk
 subtitle: Oat Milk
 ---

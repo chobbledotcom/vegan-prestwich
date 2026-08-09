@@ -1,4 +1,4 @@
 ---
-title: Tacos
+name: Tacos
 subtitle: Tacos
 ---
