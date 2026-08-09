@@ -1,5 +1,5 @@
 ---
-title: Two Birds & One Stone
+name: Two Birds & One Stone
 last_modified_at: 2025-02-02
 omni: true
 categories:

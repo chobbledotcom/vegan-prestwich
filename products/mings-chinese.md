@@ -1,5 +1,5 @@
 ---
-title: Ming's Chinese
+name: Ming's Chinese
 last_modified_at: 2025-11-17
 categories:
   - delivery

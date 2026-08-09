@@ -1,4 +1,4 @@
 ---
-title: Freezer
+name: Freezer
 subtitle: Freezer
 ---

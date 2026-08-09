@@ -1,5 +1,5 @@
 ---
-title: Milk & Miel
+name: Milk & Miel
 last_modified_at: 2025-11-17
 categories:
   - restaurant

@@ -1,5 +1,5 @@
 ---
-title: Remal
+name: Remal
 last_modified_at: 2020-08-09
 omni: true
 votes: 12

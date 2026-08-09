@@ -1,4 +1,4 @@
 ---
-title: British
+name: British
 subtitle: British
 ---

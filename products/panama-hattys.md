@@ -1,5 +1,5 @@
 ---
-title: Panama Hatty's Grill
+name: Panama Hatty's Grill
 last_modified_at: 2025-11-17
 categories:
   - restaurant

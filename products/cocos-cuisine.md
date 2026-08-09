@@ -1,5 +1,5 @@
 ---
-title: Coco's Cuisine
+name: Coco's Cuisine
 last_modified_at: 2021-01-18
 omni: true
 categories:

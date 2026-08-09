@@ -1,4 +1,4 @@
 ---
-title: Chips
+name: Chips
 subtitle: Chips
 ---

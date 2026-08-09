@@ -1,4 +1,4 @@
 ---
-title: Spanish
+name: Spanish
 subtitle: Spanish
 ---

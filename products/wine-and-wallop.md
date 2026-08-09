@@ -1,5 +1,5 @@
 ---
-title: Wine and Wallop
+name: Wine and Wallop
 last_modified_at: 2022-12-18
 omni: true
 votes: 1
@@ -33,11 +33,12 @@ specs:
       Wednesday: 10am–11pm
       Thursday: 10am–12am
       Friday: 10am–1am
+content_markdown: |
+  **December 2022:** Wine & Wallop have re-added the vegan burger and vegan breakfast to their menu!
+
+  **June 2022:** Wine & Wallop no longer do the vegan burger, or any vegan hot meals 😔
+
+  **UPDATE 2022: 'Folk' is now called 'Wine and Wallop', with a smaller vegan menu**
+
+  When they'd just opened it felt like orders got mixed up fairly often and the service was pretty haphazard, but lately we've had no problems on that front - at least at lunch time on a weekday!"
 ---
-**December 2022:** Wine & Wallop have re-added the vegan burger and vegan breakfast to their menu!
-
-**June 2022:** Wine & Wallop no longer do the vegan burger, or any vegan hot meals 😔
-
-**UPDATE 2022: 'Folk' is now called 'Wine and Wallop', with a smaller vegan menu**
-
-When they'd just opened it felt like orders got mixed up fairly often and the service was pretty haphazard, but lately we've had no problems on that front - at least at lunch time on a weekday!"

@@ -1,5 +1,5 @@
 ---
-title: Morrisons
+name: Morrisons
 last_modified_at: 2020-01-06
 omni: true
 is_chain: true
@@ -24,6 +24,6 @@ specs:
       Thursday: 7am–10pm
       Friday: 7am–10pm
       Saturday: 7am–10pm
+content_markdown: |
+  Savoury rolls, pasties, vegan cornish pasties, vegan sausage rolls, no-moozarella sticks.. Loads of Fry's frozen stuff (burgers, sausages, pies etc), and their vegan cheese is nice too.
 ---
-
-Savoury rolls, pasties, vegan cornish pasties, vegan sausage rolls, no-moozarella sticks.. Loads of Fry's frozen stuff (burgers, sausages, pies etc), and their vegan cheese is nice too.

@@ -1,4 +1,4 @@
 ---
-title: Sandwiches
+name: Sandwiches
 subtitle: Sandwiches
 ---

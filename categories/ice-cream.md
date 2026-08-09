@@ -1,4 +1,4 @@
 ---
-title: Ice Cream
+name: Ice Cream
 subtitle: Ice Cream
 ---

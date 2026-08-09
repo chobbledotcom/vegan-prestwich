@@ -1,4 +1,4 @@
 ---
-title: Organic
+name: Organic
 subtitle: Organic
 ---

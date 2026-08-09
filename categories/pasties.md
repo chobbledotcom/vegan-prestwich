@@ -1,4 +1,4 @@
 ---
-title: Pasties
+name: Pasties
 subtitle: Pasties
 ---

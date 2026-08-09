@@ -1,5 +1,5 @@
 ---
-title: Sweet Bay Bakery
+name: Sweet Bay Bakery
 last_modified_at: 2020-11-25
 categories:
   - delivery

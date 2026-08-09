@@ -1,4 +1,4 @@
 ---
-title: Pasta
+name: Pasta
 subtitle: Pasta
 ---

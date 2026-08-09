@@ -1,5 +1,5 @@
 ---
-title: Aldi Supermarket
+name: Aldi Supermarket
 last_modified_at: 2022-12-30
 omni: true
 is_chain: true

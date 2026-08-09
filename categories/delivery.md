@@ -1,5 +1,5 @@
 ---
-title: Vegan Food Delivery in Prestwich
+name: Vegan Food Delivery in Prestwich
 subtitle: Delivery
 featured: true
 eleventyNavigation:
@@ -7,6 +7,6 @@ eleventyNavigation:
   order: 4
 chain_intro: Chain Delivery in Prestwich
 non_chain_intro: Independent Delivery in Prestwich
+content_markdown: |
+  The below restaurants all deliver vegan food - click the names for more info.
 ---
-
-The below restaurants all deliver vegan food - click the names for more info.

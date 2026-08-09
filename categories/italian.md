@@ -1,4 +1,4 @@
 ---
-title: Italian
+name: Italian
 subtitle: Italian
 ---

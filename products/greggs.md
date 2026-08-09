@@ -1,5 +1,5 @@
 ---
-title: Greggs
+name: Greggs
 last_modified_at: 2022-02-19
 categories:
   - shop
@@ -24,6 +24,6 @@ specs:
       Thursday: 7am–6pm
       Friday: 7am–6pm
       Saturday: 8am–5pm
+content_markdown: |
+  They have also got a new vegan donut"
 ---
-
-They have also got a new vegan donut"

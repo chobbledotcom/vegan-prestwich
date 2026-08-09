@@ -1,5 +1,5 @@
 ---
-title: MASA Bakery
+name: MASA Bakery
 last_modified_at: 2025-05-30
 omni: true
 categories:

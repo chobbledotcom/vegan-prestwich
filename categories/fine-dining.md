@@ -1,4 +1,4 @@
 ---
-title: Fine Dining
+name: Fine Dining
 subtitle: Fine Dining
 ---

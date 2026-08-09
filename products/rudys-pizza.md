@@ -1,5 +1,5 @@
 ---
-title: Rudy's Pizza Napoletana
+name: Rudy's Pizza Napoletana
 last_modified_at: 2025-01-22
 omni: true
 categories:

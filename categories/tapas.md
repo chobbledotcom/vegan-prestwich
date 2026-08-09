@@ -1,4 +1,4 @@
 ---
-title: Tapas
+name: Tapas
 subtitle: Tapas
 ---

@@ -1,4 +1,4 @@
 ---
-title: Burgers
+name: Burgers
 subtitle: Burgers
 ---

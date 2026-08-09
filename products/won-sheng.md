@@ -1,5 +1,5 @@
 ---
-title: Won Sheng
+name: Won Sheng
 last_modified_at: 2020-01-06
 omni: true
 categories:
@@ -24,6 +24,6 @@ specs:
       Thursday: 5–11pm
       Friday: 5–11pm
       Saturday: 5–11pm
+content_markdown: |
+  A good selection of tasty vegan dishes - tofu, mock duck, mock chicken, etc. Their Just Eat page lists allergens and they seem to know what you're talking about if you call.
 ---
-
-A good selection of tasty vegan dishes - tofu, mock duck, mock chicken, etc. Their Just Eat page lists allergens and they seem to know what you're talking about if you call.

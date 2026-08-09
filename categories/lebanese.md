@@ -1,4 +1,4 @@
 ---
-title: Lebanese
+name: Lebanese
 subtitle: Lebanese
 ---

@@ -1,5 +1,5 @@
 ---
-title: Frurt Frozen Yogurt
+name: Frurt Frozen Yogurt
 last_modified_at: 2020-01-06
 omni: true
 votes: 1
@@ -32,5 +32,6 @@ specs:
       Thursday: 12–10:45pm
       Friday: 12–10:45pm
       Saturday: 11am–10:45pm
+content_markdown: |
+  Loads of vegan frozen-yoghurt options, delivery via Deliveroo and all clearly labelled!
 ---
-Loads of vegan frozen-yoghurt options, delivery via Deliveroo and all clearly labelled!

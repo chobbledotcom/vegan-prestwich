@@ -1,5 +1,5 @@
 ---
-title: Dinner By Ness
+name: Dinner By Ness
 last_modified_at: 2022-08-11
 omni: true
 categories:
@@ -21,5 +21,6 @@ specs:
     value: https://www.facebook.com/DinnerbyNess
   - name: Instagram
     value: https://www.instagram.com/dinnerbyness
+content_markdown: |
+  **Ness plans Middle Eastern supper clubs from Ramsbottom - check her Facebook or Instagram page for details.**
 ---
-**Ness plans Middle Eastern supper clubs from Ramsbottom - check her Facebook or Instagram page for details.**

@@ -1,4 +1,4 @@
 ---
-title: Indian
+name: Indian
 subtitle: Indian
 ---

@@ -1,5 +1,5 @@
 ---
-title: Grape to Grain
+name: Grape to Grain
 last_modified_at: 2022-09-11
 omni: true
 categories:
@@ -30,6 +30,6 @@ specs:
       Friday: Midday - 11pm
       Saturday: Midday - 11pm
       Sunday: Midday - 10pm
+content_markdown: |
+  Grape to Grain sell a range of vegan wines and beers and their staff are very knowledgeable about what's on offer. They also sell deli snacks, and you can sit in and stay for a glass.
 ---
-
-Grape to Grain sell a range of vegan wines and beers and their staff are very knowledgeable about what's on offer. They also sell deli snacks, and you can sit in and stay for a glass.

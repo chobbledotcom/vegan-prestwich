@@ -1,4 +1,4 @@
 ---
-title: Curry
+name: Curry
 subtitle: Curry
 ---

@@ -1,5 +1,5 @@
 ---
-title: All The Shapes
+name: All The Shapes
 last_modified_at: 2024-11-16
 omni: true
 votes: 11

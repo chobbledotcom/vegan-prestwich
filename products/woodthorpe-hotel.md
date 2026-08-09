@@ -1,5 +1,5 @@
 ---
-title: Woodthorpe Hotel
+name: Woodthorpe Hotel
 last_modified_at: 2020-01-06
 omni: true
 categories:

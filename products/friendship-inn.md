@@ -1,5 +1,5 @@
 ---
-title: Friendship Inn
+name: Friendship Inn
 last_modified_at: 2022-06-27
 omni: true
 categories:

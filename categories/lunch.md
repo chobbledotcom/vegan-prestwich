@@ -1,4 +1,4 @@
 ---
-title: Lunch
+name: Lunch
 subtitle: Lunch
 ---

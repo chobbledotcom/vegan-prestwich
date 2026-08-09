@@ -1,5 +1,5 @@
 ---
-title: Anatolian Grill
+name: Anatolian Grill
 last_modified_at: 2025-01-31
 omni: true
 votes: 4

@@ -1,5 +1,5 @@
 ---
-title: Heaton Park Cafés
+name: Heaton Park Cafés
 last_modified_at: 2023-09-03
 omni: true
 categories:

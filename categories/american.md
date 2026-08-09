@@ -1,4 +1,4 @@
 ---
-title: American
+name: American
 subtitle: American
 ---

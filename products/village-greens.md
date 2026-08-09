@@ -1,5 +1,5 @@
 ---
-title: Village Greens
+name: Village Greens
 last_modified_at: 2024-09-27
 omni: true
 categories:
@@ -35,5 +35,6 @@ specs:
       Thursday: 9am–6pm
       Friday: 9am–6pm
       Saturday: 9am–5pm
+content_markdown: |
+  Loads of veggie / organic options, fresh hot and cold food, very little plastic on the vegetables and pulses, and you can take your empty grains, pasta, rice, soap, shampoo bottles etc to be refilled!
 ---
-Loads of veggie / organic options, fresh hot and cold food, very little plastic on the vegetables and pulses, and you can take your empty grains, pasta, rice, soap, shampoo bottles etc to be refilled!

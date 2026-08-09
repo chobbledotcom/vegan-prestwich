@@ -1,5 +1,5 @@
 ---
-title: Mozzarella
+name: Mozzarella
 last_modified_at: 2020-01-06
 omni: true
 categories:
@@ -29,5 +29,6 @@ specs:
       Thursday: 8:30am–10:30pm
       Friday: 9am–2:30pm
       Saturday: 7–11pm
+content_markdown: |
+  Vegan cheese options on the pizza, and vegan sausage and salami! Delivery possible.
 ---
-Vegan cheese options on the pizza, and vegan sausage and salami! Delivery possible.

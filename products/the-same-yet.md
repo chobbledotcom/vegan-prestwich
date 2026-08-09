@@ -1,5 +1,5 @@
 ---
-title: The Same Yet Inn
+name: The Same Yet Inn
 last_modified_at: 2023-06-12
 omni: true
 categories:
