@@ -1,6 +1,6 @@
 ---
 title: Anatolian Grill
-last_modified_at: 2022-05-17
+last_modified_at: 2025-01-31
 omni: true
 votes: 4
 categories:

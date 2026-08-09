@@ -1,6 +1,6 @@
 ---
 title: Sally's Bakes
-last_modified_at: 2022-04-19
+last_modified_at: 2026-04-28
 categories:
   - delivery
   - cake
@@ -17,6 +17,11 @@ gallery:
   - /images/products/sallys-bakes/07.jpg
   - /images/products/sallys-bakes/08.jpg
   - /images/products/sallys-bakes/09.jpg
+  - /images/products/sallys-bakes/10.jpg
+  - /images/products/sallys-bakes/11.jpg
+  - /images/products/sallys-bakes/12.jpg
+  - /images/products/sallys-bakes/13.jpg
+  - /images/products/sallys-bakes/14.jpg
 specs:
   - name: Address
     value: Based in Bury but delivers to Prestwich

@@ -1,10 +1,14 @@
 ---
 title: Pizzology
-last_modified_at: 2020-08-09
+last_modified_at: 2025-03-01
 omni: true
 categories:
   - delivery
   - pizza
+gallery:
+  - /images/products/pizzology/01.jpg
+  - /images/products/pizzology/02.jpg
+  - /images/products/pizzology/03.jpg
 specs:
   - name: Address
     value: 16A Crescent, Salford, M5 4PF

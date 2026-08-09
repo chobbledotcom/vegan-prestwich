@@ -8,6 +8,7 @@ gallery:
   - /images/products/time-for-tea/01.jpg
   - /images/products/time-for-tea/02.jpg
   - /images/products/time-for-tea/03.jpg
+  - /images/products/time-for-tea/04.jpg
 specs:
   - name: Address
     value: 416 Bury New Road, M25 1BD

@@ -1,6 +1,6 @@
 ---
 title: Campo Blanco
-last_modified_at: 2024-02-23
+last_modified_at: 2025-11-17
 omni: true
 votes: 15
 categories:
@@ -21,6 +21,8 @@ gallery:
   - /images/products/campo-blanco/11.jpg
   - /images/products/campo-blanco/12.jpg
   - /images/products/campo-blanco/13.jpg
+  - /images/products/campo-blanco/14.jpg
+  - /images/products/campo-blanco/15.jpg
 specs:
   - name: Address
     value: 1 Moss Ln, Whitefield, M45 6QE

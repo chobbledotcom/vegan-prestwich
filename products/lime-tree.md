@@ -1,6 +1,6 @@
 ---
 title: Lime Tree
-last_modified_at: 2022-08-30
+last_modified_at: 2026-01-26
 omni: true
 votes: 7
 categories:
@@ -11,6 +11,8 @@ gallery:
   - /images/products/lime-tree/01.jpg
   - /images/products/lime-tree/02.jpg
   - /images/products/lime-tree/03.jpg
+  - /images/products/lime-tree/04.jpg
+  - /images/products/lime-tree/05.jpg
 specs:
   - name: Address
     value: 213 Bury Old Road, M25 1JF
