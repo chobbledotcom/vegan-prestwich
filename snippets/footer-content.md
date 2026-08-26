@@ -7,4 +7,4 @@
 
 no ads / sponsors / tracking / cookies
 
-[site by chobble](https://chobble.com)
+[site by chobble](https://www.chobble.com)
